@@ -10,9 +10,9 @@ class InterfaceRepositorioFireBaseMVVM {
 
     //todo lista de dados
     private val listaDadosFirebase = MutableLiveData<List<ClasseDeDadosFireBaseMVVM>>()
-    private var fotoPerfil = " "
 
-
+    //todo foto perfil
+    private var fotoPerfil = ""
 
     fun funcaoAtualizaPeloRepositorio(classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM) {
 
@@ -128,16 +128,16 @@ class InterfaceRepositorioFireBaseMVVM {
         //todo referencia da imagem
         FirebaseStorage.getInstance() .getReference("image") .child("image.jpg") .downloadUrl
 
-            .addOnSuccessListener { fotoPerfilRetornada ->
+            .addOnSuccessListener { fotoPerfilRetornada , ->
 
                 fotoPerfil = fotoPerfilRetornada.toString()
 
                 println( "interfaceRepositorioFireBaseMVVM listar fotos -> $fotoPerfil")
 
             }
-            .addOnFailureListener {
+            .addOnFailureListener { falha ->
 
-                println(" repositorio firebase mvvm listar nome erro ")
+                println(" interfaceRepositorioFireBaseMVVM listar fotos erro -> $falha ")
             }
 
         return fotoPerfil

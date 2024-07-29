@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -106,6 +107,16 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
             Log.i("ViewModel observe", "$dados")
         }
 
+        //todo observa o repositorio viewmodel
+        viewModelFireBaseMVVM.fotoPerfilLiveData.observe(viewLifecycleOwner)  { imagemRetornada ->
+
+            Picasso.get()
+                .load(imagemRetornada.toUri())
+                .into(binding.imageView)
+
+            println( "fragmentFireBaseMVVM listar fotos no observe -> $imagemRetornada" )
+        }
+
         //todo botoes
         binding.btnAutenticar.setOnClickListener {
 
@@ -151,8 +162,6 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
     private fun funcaoListarTodos() {
 
         viewModelFireBaseMVVM.funcaoListarTodosPeloViewModel()
-
-        funcaoListarImage()
     }
     private fun funcaoAbrirGaleria() {
 
@@ -177,39 +186,10 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
                 mensagemToast("Erro: $erro \n\n Causa: $causa")
             }
     }
-    private fun funcaoListarImage1 () {
-
-        //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("image") .child("image.jpg") .downloadUrl
-            .addOnSuccessListener { sucesso ->
-
-                val url = sucesso.toString()
-
-            //todo visualizando imagem com API Picasso
-            Picasso.get()
-                .load(sucesso)
-                .into(binding.imageView)
-
-                println{ "fragmentFireBaseMVVM listar fotos -> $url\u001B[41m" }
-        }
-            .addOnFailureListener { falha ->
-
-                val erro = falha.message
-                val causa = falha.cause
-
-                mensagemToast("Erro: $erro \n\n Causa: $causa")
-            }
-    }
     private fun funcaoListarImage () {
 
-
-        println( "fragmentFireBaseMVVM listar fotos -> ${viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()}" )
+        viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()
     }
-
-
-
-
-
     private fun funcaoAutenticar() {
 
         val email = "m@m.com"
@@ -292,6 +272,9 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
     override fun onStart() {
         super.onStart()
 
+        viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()
+
+        funcaoListarImage()
         funcaoListarTodos()
     }
 }

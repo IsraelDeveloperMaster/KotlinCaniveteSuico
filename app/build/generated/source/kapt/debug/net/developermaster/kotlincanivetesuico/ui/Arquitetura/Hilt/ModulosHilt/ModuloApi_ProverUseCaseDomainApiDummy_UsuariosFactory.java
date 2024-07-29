@@ -7,8 +7,8 @@ import dagger.internal.Preconditions;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Domain.Repository.InterfaceRepositoryDomainApiDummy_Usuarios;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Domain.UseCase.GetUseCaseDomainApiDummy_Usuarios;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.Repository.InterfaceRepositoryDomainApiDummy_Usuarios;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.UseCase.GetUseCaseDomainApiDummy_Usuarios;
 
 @ScopeMetadata
 @QualifierMetadata

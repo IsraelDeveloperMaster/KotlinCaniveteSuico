@@ -17,6 +17,9 @@ class ViewModelFireBaseMVVM : ViewModel() {
     //todo lista de dados recuperados
     val observaListaTodosRepositorioFireBaseMVVM : LiveData<List<ClasseDeDadosFireBaseMVVM>>  =  interfaceRepositorioFireBaseMVVM.funcaoListarTodosPeloRepositorio()
 
+    //todo foto perfil recuperada
+    val observaListaFotoPerfilRepositorioFireBaseMVVM : String  =  interfaceRepositorioFireBaseMVVM.funcaoListarFotoPerfilPeloRepositorio()
+
     fun funcaoListarNomePeloViewModel( nome: String ) {
 
         interfaceRepositorioFireBaseMVVM.funcaoListarNomePeloRepositorio( nome )
@@ -60,5 +63,10 @@ class ViewModelFireBaseMVVM : ViewModel() {
 
              println("viewModelFireBaseMVVM listar fotos -> $imagemPerfilRetornada")
         }
+    }
+
+    fun funcaoAutenticarPeloViewModel( email: String, senha: String ) {
+
+        interfaceRepositorioFireBaseMVVM.funcaoAutenticarPeloRepositorio(email, senha)
     }
 }

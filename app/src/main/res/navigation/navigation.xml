@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+
+    app:startDestination="@id/fragment_FireBase_Mvvm">
+
+
+    <!--    //////////////////// HOME ////////////////////-->
+    <activity android:id="@+id/__________________________" />
+    <activity android:id="@+id/HOME"/>
+
+    <fragment
+        android:id="@+id/fragment_Home"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Home.View.FragmentHome"
+        android:label="@string/NAV_HOME"
+        tools:layout="@layout/fragment_home" />
+
+    <!--    //////////////////// ARQUITETURA ////////////////////-->
+    <!--todo ARQUITETURA-->
+    <activity android:id="@+id/_______________________________" />
+    <activity android:id="@+id/___ARQUITETURA___" />
+
+    <fragment
+        android:id="@+id/fragment_Arquitetura_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ArquiteturaFragment.FragmentArquiteturaMain"
+        android:label="@string/MAIN_ARQUITETURA"
+        tools:layout="@layout/fragment_arquitetura_main" />
+
+    <!--    //////////////////// MVC ////////////////////-->
+    <activity android:id="@+id/___________" />
+    <activity android:id="@+id/MVC" />
+
+    <fragment
+        android:id="@+id/fragment_Mvc"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvc.View.FragmentMVC"
+        android:label="@string/EXT_MVC"
+        tools:layout="@layout/fragment_mvc" />
+
+    <!--    //////////////////// MVP ////////////////////-->
+    <activity android:id="@+id/____________" />
+    <activity android:id="@+id/MVP" />
+
+    <fragment
+        android:id="@+id/fragment_Mvp_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvp.Main.FragmentMvpMain"
+        android:label="@string/EXT_MVP"
+        tools:layout="@layout/fragment_mvp_main" />
+    <fragment
+        android:id="@+id/fragment_Mvp_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvp.MvpSimples.View.FragmentMvpSimples"
+        android:label="@string/MAIN_MVP_SIMPLES"
+        tools:layout="@layout/fragment_mvp_simples" />
+    <fragment
+        android:id="@+id/fragment_Mvp_Api"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvp.MvpApi.View.FragmentMvpApi"
+        android:label="@string/MAIN_MVP_API"
+        tools:layout="@layout/fragment_mvp_api" />
+
+    <!--    //////////////////// VIEWMODEL ////////////////////-->
+    <activity android:id="@+id/_____________" />
+    <activity android:id="@+id/VIEWMODEL" />
+
+    <fragment
+        android:id="@+id/fragment_ViewModel_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ViewModel.Main.FragmentViewModelMain"
+        android:label="@string/EXT_VIEWMODEL"
+        tools:layout="@layout/fragment_viewmodel_main" />
+    <fragment
+        android:id="@+id/fragment_ViewModel_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ViewModel.ViewModelSimples.View.FragmentViewModelSimples"
+        android:label="@string/NAV_VIEWMODEL_SIMPLES"
+        tools:layout="@layout/fragment_viewmodel_simples" />
+    <fragment
+        android:id="@+id/fragment_ViewModel_Contador"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ViewModel.ViewModelContador.View.FragmentViewModelContador"
+        android:label="@string/MAIN_VIEWMODEL_CONTADOR"
+        tools:layout="@layout/fragment_viewmodel_contador" />
+
+<!--    //////////////////// MVVM ////////////////////-->
+    <activity android:id="@+id/___________________" />
+    <activity android:id="@+id/MVVM" />
+
+    <fragment
+        android:id="@+id/fragment_Mvvm_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvvm.Main.Fragment_Mvvm_Main"
+        android:label="@string/EXT_MVVM"
+        tools:layout="@layout/fragment_mvvm_main" />
+    <fragment
+        android:id="@+id/fragment_Mvvm_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvvm.MvvmSimples.View.FragmentMvvm_Simples"
+        android:label="@string/NAV_MVVM_SIMPLES"
+        tools:layout="@layout/fragment_mvvm_simples" />
+    <fragment
+        android:id="@+id/fragment_Mvvm_Api"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvvm.MvvmApi.View.FragmentMvvmApi"
+        android:label="@string/NAV_MVVM_API"
+        tools:layout="@layout/fragment_mvvm_api" />
+
+    <!--    //////////////////// HILT ////////////////////-->
+    <activity android:id="@+id/____________________" />
+    <activity android:id="@+id/HILT" />
+
+    <fragment
+        android:id="@+id/fragment_Hilt_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.Main.FragmentHiltMain"
+        android:label="@string/EXT_HILT"
+        tools:layout="@layout/fragment_hilt_main" />
+    <fragment
+        android:id="@+id/fragment_Hilt_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltSimples.View.FragmentHiltSimples"
+        android:label="@string/NAV_HILT_INJECAO_SIMPLES"
+        tools:layout="@layout/fragment_hilt_simples" />
+
+    <fragment
+        android:id="@+id/fragment_Hilt_Injecao"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltInjecao.View.FragmentHiltInjecao"
+        android:label="@string/NAV_HILT_INJECAO"
+        tools:layout="@layout/fragment_hilt_injecao" />
+    <fragment
+        android:id="@+id/fragment_Dependencias_Nomeadas"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltDependenciasNomeadas.View.FragmentHiltDependenciasNomeadas"
+        android:label="@string/NAV_HILT_DEPENDENCIAS_NOMEADAS"
+        tools:layout="@layout/fragment_hilt_dependencias_nomeadas" />
+    <fragment
+        android:id="@+id/fragment_Hilt_Dummy_Usuarios"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Presentation.View.FragmentHiltApiDummyUsuarios"
+        android:label="@string/NAV_HILT_DOMAIN_API_DUMMY_USUARIOS"
+        tools:layout="@layout/fragment_hilt_domain_api_dummy_usuarios" />
+    <fragment
+        android:id="@+id/fragment_Hilt_Dummy_Produtos"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Presentation.View.FragmentHiltApiDummyProdutos"
+        android:label="@string/NAV_HILT_DOMAIN_API_DUMMY_PRODUTOS"
+        tools:layout="@layout/fragment_hilt_domain_api_dummy_produtos" />
+
+    <!--    //////////////////// LIVEDATA ////////////////////-->
+    <activity android:id="@+id/_____________________" />
+    <activity android:id="@+id/LIVEDATA" />
+
+    <fragment
+        android:id="@+id/fragment_LiveData_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.LiveData.Main.FragmentLiveDataMain"
+        android:label="@string/EXT_LIVEDATA"
+        tools:layout="@layout/fragment_livedata_main" />
+    <fragment
+        android:id="@+id/fragment_LiveData_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.LiveData.LiveDataSimples.View.FragmentLiveDataSimples"
+        android:label="@string/NAV_LIVEDATA_SIMPLES"
+        tools:layout="@layout/fragment_livedata_simples" />
+    <fragment
+        android:id="@+id/fragment_LiveData_Contador"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.LiveData.LiveDataContador.View.FragmentLiveDataContador"
+        android:label="@string/NAV_LIVEDATA_CONTADOR"
+        tools:layout="@layout/fragment_livedata_contador" />
+
+    <!--    //////////////////// DATABINDING ////////////////////-->
+    <activity android:id="@+id/______________________" />
+    <activity android:id="@+id/DATABINDING" />
+
+    <fragment
+        android:id="@+id/fragment_DataBinding_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.Main.FragmentDataBindingMain"
+        android:label="@string/EXT_DATABINDING"
+        tools:layout="@layout/fragment_databinding_main" />
+    <fragment
+        android:id="@+id/fragment_DataBinding_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.DataBindingSimples.View.FragmentDataBindingSimples"
+        android:label="@string/NAV_DATABINDING_SIMPLES"
+        tools:layout="@layout/fragment_databinding_simples" />
+    <fragment
+        android:id="@+id/fragment_DataBinding_LiveData_ViewModel"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.DataBindingLiveData.View.FragmentDataBindingLivedataViewModel"
+        android:label="@string/NAV_DATABINDING_CLIQUE"
+        tools:layout="@layout/fragment_databinding_livedata_viewmodel" />
+    <fragment
+        android:id="@+id/fragment_DataBinding_Clique"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.DataBindingClique.View.FragmentDataBindingComEventoDeClique"
+        android:label="@string/NAV_DATABINDING_CLIQUE"
+        tools:layout="@layout/fragment_databinding_com_evento_de_clique" />
+
+    <!--    //////////////////// CLEN ARCHITECTURE ////////////////////-->
+    <activity android:id="@+id/_______________________" />
+    <activity android:id="@+id/CLEN_ARCHITECTURE" />
+
+    <fragment
+        android:id="@+id/fragment_Clean_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.Main.FragmentCleanMain"
+        android:label="@string/EXT_CLEAN_ARCHITECTURE"
+        tools:layout="@layout/fragment_clean_main" />
+    <fragment
+        android:id="@+id/fragment_Clean_Mvvm"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.View.FragmentCleanMvvm"
+        android:label="@string/NAV_CLEAN_ARCHITECTURE_MVVM"
+        tools:layout="@layout/fragment_clean_mvvm" />
+    <fragment
+        android:id="@+id/fragment_Clean_Domain"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanUtilizandoCamadaDomain.Presentation.View.FragmentCleanDomain"
+        android:label="@string/NAV_CLEAN_ARCHITECTURE_DOMAIN"
+        tools:layout="@layout/fragment_clean_domain" />
+
+
+    <!--    //////////////////// GIT ////////////////////-->
+    <activity android:id="@+id/_________________________" />
+    <activity android:id="@+id/GIT" />
+    <!--    //////////////////// GIT ////////////////////-->
+
+
+    <!--    //////////////////// TEST ////////////////////-->
+    <activity android:id="@+id/___________________________" />
+    <activity android:id="@+id/TEST" />
+    <!--    //////////////////// TEST ////////////////////-->
+
+
+    <!--    //////////////////// CODIGO ////////////////////-->
+    <activity android:id="@+id/_____________________________" />
+    <activity android:id="@+id/CODIGO" />
+
+    <fragment
+        android:id="@+id/fragment_Codigo"
+        android:name="net.developermaster.classe_de_dados_codigos.FragmentCodigos"
+        android:label="@string/NAV_CODIGOS"
+        tools:layout="@layout/fragment_codigo" />
+    <!--    //////////////////// CODIGO ////////////////////-->
+
+
+
+    <!--    //////////////////// RECYCLER VIEW ////////////////////-->
+    <activity android:id="@+id/____________________________" />
+    <activity android:id="@+id/RECYCLER_VIEW" />
+
+    <fragment
+        android:id="@+id/fragment_RecyclerView_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.RecyclerViewSimples.View.FragmentRecyclerViewSimples"
+        android:label="@string/NAV_HOME"
+        tools:layout="@layout/fragment_recyclerview_simples" />
+    <!--    //////////////////// RECYCLER VIEW ////////////////////-->
+
+
+    <!--    //////////////////// SEARCH VIEW ////////////////////-->
+    <activity android:id="@+id/______________________________" />
+    <activity android:id="@+id/SEARCH_VIEW" />
+
+    <fragment
+        android:id="@+id/fragment_SearchView_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.SearchView.Main.FragmentSearchViewMain"
+        android:label="@string/EXT_SEARCHVIEW"
+        tools:layout="@layout/fragment_searchview_main" />
+    <fragment
+        android:id="@+id/fragment_SearchView_ListView"
+        android:name="net.developermaster.kotlincanivetesuico.ui.SearchView.SearchViewListView.FragmentSearchListView"
+        android:label="@string/NAV_SEARCHVIEW_LISTVIEW"
+        tools:layout="@layout/fragment_search_listview" />
+    <fragment
+        android:id="@+id/fragment_SearchView_RecyclerView"
+        android:name="net.developermaster.kotlincanivetesuico.ui.SearchView.SearchViewRecyclerView.View.FragmentSearchRecyclerView"
+        android:label="@string/NAV_SEARCHVIEW_RECYCLERVIEW"
+        tools:layout="@layout/fragment_search_recyclerview" />
+    <!--    //////////////////// SEARCH VIEW ////////////////////-->
+
+
+    <!--    //////////////////// CONTATO ////////////////////-->
+    <activity android:id="@+id/_________________________________" />
+    <activity android:id="@+id/CONTATO" />
+
+    <fragment
+        android:id="@+id/fragment_contato"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Contato.Fragment_Contato"
+        android:label="@string/EXT_CONTATO"
+        tools:layout="@layout/fragment_contato" />
+    <!--    //////////////////// CONTATO ////////////////////-->
+
+
+    <!--    //////////////////// COMPOSE ////////////////////-->
+    <activity android:id="@+id/__________________________________" />
+    <activity android:id="@+id/COMPOSE" />
+
+    <fragment
+        android:id="@+id/fragment_Compose_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Compose.Main.FragmentComposeMain"
+        android:label="@string/EXT_COMPOSE"
+        tools:layout="@layout/fragment_compose_main" />
+    <!--    //////////////////// COMPOSE ////////////////////-->
+
+
+    <!--    //////////////////// ROOM ////////////////////-->
+    <activity android:id="@+id/___________________________________" />
+    <activity android:id="@+id/ROOM" />
+
+    <fragment
+        android:id="@+id/fragment_Room_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Room.Main.FragmentRoomMain"
+        android:label="@string/EXT_ROOM"
+        tools:layout="@layout/fragment_room_main" />
+    <fragment
+        android:id="@+id/fragment_Room_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Room.RoomSimples.View.FragmentRoomSimples"
+        android:label="@string/NAV_ROOM_SIMPLES"
+        tools:layout="@layout/fragment_room_simples" />
+
+    <fragment
+        android:id="@+id/fragment_Room_MVVM"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Room.RoomMVVM.View.FragmentRoomMVVM"
+        android:label="@string/NAV_ROOM_MVVM"
+        tools:layout="@layout/fragment_room_mvvm" />
+    <!--    //////////////////// ROOM ////////////////////-->
+
+
+    <!--    //////////////////// FRAGMENT ////////////////////-->
+    <activity android:id="@+id/_________________________________________" />
+    <activity android:id="@+id/FRAGMENT" />
+
+    <fragment
+        android:id="@+id/fragment_Fragment_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.Activity.Main.FragmentActivityMain"
+        android:label="@string/EXT_FRAGMENT"
+        tools:layout="@layout/fragment_room_main" />
+    <!--    //////////////////// FRAGMENT ////////////////////-->
+
+
+    <!--    //////////////////// FIREBASE ////////////////////-->
+    <activity android:id="@+id/____________________________________________" />
+    <activity android:id="@+id/FIREBASE" />
+
+    <fragment
+        android:id="@+id/fragment_FireBase_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.Main.FragmentFireBaseMain"
+        android:label="@string/EXT_FIREBASE"
+        tools:layout="@layout/fragment_firebase_main" />
+    <fragment
+        android:id="@+id/fragment_FireBase_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseSimples.View.FragmentFireBaseSimples"
+        android:label="@string/NAV_FIREBASE_SIMPLES"
+        tools:layout="@layout/fragment_firebase_simples" />
+    <fragment
+        android:id="@+id/fragment_FireBase_Mvvm"
+        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM"
+        android:label="@string/MAIN_FIREBASE_MVVM"
+        tools:layout="@layout/fragment_firebase_mvvm" />
+    <fragment
+        android:id="@+id/fragment_FireBase_Mvvm_Adicionar"
+        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM_Adicionar"
+        android:label="@string/MAIN_FIREBASE_MVVM_ADICIONAR"
+        tools:layout="@layout/fragment_firebase_mvvm_adicionar" />
+    <!--    //////////////////// FIREBASE ////////////////////-->
+
+
+
+
+</navigation>

@@ -2,6 +2,7 @@ package net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Reposit
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Model.ClasseDeDadosFireBaseMVVM
@@ -141,6 +142,25 @@ class InterfaceRepositorioFireBaseMVVM {
             }
 
         return fotoPerfil
+    }
+
+    fun funcaoAutenticarPeloRepositorio ( email: String, senha: String ) : Boolean {
+
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha)
+                .addOnSuccessListener { sucesso ->
+
+                    val email = sucesso.user?.email
+                    val id = sucesso.user?.uid
+                    val provedor = sucesso.user?.providerId
+
+                    println( "sucesso:\n \n  id: $id \n \n Provedor: $provedor \n \n Email: $email" )
+
+                }.addOnFailureListener { falha ->
+
+                    println(" interfaceRepositorioFireBaseMVVM autenticar usuario -> $falha.message")
+
+                }
+        return true
     }
 }
 

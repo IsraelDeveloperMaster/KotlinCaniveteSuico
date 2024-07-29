@@ -16,7 +16,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
 import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
@@ -190,29 +189,6 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
         viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()
     }
-    private fun funcaoAutenticar() {
-
-        val email = "m@m.com"
-        val senha = "123456"
-
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha)
-            .addOnSuccessListener { sucesso ->
-
-                val email = sucesso.user?.email
-                val id = sucesso.user?.uid
-                val provedor = sucesso.user?.providerId
-
-                mensagemSnackBar("sucesso:\n \n  id: $id \n \n Provedor: $provedor \n \n Email: $email")
-
-                mensagemToast(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_AUTENTICAR))
-
-            }.addOnFailureListener { falha ->
-
-                val mensagemDeErro = falha.message
-
-                mensagemToast("$mensagemDeErro \n")
-            }
-    }
     private fun funcaoListarNome() {
 
         val nome = binding.textInputNome.text.toString()
@@ -254,7 +230,22 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         //todo mantem o cursor neste campo
         binding.textInputNome.requestFocus()
     }
+    private fun funcaoAutenticar(  ) {
 
+        val email = binding.textInputNome.setText("m@m.com").toString()
+        val senha = binding.textInputIdade.setText("123456").toString()
+
+        if ( email.isNotEmpty() || senha.isNotEmpty() ) {
+
+            mensagemToast(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_AUTENTICAR))
+
+            viewModelFireBaseMVVM.funcaoAutenticarPeloViewModel( email, senha )
+
+        } else {
+
+            mensagemToast(getString(R.string.MENSAGEM_FIREBASE_ERRO_AUTENTICAR))
+        }
+    }
     override fun funcaoInterfaceFireBaseMVVM(position: Int) {
         funcaoListarTodos()
     }
@@ -272,9 +263,8 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
     override fun onStart() {
         super.onStart()
 
-        viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()
-
         funcaoListarImage()
+
         funcaoListarTodos()
     }
 }

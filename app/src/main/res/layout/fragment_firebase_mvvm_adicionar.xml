@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_nome_layout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nome"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInput_nome_adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="text"
+            android:text=""
+            android:textColor="#F6355FDE"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_idade_layout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:hint="idade"
+        app:endIconMode="clear_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_nome_layout"
+        app:startIconDrawable="@drawable/ic_menu_manage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInput_idade_adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#F6355FDE"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/INT_FIREBASE_SALVAR"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnAtualizar"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_idade_layout" />
+
+    <Button
+        android:id="@+id/btnAtualizar"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/INT_ROOM_ATUALIZAR"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_idade_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

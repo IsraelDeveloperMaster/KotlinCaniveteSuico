@@ -7,7 +7,7 @@ import dagger.internal.Preconditions;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Data.API.InterfaceDomainApiDummy_Usuarios;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Data.API.InterfaceDomainApiDummy_Usuarios;
 import retrofit2.Retrofit;
 
 @ScopeMetadata

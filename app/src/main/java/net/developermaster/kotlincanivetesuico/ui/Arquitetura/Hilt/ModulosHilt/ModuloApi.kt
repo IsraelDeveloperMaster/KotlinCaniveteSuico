@@ -5,13 +5,13 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.Constantes.BaseUrlApi_Dummy.BASE_URL_API_DUMMY
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.API.InterfaceDomainApiDummy_Produtos
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.Repository.InterfaceRepositoryDataImplementacaoDomainApiDummyApiDummy_Produtos
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.Repository_Domain.InterfaceRepositoryDomainApiDummy_Produtos
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.API.InterfaceDomainApiDummyProdutos
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.Repository.InterfaceRepositoryImpl
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.RepositoryDomain.InterfaceRepositoryDomain
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.UseCase.GetUseCaseDomainApiDummy_Produtos
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Data.API.InterfaceDomainApiDummy_Usuarios
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Data.Repository.InterfaceRepositoryDataImplementacaoDomainApiDummy_Usuarios
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.Repository.InterfaceRepositoryDomainApiDummy_Usuarios
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Data.Repository.InterfaceRepositoryImplUsuarios
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.Repository.InterfaceRepositorioUsuarios
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.UseCase.GetUseCaseDomainApiDummy_Usuarios
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -41,35 +41,35 @@ object ModuloApi {
 
     //todo prover interface api dummy produtos
     @Provides
-    fun proverInterfaceApiDummy_Produtos(retrofit: Retrofit): InterfaceDomainApiDummy_Produtos {
+    fun proverInterfaceApiDummy_Produtos(retrofit: Retrofit): InterfaceDomainApiDummyProdutos {
 
-        return retrofit.create(InterfaceDomainApiDummy_Produtos::class.java)
+        return retrofit.create(InterfaceDomainApiDummyProdutos::class.java)
     }
 
     //todo prover interface repository domain dummy usuarios
     @Provides
-    fun proverInterfaceRepositoryDomainApiDummy_Usuarios(interfacedomainapidummyUsuarios: InterfaceDomainApiDummy_Usuarios): InterfaceRepositoryDomainApiDummy_Usuarios {
+    fun proverInterfaceRepositoryDomainApiDummy_Usuarios(interfacedomainapidummyUsuarios: InterfaceDomainApiDummy_Usuarios): InterfaceRepositorioUsuarios {
 
-        return InterfaceRepositoryDataImplementacaoDomainApiDummy_Usuarios(interfacedomainapidummyUsuarios)
+        return InterfaceRepositoryImplUsuarios(interfacedomainapidummyUsuarios)
     }
 
     //todo prover interface repository domain Produtos
     @Provides
-    fun proverInterfaceRepositoryDomainApiDummy_Produtos(interfacedomainapidummyProdutos: InterfaceDomainApiDummy_Produtos): InterfaceRepositoryDomainApiDummy_Produtos {
+    fun proverInterfaceRepositoryDomainApiDummy_Produtos(interfacedomainapidummyProdutos: InterfaceDomainApiDummyProdutos): InterfaceRepositoryDomain {
 
-        return InterfaceRepositoryDataImplementacaoDomainApiDummyApiDummy_Produtos(interfacedomainapidummyProdutos)
+        return InterfaceRepositoryImpl(interfacedomainapidummyProdutos)
     }
 
     //todo prover usecase dummy usuarios
     @Provides
-    fun proverUseCaseDomainApiDummy_Usuarios(interfacerepositorydomainapidummyUsuarios: InterfaceRepositoryDomainApiDummy_Usuarios): GetUseCaseDomainApiDummy_Usuarios {
+    fun proverUseCaseDomainApiDummy_Usuarios(interfacerepositorydomainapidummyUsuarios: InterfaceRepositorioUsuarios): GetUseCaseDomainApiDummy_Usuarios {
 
         return GetUseCaseDomainApiDummy_Usuarios(interfacerepositorydomainapidummyUsuarios)
     }
 
     //todo prover usecase dummy produtos
     @Provides
-    fun proverUseCaseDomainApiDummy_Produtos(interfacerepositorydomainapidummyProdutos: InterfaceRepositoryDomainApiDummy_Produtos): GetUseCaseDomainApiDummy_Produtos {
+    fun proverUseCaseDomainApiDummy_Produtos(interfacerepositorydomainapidummyProdutos: InterfaceRepositoryDomain): GetUseCaseDomainApiDummy_Produtos {
 
         return GetUseCaseDomainApiDummy_Produtos(interfacerepositorydomainapidummyProdutos)
     }

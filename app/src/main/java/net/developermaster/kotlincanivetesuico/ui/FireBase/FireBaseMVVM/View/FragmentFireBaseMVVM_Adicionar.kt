@@ -66,7 +66,7 @@ class FragmentFireBaseMVVM_Adicionar : Fragment() {
         val nome = binding.textInputNomeAdicionar.text.toString()
         val idade = binding.textInputIdadeAdicionar.text.toString()
 
-        val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM("",nome, idade)
+        val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM("","",nome, idade)
 
         if ( nome.isEmpty() || idade.isEmpty()) {
 
@@ -91,7 +91,7 @@ class FragmentFireBaseMVVM_Adicionar : Fragment() {
          val nome = binding.textInputNomeAdicionar.text.toString()
          val idade = binding.textInputIdadeAdicionar.text.toString()
 
-         val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM(id,nome, idade)
+         val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM("",id,nome, idade)
 
          if ( nome.isEmpty() || idade.isEmpty()) {
 

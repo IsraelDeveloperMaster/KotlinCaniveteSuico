@@ -15,7 +15,7 @@ import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHiltDomainApiDummyProdutosBinding
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Presentation.ViewModel.ViewModelDomainApiDummyProdutos
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Presentation.ViewModel.ViewModelDomainProdutos
 
 @AndroidEntryPoint
 class FragmentHiltApiDummyProdutos : Fragment() , InterfaceCarregando {
@@ -28,8 +28,8 @@ class FragmentHiltApiDummyProdutos : Fragment() , InterfaceCarregando {
     private val binding get() = _binding!!
 
     //todo viewmodel
-    private val viewModelDummyApi: ViewModelDomainApiDummyProdutos by viewModels()
-    //private val viewModelDummyApi by viewModels<ViewModelDomainApiDummyProdutos>()
+    private val viewModelDummyApi: ViewModelDomainProdutos by viewModels()
+    //private val viewModelDummyApi by viewModels<ViewModelDomainProdutos>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,7 +48,7 @@ class FragmentHiltApiDummyProdutos : Fragment() , InterfaceCarregando {
 
             progressBar(true)
 
-            /*viewModelDummyApi = ViewModelProvider(this)[ViewModelDomainApiDummyProdutos::class.java]*/
+            /*viewModelDummyApi = ViewModelProvider(this)[ViewModelDomainProdutos::class.java]*/
 
             viewModelDummyApi.produtos.observe(viewLifecycleOwner) { listaProdutos ->
 

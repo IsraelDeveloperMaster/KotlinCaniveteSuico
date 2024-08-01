@@ -15,7 +15,7 @@ import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHiltDomainApiDummyUsuariosBinding
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Presentation.ViewModel.ViewModelDomainApiDummy_Usuarios
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Presentation.ViewModel.ViewModelDomainUsuarios
 
 @AndroidEntryPoint
 class FragmentHiltApiDummyUsuarios : Fragment(), InterfaceCarregando {
@@ -28,7 +28,7 @@ class FragmentHiltApiDummyUsuarios : Fragment(), InterfaceCarregando {
     private val binding get() = _binding!!
 
     //todo chama o viewmodel
-    private val viewModel: ViewModelDomainApiDummy_Usuarios by viewModels()
+    private val viewModel: ViewModelDomainUsuarios by viewModels()
     //private val viewModelDummyApi by viewModels<ViewModel_DummyApi>()
 
     override fun onCreateView(

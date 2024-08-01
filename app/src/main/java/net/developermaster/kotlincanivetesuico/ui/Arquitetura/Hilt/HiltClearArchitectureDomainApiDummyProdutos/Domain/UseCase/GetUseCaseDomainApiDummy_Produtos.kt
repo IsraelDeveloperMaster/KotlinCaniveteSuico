@@ -1,11 +1,11 @@
 package net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.UseCase
 
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.Model.ClasseDeDadosDummyProdutos.Product
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.Repository_Domain.InterfaceRepositoryDomainApiDummy_Produtos
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.RepositoryDomain.InterfaceRepositoryDomain
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Data.Model.Product
 import javax.inject.Inject
 
 class GetUseCaseDomainApiDummy_Produtos @Inject constructor(
-    private val interfaceRepositoryDomain_ApiJson: InterfaceRepositoryDomainApiDummy_Produtos
+    private val interfaceRepositoryDomain_ApiJson: InterfaceRepositoryDomain
 ) {
     suspend operator fun invoke(): List<Product> {
         return try {

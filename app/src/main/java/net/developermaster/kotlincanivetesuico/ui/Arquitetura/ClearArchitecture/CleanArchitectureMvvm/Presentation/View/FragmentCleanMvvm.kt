@@ -14,7 +14,7 @@ import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentCleanMvvmBinding
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Data.Repository.PostagemRepositorioDataFireBase_MvvmClean
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Data.Repository.PostagemRepositorioDataFireBaseMvvmClean
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.ViewModel.ViewModelComMvvmClean
 import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.ViewModel.ViewModelComMvvmCleanFactory
 
@@ -43,7 +43,7 @@ class FragmentCleanMvvm : Fragment(), InterfaceCarregando {
 
         //todo instanciando postagem repositoty firebase
         val postagemrepositorioapijsonplaceholderMvvmclean =
-            PostagemRepositorioDataFireBase_MvvmClean()
+            PostagemRepositorioDataFireBaseMvvmClean()
 
         //todo instanciando viewmodel Factory
         classeViewModel = ViewModelProvider(

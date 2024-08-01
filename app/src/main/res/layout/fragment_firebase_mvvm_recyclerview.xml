@@ -7,8 +7,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInput_nome_layout"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
         android:layout_marginTop="16dp"
         android:hint="Nome"
         app:endIconMode="clear_text"
@@ -17,10 +17,10 @@
         app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInput_nome888"
+            android:id="@+id/textInput_nome_firebaseMVVM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="true"
+            android:enabled="false"
             android:inputType="text"
             android:text=""
             android:textColor="#F6355FDE"
@@ -29,8 +29,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInput_idade_layout"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
         android:layout_marginTop="8dp"
         android:hint="idade"
         app:endIconMode="clear_text"
@@ -39,10 +39,10 @@
         app:startIconDrawable="@drawable/ic_menu_manage">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInput_idade888"
+            android:id="@+id/textInput_idade_firebaseMVVM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="true"
+            android:enabled="false"
             android:inputType="number"
             android:text=""
             android:textColor="#F6355FDE"
@@ -72,6 +72,18 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInput_idade_layout" />
+
+    <ImageView
+        android:id="@+id/imageView_layout_recyclerview_firebaseMVVM"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeletar"
+        app:layout_constraintStart_toEndOf="@+id/textInput_nome_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_camera" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

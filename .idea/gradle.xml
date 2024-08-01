@@ -5,13 +5,14 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="gradleJvm" value="20" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core-classe_de_Dados_Codigos" />
             <option value="$PROJECT_DIR$/core-classes_de_Utilizade_Geral" />
+            <option value="$PROJECT_DIR$/core-utils" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

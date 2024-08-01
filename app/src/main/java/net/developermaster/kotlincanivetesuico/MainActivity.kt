@@ -1,6 +1,7 @@
 package net.developermaster.kotlincanivetesuico
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -19,11 +20,16 @@ import net.developermaster.kotlincanivetesuico.databinding.ActivityMainBinding
 @AndroidEntryPoint //todo todas as classe que iniciam junto com android devem receber esta anotacao
 class MainActivity : AppCompatActivity()  {
 
+
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.i("Fragmento_Modelo_Main", "OnCreate")
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -118,7 +124,10 @@ class MainActivity : AppCompatActivity()  {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
+
+
 
 
 

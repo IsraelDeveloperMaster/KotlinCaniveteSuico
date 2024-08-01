@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputEditText
@@ -18,8 +19,9 @@ class AdapterFireBaseMVVM( private val interfaceFireBaseMVVM: InterfaceFireBaseM
 
     inner class ViewHolder(itensDaView: View) : RecyclerView.ViewHolder(itensDaView) {
 
-         val textInputNome: TextInputEditText = itensDaView.findViewById(R.id.textInput_nome888)
-         val textInputIdade: TextInputEditText = itensDaView.findViewById(R.id.textInput_idade888)
+         val imageView: ImageView = itensDaView.findViewById(R.id.imageView_layout_recyclerview_firebaseMVVM)
+         val textInputNome: TextInputEditText = itensDaView.findViewById(R.id.textInput_nome_firebaseMVVM)
+         val textInputIdade: TextInputEditText = itensDaView.findViewById(R.id.textInput_idade_firebaseMVVM)
          val btnAtualizar: Button = itensDaView.findViewById(R.id.btnAtualizar)
          val btnDeletar: Button = itensDaView.findViewById(R.id.btnDeletar)
     }
@@ -35,9 +37,16 @@ class AdapterFireBaseMVVM( private val interfaceFireBaseMVVM: InterfaceFireBaseM
 
         val classeDeDadosFireBaseMVVM = listaRetornada[position]
 
+        /*Picasso.get()
+            .load(classeDeDadosFireBaseMVVM.foto)
+            .into(holder.imageView)*/
+
         holder.textInputNome.setText(classeDeDadosFireBaseMVVM.nome)
         holder.textInputIdade.setText(classeDeDadosFireBaseMVVM.idade)
 
+        holder.imageView.setOnClickListener {
+
+        }
         holder.btnAtualizar.setOnClickListener {
 
             val bundleId = Bundle().apply {
@@ -60,7 +69,6 @@ class AdapterFireBaseMVVM( private val interfaceFireBaseMVVM: InterfaceFireBaseM
 
             interfaceFireBaseMVVM.funcaoInterfaceFireBaseMvvmAdicionar( bundle , position)
         }
-
         holder.btnDeletar.setOnClickListener {
 
             val viewModelFireBaseMVVM = ViewModelFireBaseMVVM()

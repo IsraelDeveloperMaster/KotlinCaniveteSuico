@@ -7,8 +7,8 @@ import dagger.internal.Preconditions;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Produtos.Domain.Repository_Domain.InterfaceRepositoryDomainApiDummy_Produtos;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Produtos.Domain.UseCase.GetUseCaseDomainApiDummy_Produtos;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.RepositoryDomain.InterfaceRepositoryDomain;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyProdutos.Domain.UseCase.GetUseCaseDomainApiDummy_Produtos;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -21,10 +21,10 @@ import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArch
     "cast"
 })
 public final class ModuloApi_ProverUseCaseDomainApiDummy_ProdutosFactory implements Factory<GetUseCaseDomainApiDummy_Produtos> {
-  private final Provider<InterfaceRepositoryDomainApiDummy_Produtos> interfacerepositorydomainapidummyProdutosProvider;
+  private final Provider<InterfaceRepositoryDomain> interfacerepositorydomainapidummyProdutosProvider;
 
   public ModuloApi_ProverUseCaseDomainApiDummy_ProdutosFactory(
-      Provider<InterfaceRepositoryDomainApiDummy_Produtos> interfacerepositorydomainapidummyProdutosProvider) {
+      Provider<InterfaceRepositoryDomain> interfacerepositorydomainapidummyProdutosProvider) {
     this.interfacerepositorydomainapidummyProdutosProvider = interfacerepositorydomainapidummyProdutosProvider;
   }
 
@@ -34,12 +34,12 @@ public final class ModuloApi_ProverUseCaseDomainApiDummy_ProdutosFactory impleme
   }
 
   public static ModuloApi_ProverUseCaseDomainApiDummy_ProdutosFactory create(
-      Provider<InterfaceRepositoryDomainApiDummy_Produtos> interfacerepositorydomainapidummyProdutosProvider) {
+      Provider<InterfaceRepositoryDomain> interfacerepositorydomainapidummyProdutosProvider) {
     return new ModuloApi_ProverUseCaseDomainApiDummy_ProdutosFactory(interfacerepositorydomainapidummyProdutosProvider);
   }
 
   public static GetUseCaseDomainApiDummy_Produtos proverUseCaseDomainApiDummy_Produtos(
-      InterfaceRepositoryDomainApiDummy_Produtos interfacerepositorydomainapidummyProdutos) {
+      InterfaceRepositoryDomain interfacerepositorydomainapidummyProdutos) {
     return Preconditions.checkNotNullFromProvides(ModuloApi.INSTANCE.proverUseCaseDomainApiDummy_Produtos(interfacerepositorydomainapidummyProdutos));
   }
 }

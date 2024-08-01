@@ -1,0 +1,132 @@
+package net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.View
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.classes_de_utilizade_geral.InterfaceCarregando
+import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
+import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.R
+import net.developermaster.kotlincanivetesuico.databinding.FragmentCleanMvvmBinding
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Data.Repository.PostagemRepositorioDataFireBaseMvvmClean
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.ViewModel.ViewModelComMvvmClean
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.ClearArchitecture.CleanArchitectureMvvm.Presentation.ViewModel.ViewModelComMvvmCleanFactory
+
+class FragmentCleanMvvm : Fragment(), InterfaceCarregando {
+
+    //todo instancia de classe onde estao os codigos e xml
+    val dados = ClasseDeDadosCodigos()
+
+    //todo binding
+    private var _binding: FragmentCleanMvvmBinding? = null
+    private val binding get() = _binding!!
+
+    //todo chama o viewmodel
+    private lateinit var classeViewModel: ViewModelComMvvmClean
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+
+        _binding = FragmentCleanMvvmBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //todo instanciando postagem repositoty firebase
+        val postagemrepositorioapijsonplaceholderMvvmclean =
+            PostagemRepositorioDataFireBaseMvvmClean()
+
+        //todo instanciando viewmodel Factory
+        classeViewModel = ViewModelProvider(
+            this, ViewModelComMvvmCleanFactory(postagemrepositorioapijsonplaceholderMvvmclean)
+        )[ViewModelComMvvmClean::class.java]
+
+        fun recuperandoAsPostagens() {
+
+            progressBar(true)
+
+            //todo criando o observador
+            val observadorLiveData = this.classeViewModel.recuperaPostagensApiJsonPlaceHolder()
+            classeViewModel.listaDePostagens.observe(viewLifecycleOwner) { lista ->
+
+                //todo lista onde serao exibido as postagens
+                var textoSerExibido = ""
+
+                lista.forEach { postagensRecebidasApartirDaInterface ->
+
+                    textoSerExibido += "${postagensRecebidasApartirDaInterface.id} - ${postagensRecebidasApartirDaInterface.title} \n "
+
+                    binding.textView.text = textoSerExibido
+
+                    progressBar(false)
+                }
+            }
+        }
+
+        //todo instancia de string
+        val variavelMensagens = getString(R.string.NAV_CLEAN_ARCHITECTURE_MVVM)
+
+        //todo botoes
+        binding.btn01.setOnClickListener {
+
+            mensagemToast(variavelMensagens)
+
+            mensagemSnackBar(variavelMensagens)
+
+            recuperandoAsPostagens()
+        }
+
+        binding.fabCodigo.setOnClickListener {
+
+            codigo()
+        }
+
+        binding.fabXml.setOnClickListener {
+
+            codigoXml()
+        }
+    }
+
+    private fun codigo() {
+
+        val bundle1 = Bundle().apply {
+            putString("codigo", "${dados.cleanMvvm()}")
+        }
+
+        findNavController().navigate(R.id.fragment_Codigo, bundle1)
+    }
+
+    private fun codigoXml() {
+
+        val bundle2 = bundleOf("codigoXml" to "${dados.cleanMvvmXml()}")
+        findNavController().navigate(R.id.fragment_Codigo, bundle2)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun progressBar(carregando: Boolean) {
+
+        if (carregando) {
+
+            binding.progressBar.visibility = View.VISIBLE
+            binding.progressBar2.visibility = View.VISIBLE
+
+        } else {
+
+            binding.progressBar.visibility = View.GONE
+            binding.progressBar2.visibility = View.GONE
+        }
+    }
+}

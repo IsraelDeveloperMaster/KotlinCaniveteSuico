@@ -2,6 +2,7 @@ package net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Reposit
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Model.ClasseDeDadosFireBaseMVVM
@@ -10,9 +11,39 @@ class InterfaceRepositorioFireBaseMVVM {
 
     //todo lista de dados
     private val listaDadosFirebase = MutableLiveData<List<ClasseDeDadosFireBaseMVVM>>()
-    private var fotoPerfil = " "
+
+    //todo foto perfil
+    private var fotoPerfil = ""
+
+    fun funcaoAtualizaFotoAdapterPeloRepositorio ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) {
+
+        //todo referencia da imagem
+        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id ).child("dados.jpg")  .downloadUrl
+
+            .addOnSuccessListener { fotoPerfilRetornada , ->
+
+                fotoPerfil = fotoPerfilRetornada.toString()
+
+                println( "fragmentFireBaseMVVM listar foto NOVO -> $fotoPerfil")
+
+                val mapClasseDeDados = mapOf( "foto" to fotoPerfil )
 
 
+
+                FirebaseFirestore.getInstance().collection("FireBaseMVVM") .document( classeDeDadosFireBaseMVVM.id ).update(mapClasseDeDados)
+
+                    .addOnSuccessListener { println(" fragmentFireBaseMVVM atualizado com sucesso NOVO ") }
+
+                    .addOnFailureListener { println(" fragmentFireBaseMVVM erro ao atualizar NOVO ") }
+            }
+
+            .addOnFailureListener { falha ->
+
+                println(" fragmentFireBaseMVVM erro ao listar foto NOVO -> $falha ")
+            }
+
+        /*return fotoPerfil*/
+    }
 
     fun funcaoAtualizaPeloRepositorio(classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM) {
 
@@ -33,7 +64,7 @@ class InterfaceRepositorioFireBaseMVVM {
     fun funcaoListarTodosPeloRepositorio () : LiveData<List<ClasseDeDadosFireBaseMVVM>> {
 
         FirebaseFirestore.getInstance().collection("FireBaseMVVM").get()
-            .addOnSuccessListener { Sucesso ->
+            .addOnSuccessListener { sucesso ->
 
                 //todo lista de dados
                 val listaDeDados = mutableListOf<ClasseDeDadosFireBaseMVVM>()
@@ -41,7 +72,7 @@ class InterfaceRepositorioFireBaseMVVM {
                 //todo limpa a lista
                 listaDeDados.clear()
 
-                for (document in Sucesso) {
+                for ( document in sucesso) {
 
                     val listaRetornada = document.toObject(ClasseDeDadosFireBaseMVVM::class.java) .apply { id = document.id }
 
@@ -53,7 +84,8 @@ class InterfaceRepositorioFireBaseMVVM {
                 listaDadosFirebase.value = listaDeDados
 
             }.addOnFailureListener { println(" repositorio firebase mvvm listar todos erro ")
-            }
+        }
+
         return listaDadosFirebase
     }
 
@@ -128,19 +160,58 @@ class InterfaceRepositorioFireBaseMVVM {
         //todo referencia da imagem
         FirebaseStorage.getInstance() .getReference("image") .child("image.jpg") .downloadUrl
 
-            .addOnSuccessListener { fotoPerfilRetornada ->
+            .addOnSuccessListener { fotoPerfilRetornada , ->
 
                 fotoPerfil = fotoPerfilRetornada.toString()
 
                 println( "interfaceRepositorioFireBaseMVVM listar fotos -> $fotoPerfil")
 
             }
-            .addOnFailureListener {
+            .addOnFailureListener { falha ->
 
-                println(" repositorio firebase mvvm listar nome erro ")
+                println(" interfaceRepositorioFireBaseMVVM listar fotos erro -> $falha ")
             }
 
         return fotoPerfil
+    }
+
+    fun funcaoListarImagensPeloRepositorio ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) : String {
+
+        //todo referencia da imagem
+        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id ).child("dados.jpg") .downloadUrl
+
+            .addOnSuccessListener { imagensRetornada , ->
+
+                fotoPerfil = imagensRetornada.toString()
+
+                println( "interfaceRepositorioFireBaseMVVM listar imagens -> $fotoPerfil")
+
+            }
+            .addOnFailureListener { falha ->
+
+                println(" interfaceRepositorioFireBaseMVVM listar imagens erro -> $falha ")
+            }
+
+        return fotoPerfil
+    }
+
+    fun funcaoAutenticarPeloRepositorio ( email: String, senha: String ) : Boolean {
+
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha)
+                .addOnSuccessListener { sucesso ->
+
+                    val email = sucesso.user?.email
+                    val id = sucesso.user?.uid
+                    val provedor = sucesso.user?.providerId
+
+                    println( "sucesso:\n \n  id: $id \n \n Provedor: $provedor \n \n Email: $email" )
+
+                }.addOnFailureListener { falha ->
+
+                    println(" interfaceRepositorioFireBaseMVVM autenticar usuario -> $falha.message")
+
+                }
+        return true
     }
 }
 

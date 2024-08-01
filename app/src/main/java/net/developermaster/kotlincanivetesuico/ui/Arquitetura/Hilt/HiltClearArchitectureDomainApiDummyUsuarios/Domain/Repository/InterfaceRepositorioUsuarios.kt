@@ -1,0 +1,7 @@
+package net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.Repository
+
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Data.Model_Data.ClasseDeDadosDataDomainApiDummy_Usuarios
+
+interface InterfaceRepositorioUsuarios {
+    suspend fun recuperarUsuarios() : List<ClasseDeDadosDataDomainApiDummy_Usuarios>
+}

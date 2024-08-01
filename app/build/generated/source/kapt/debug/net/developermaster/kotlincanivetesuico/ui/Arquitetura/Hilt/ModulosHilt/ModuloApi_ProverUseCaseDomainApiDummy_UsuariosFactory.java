@@ -7,8 +7,8 @@ import dagger.internal.Preconditions;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import javax.inject.Provider;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Domain.Repository.InterfaceRepositoryDomainApiDummy_Usuarios;
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Domain.UseCase.GetUseCaseDomainApiDummy_Usuarios;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.Repository.InterfaceRepositorioUsuarios;
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummyUsuarios.Domain.UseCase.GetUseCaseDomainApiDummy_Usuarios;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -21,10 +21,10 @@ import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArch
     "cast"
 })
 public final class ModuloApi_ProverUseCaseDomainApiDummy_UsuariosFactory implements Factory<GetUseCaseDomainApiDummy_Usuarios> {
-  private final Provider<InterfaceRepositoryDomainApiDummy_Usuarios> interfacerepositorydomainapidummyUsuariosProvider;
+  private final Provider<InterfaceRepositorioUsuarios> interfacerepositorydomainapidummyUsuariosProvider;
 
   public ModuloApi_ProverUseCaseDomainApiDummy_UsuariosFactory(
-      Provider<InterfaceRepositoryDomainApiDummy_Usuarios> interfacerepositorydomainapidummyUsuariosProvider) {
+      Provider<InterfaceRepositorioUsuarios> interfacerepositorydomainapidummyUsuariosProvider) {
     this.interfacerepositorydomainapidummyUsuariosProvider = interfacerepositorydomainapidummyUsuariosProvider;
   }
 
@@ -34,12 +34,12 @@ public final class ModuloApi_ProverUseCaseDomainApiDummy_UsuariosFactory impleme
   }
 
   public static ModuloApi_ProverUseCaseDomainApiDummy_UsuariosFactory create(
-      Provider<InterfaceRepositoryDomainApiDummy_Usuarios> interfacerepositorydomainapidummyUsuariosProvider) {
+      Provider<InterfaceRepositorioUsuarios> interfacerepositorydomainapidummyUsuariosProvider) {
     return new ModuloApi_ProverUseCaseDomainApiDummy_UsuariosFactory(interfacerepositorydomainapidummyUsuariosProvider);
   }
 
   public static GetUseCaseDomainApiDummy_Usuarios proverUseCaseDomainApiDummy_Usuarios(
-      InterfaceRepositoryDomainApiDummy_Usuarios interfacerepositorydomainapidummyUsuarios) {
+      InterfaceRepositorioUsuarios interfacerepositorydomainapidummyUsuarios) {
     return Preconditions.checkNotNullFromProvides(ModuloApi.INSTANCE.proverUseCaseDomainApiDummy_Usuarios(interfacerepositorydomainapidummyUsuarios));
   }
 }

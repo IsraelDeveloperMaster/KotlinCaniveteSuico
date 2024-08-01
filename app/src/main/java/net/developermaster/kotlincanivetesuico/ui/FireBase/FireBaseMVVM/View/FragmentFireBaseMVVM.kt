@@ -9,15 +9,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.coroutineScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
@@ -28,6 +31,13 @@ import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Reposito
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.ViewModel.ViewModelFireBaseMVVM
 
 class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
+
+    //todo foto perfil
+    private var fotoPerfil = ""
+    private var idImagemAdapter = ""
+
+    //todo classe de dados
+    private val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM(  )
 
     //todo recyclerview
     private lateinit var recyclerView: RecyclerView
@@ -51,12 +61,29 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
             funcaoSalvaFotoFireBase(uri)
 
             mensagemToast("Imagem Selecionada com Sucesso")
+
         } else {
 
-            mensagemToast("Erro ao Selecionar a Imagem")
+            mensagemSnackBar("Erro ao Selecionar a Imagem")
         }
     }
 
+    //todo abre a galeria e salva a imagem adapter
+    private val abrirGaleriaSalvarFotoAdaper =  registerForActivityResult(ActivityResultContracts.PickVisualMedia()) { caminhoDaImagem ->
+
+        if (caminhoDaImagem != null) {
+
+            funcaoSalvaFotoFireBaseAdapter(caminhoDaImagem)
+
+            mensagemToast("Imagem Selecionada com Sucesso")
+
+        } else {
+
+            mensagemSnackBar("Erro ao Selecionar a Imagem")
+        }
+    }
+
+    //todo lista de dados adapter
     private var resultadoRecyclerView = mutableListOf<ClasseDeDadosFireBaseMVVM>()
 
     //todo binding
@@ -75,7 +102,7 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         super.onViewCreated(view, savedInstanceState)
 
         //todo repositorio
-        interfaceRepositorioFireBaseMVVM = InterfaceRepositorioFireBaseMVVM()
+        interfaceRepositorioFireBaseMVVM = InterfaceRepositorioFireBaseMVVM(  )
 
         //todo recyclerview
         recyclerView = binding.recyclerview
@@ -106,6 +133,16 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
             Log.i("ViewModel observe", "$dados")
         }
 
+        //todo observa o repositorio viewmodel
+        viewModelFireBaseMVVM.fotoPerfilLiveData.observe(viewLifecycleOwner)  { imagemRetornada ->
+
+            Picasso.get()
+                .load(imagemRetornada.toUri())
+                .into(binding.imageView)
+
+            println( "fragmentFireBaseMVVM listar fotos no observe -> $imagemRetornada" )
+        }
+
         //todo botoes
         binding.btnAutenticar.setOnClickListener {
 
@@ -129,7 +166,9 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
         binding.btnListaTodos.setOnClickListener {
 
-            funcaoListarTodos()
+            lifecycle.coroutineScope.launch {
+                funcaoListarTodos()
+            }
         }
         binding.btnAbrirGaleria.setOnClickListener {
 
@@ -137,7 +176,9 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
         binding.btnListarFoto.setOnClickListener {
 
-            funcaoListarImage()
+            lifecycle.coroutineScope.launch {
+                funcaoListarImage()
+            }
         }
 
         binding.fabCodigo.setOnClickListener {
@@ -148,11 +189,10 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
     }
 
-    private fun funcaoListarTodos() {
+    private suspend fun funcaoListarTodos() {
 
+        delay(3000)
         viewModelFireBaseMVVM.funcaoListarTodosPeloViewModel()
-
-        funcaoListarImage()
     }
     private fun funcaoAbrirGaleria() {
 
@@ -167,31 +207,6 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
                 mensagemSnackBar(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_SALVAR_FOTO))
             }
-            .addOnFailureListener {
-
-                    falha ->
-
-                val erro = falha.message
-                val causa = falha.cause
-
-                mensagemToast("Erro: $erro \n\n Causa: $causa")
-            }
-    }
-    private fun funcaoListarImage1 () {
-
-        //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("image") .child("image.jpg") .downloadUrl
-            .addOnSuccessListener { sucesso ->
-
-                val url = sucesso.toString()
-
-            //todo visualizando imagem com API Picasso
-            Picasso.get()
-                .load(sucesso)
-                .into(binding.imageView)
-
-                println{ "fragmentFireBaseMVVM listar fotos -> $url\u001B[41m" }
-        }
             .addOnFailureListener { falha ->
 
                 val erro = falha.message
@@ -200,38 +215,27 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
                 mensagemToast("Erro: $erro \n\n Causa: $causa")
             }
     }
-    private fun funcaoListarImage () {
+    private fun funcaoSalvaFotoFireBaseAdapter (caminhoDaImagem: Uri) {
 
+        //todo referencia da imagem
+        FirebaseStorage.getInstance() .getReference("imagens").child( idImagemAdapter ).child("dados.jpg") .putFile(caminhoDaImagem)
 
-        println( "fragmentFireBaseMVVM listar fotos -> ${viewModelFireBaseMVVM.funcaoListarFotosPeloViewModel()}" )
-    }
+            .addOnSuccessListener {
 
-
-
-
-
-    private fun funcaoAutenticar() {
-
-        val email = "m@m.com"
-        val senha = "123456"
-
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha)
-            .addOnSuccessListener { sucesso ->
-
-                val email = sucesso.user?.email
-                val id = sucesso.user?.uid
-                val provedor = sucesso.user?.providerId
-
-                mensagemSnackBar("sucesso:\n \n  id: $id \n \n Provedor: $provedor \n \n Email: $email")
-
-                mensagemToast(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_AUTENTICAR))
-
-            }.addOnFailureListener { falha ->
-
-                val mensagemDeErro = falha.message
-
-                mensagemToast("$mensagemDeErro \n")
+                mensagemSnackBar(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_SALVAR_FOTO))
             }
+            .addOnFailureListener { falha ->
+
+                val erro = falha.message
+                val causa = falha.cause
+
+                mensagemToast("Erro: $erro \n\n Causa: $causa")
+            }
+    }
+    private suspend fun funcaoListarImage () {
+
+        delay(5000)
+        viewModelFireBaseMVVM.funcaoListarFotoPerfilPeloViewModel()
     }
     private fun funcaoListarNome() {
 
@@ -274,11 +278,46 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         //todo mantem o cursor neste campo
         binding.textInputNome.requestFocus()
     }
+    private fun funcaoAutenticar(  ) {
 
-    override fun funcaoInterfaceFireBaseMVVM(position: Int) {
-        funcaoListarTodos()
+        val email = binding.textInputNome.setText("m@m.com").toString()
+        val senha = binding.textInputIdade.setText("123456").toString()
+
+        if ( email.isNotEmpty() || senha.isNotEmpty() ) {
+
+            mensagemToast(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_AUTENTICAR))
+
+            viewModelFireBaseMVVM.funcaoAutenticarPeloViewModel( email, senha )
+
+        } else {
+
+            mensagemToast(getString(R.string.MENSAGEM_FIREBASE_ERRO_AUTENTICAR))
+        }
     }
-    override fun funcaoInterfaceFireBaseMvvmAlertDialog(position: Int) {
+
+    //todo interface
+    override fun funcaoInterfaceFireBaseMvvmListarImagensNotyfy() {
+
+        lifecycle.coroutineScope.launch {
+            funcaoListarTodos ()
+        }
+    }
+    override fun funcaoInterfaceFireBaseMvvmDeleteNotyfy( position: Int) {
+
+        lifecycle.coroutineScope.launch {
+            funcaoListarTodos()
+        }
+    }
+    override fun funcaoInterfaceFireBaseMvvmSalvarImagem ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) {
+
+        abrirGaleriaSalvarFotoAdaper.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+
+        idImagemAdapter.isEmpty()
+
+        idImagemAdapter = classeDeDadosFireBaseMVVM.id
+
+        println("fragmentFireBaseMVVM funcaoInterfaceFireBaseMvvmSalvarImagem -> $idImagemAdapter")
+
     }
     override fun funcaoInterfaceFireBaseMvvmAdicionar(bundle: Bundle, position: Int) {
 
@@ -292,7 +331,13 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
     override fun onStart() {
         super.onStart()
 
-        funcaoListarTodos()
+        lifecycle.coroutineScope.launch {
+            funcaoListarImage()
+        }
+
+        lifecycle.coroutineScope.launch {
+            funcaoListarTodos()
+        }
     }
 }
 

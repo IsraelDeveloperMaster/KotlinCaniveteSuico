@@ -8,6 +8,8 @@ import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Reposito
 
 class ViewModelFireBaseMVVM : ViewModel() {
 
+    private val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM()
+
     val fotoPerfilMutable = MutableLiveData<String>()
     val fotoPerfilLiveData : LiveData<String> get() = fotoPerfilMutable
 
@@ -19,6 +21,11 @@ class ViewModelFireBaseMVVM : ViewModel() {
 
     //todo foto perfil recuperada
     val observaListaFotoPerfilRepositorioFireBaseMVVM : String  =  interfaceRepositorioFireBaseMVVM.funcaoListarFotoPerfilPeloRepositorio()
+
+    fun funcaoAutenticarPeloViewModel( email: String, senha: String ) {
+
+        interfaceRepositorioFireBaseMVVM.funcaoAutenticarPeloRepositorio(email, senha)
+    }
 
     fun funcaoListarNomePeloViewModel( nome: String ) {
 
@@ -54,7 +61,7 @@ class ViewModelFireBaseMVVM : ViewModel() {
         interfaceRepositorioFireBaseMVVM.funcaoDeletarPeloRepositorio(classeDeDadosFireBaseMVVM)
     }
 
-    fun funcaoListarFotosPeloViewModel( )  {
+    fun funcaoListarFotoPerfilPeloViewModel( )  {
 
         //todo chama o repositorio
          interfaceRepositorioFireBaseMVVM.funcaoListarFotoPerfilPeloRepositorio().let { imagemPerfilRetornada ->
@@ -65,8 +72,15 @@ class ViewModelFireBaseMVVM : ViewModel() {
         }
     }
 
-    fun funcaoAutenticarPeloViewModel( email: String, senha: String ) {
+    fun funcaoListarImagensPeloViewModel( )  {
 
-        interfaceRepositorioFireBaseMVVM.funcaoAutenticarPeloRepositorio(email, senha)
+        //todo chama o repositorio
+         interfaceRepositorioFireBaseMVVM.funcaoListarImagensPeloRepositorio( classeDeDadosFireBaseMVVM ).let { imagensRetornada ->
+
+             fotoPerfilMutable.value = imagensRetornada
+
+             println("viewModelFireBaseMVVM listar imagens -> $imagensRetornada")
+        }
     }
+
 }

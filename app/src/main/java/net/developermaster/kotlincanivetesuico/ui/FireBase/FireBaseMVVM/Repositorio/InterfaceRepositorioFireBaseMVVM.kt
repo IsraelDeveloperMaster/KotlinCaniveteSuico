@@ -13,33 +13,32 @@ class InterfaceRepositorioFireBaseMVVM {
     private val listaDadosFirebase = MutableLiveData<List<ClasseDeDadosFireBaseMVVM>>()
 
     //todo foto perfil
-    private var fotoPerfil = ""
+    private var fotoAdapterUrl = ""
 
-    fun funcaoAtualizaFotoAdapterPeloRepositorio ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) {
+
+    fun funcaoAtualizaImagemDocumentAdapterPeloRepositorio (idImagem: String ) {
 
         //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id ).child("dados.jpg")  .downloadUrl
+        FirebaseStorage.getInstance() .getReference("imagens").child( idImagem ).child("dados.jpg")  .downloadUrl
 
-            .addOnSuccessListener { fotoPerfilRetornada , ->
+            .addOnSuccessListener { urlRetornada , ->
 
-                fotoPerfil = fotoPerfilRetornada.toString()
+                fotoAdapterUrl = urlRetornada.toString()
 
-                println( "fragmentFireBaseMVVM listar foto NOVO -> $fotoPerfil")
+                println( "interfaceRepositorioFireBaseMVVM atualizar foto document -> $fotoAdapterUrl")
 
-                val mapClasseDeDados = mapOf( "foto" to fotoPerfil )
+                val mapClasseDeDados = mapOf( "foto" to fotoAdapterUrl )
 
+                FirebaseFirestore.getInstance().collection("FireBaseMVVM") .document( idImagem ).update(mapClasseDeDados)
 
+                    .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM atualizado foto document com sucesso id:$urlRetornada ") }
 
-                FirebaseFirestore.getInstance().collection("FireBaseMVVM") .document( classeDeDadosFireBaseMVVM.id ).update(mapClasseDeDados)
-
-                    .addOnSuccessListener { println(" fragmentFireBaseMVVM atualizado com sucesso NOVO ") }
-
-                    .addOnFailureListener { println(" fragmentFireBaseMVVM erro ao atualizar NOVO ") }
+                    .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM erro ao atualizar foto document ") }
             }
 
             .addOnFailureListener { falha ->
 
-                println(" fragmentFireBaseMVVM erro ao listar foto NOVO -> $falha ")
+                println(" interfaceRepositorioFireBaseMVVM falha ao atualizar foto document -> $falha ")
             }
 
         /*return fotoPerfil*/
@@ -50,15 +49,15 @@ class InterfaceRepositorioFireBaseMVVM {
         val mapClasseDeDados = mapOf( "nome" to classeDeDadosFireBaseMVVM.nome, "idade" to classeDeDadosFireBaseMVVM.idade )
 
         FirebaseFirestore.getInstance().collection("FireBaseMVVM") .document(classeDeDadosFireBaseMVVM.id).update(mapClasseDeDados)
-            .addOnSuccessListener { println(" repositorio firebase mvvm atualizar sucesso ") }
-            .addOnFailureListener { println(" repositorio firebase mvvm atualizar erro ") }
+            .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM atualizar sucesso ") }
+            .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM atualizar erro ") }
     }
 
     fun funcaoSalvaPeloRepositorio(classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM) {
 
         FirebaseFirestore.getInstance().collection("FireBaseMVVM").document() .set(classeDeDadosFireBaseMVVM)
-            .addOnSuccessListener { println(" repositorio firebase mvvm salvar sucesso ") }
-            .addOnFailureListener { println(" repositorio firebase mvvm salvar sucesso ") }
+            .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM salvar sucesso ") }
+            .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM salvar sucesso ") }
     }
 
     fun funcaoListarTodosPeloRepositorio () : LiveData<List<ClasseDeDadosFireBaseMVVM>> {
@@ -78,12 +77,13 @@ class InterfaceRepositorioFireBaseMVVM {
 
                     listaDeDados.add(listaRetornada)
 
-                    println(" repositorio firebase mvvm listar todos sucesso $listaDeDados ")
+                    println(" interfaceRepositorioFireBaseMVVM listar todos sucesso $listaDeDados ")
                 }
 
                 listaDadosFirebase.value = listaDeDados
 
-            }.addOnFailureListener { println(" repositorio firebase mvvm listar todos erro ")
+            }
+            .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM listar todos erro ")
         }
 
         return listaDadosFirebase
@@ -93,8 +93,8 @@ class InterfaceRepositorioFireBaseMVVM {
 
         FirebaseFirestore.getInstance().collection("FireBaseMVVM")
             .document(classeDeDadosFireBaseMVVM.id).delete()
-            .addOnSuccessListener { println(" repositorio firebase mvvm deletar sucesso ") }
-            .addOnFailureListener { println(" repositorio firebase mvvm deletar erro ") }
+            .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM deletar sucesso ") }
+            .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM deletar erro ") }
     }
 
     fun funcaoListarNomePeloRepositorio ( nome: String ) : LiveData<List<ClasseDeDadosFireBaseMVVM>> {
@@ -114,14 +114,14 @@ class InterfaceRepositorioFireBaseMVVM {
 
                     listaDeDados.add(listaRetornada)
 
-                    println(" repositorio firebase mvvm listar nome sucesso $listaDeDados ")
+                    println(" interfaceRepositorioFireBaseMVVM listar nome sucesso $listaDeDados ")
                 }
 
                 listaDadosFirebase.value = listaDeDados
 
             }.addOnFailureListener {
 
-                println(" repositorio firebase mvvm listar nome erro ")
+                println(" interfaceRepositorioFireBaseMVVM listar nome erro ")
             }
         return listaDadosFirebase
     }
@@ -143,14 +143,14 @@ class InterfaceRepositorioFireBaseMVVM {
 
                     listaDeDados.add(listaRetornada)
 
-                    println(" repositorio firebase mvvm listar nome sucesso $listaDeDados ")
+                    println(" interfaceRepositorioFireBaseMVVM nome sucesso $listaDeDados ")
                 }
 
                 listaDadosFirebase.value = listaDeDados
 
             }.addOnFailureListener {
 
-                println(" repositorio firebase mvvm listar nome erro ")
+                println(" interfaceRepositorioFireBaseMVVM listar nome erro ")
             }
         return listaDadosFirebase
     }
@@ -162,9 +162,9 @@ class InterfaceRepositorioFireBaseMVVM {
 
             .addOnSuccessListener { fotoPerfilRetornada , ->
 
-                fotoPerfil = fotoPerfilRetornada.toString()
+                fotoAdapterUrl = fotoPerfilRetornada.toString()
 
-                println( "interfaceRepositorioFireBaseMVVM listar fotos -> $fotoPerfil")
+                println( "interfaceRepositorioFireBaseMVVM listar foto perfil -> $fotoAdapterUrl")
 
             }
             .addOnFailureListener { falha ->
@@ -172,7 +172,7 @@ class InterfaceRepositorioFireBaseMVVM {
                 println(" interfaceRepositorioFireBaseMVVM listar fotos erro -> $falha ")
             }
 
-        return fotoPerfil
+        return fotoAdapterUrl
     }
 
     fun funcaoListarImagensPeloRepositorio ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) : String {
@@ -182,9 +182,9 @@ class InterfaceRepositorioFireBaseMVVM {
 
             .addOnSuccessListener { imagensRetornada , ->
 
-                fotoPerfil = imagensRetornada.toString()
+                fotoAdapterUrl = imagensRetornada.toString()
 
-                println( "interfaceRepositorioFireBaseMVVM listar imagens -> $fotoPerfil")
+                println( "interfaceRepositorioFireBaseMVVM listar imagens -> $fotoAdapterUrl")
 
             }
             .addOnFailureListener { falha ->
@@ -192,7 +192,7 @@ class InterfaceRepositorioFireBaseMVVM {
                 println(" interfaceRepositorioFireBaseMVVM listar imagens erro -> $falha ")
             }
 
-        return fotoPerfil
+        return fotoAdapterUrl
     }
 
     fun funcaoAutenticarPeloRepositorio ( email: String, senha: String ) : Boolean {

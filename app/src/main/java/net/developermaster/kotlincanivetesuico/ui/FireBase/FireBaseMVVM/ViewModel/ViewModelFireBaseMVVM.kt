@@ -68,7 +68,7 @@ class ViewModelFireBaseMVVM : ViewModel() {
 
              fotoPerfilMutable.value = imagemPerfilRetornada
 
-             println("viewModelFireBaseMVVM listar fotos -> $imagemPerfilRetornada")
+             println("viewModelFireBaseMVVM listar foto perfil -> $imagemPerfilRetornada")
         }
     }
 

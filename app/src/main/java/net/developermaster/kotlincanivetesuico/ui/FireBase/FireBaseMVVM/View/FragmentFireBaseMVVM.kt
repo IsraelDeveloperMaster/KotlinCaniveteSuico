@@ -33,11 +33,7 @@ import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.ViewMode
 class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
     //todo foto perfil
-    private var fotoPerfil = ""
     private var idImagemAdapter = ""
-
-    //todo classe de dados
-    private val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM(  )
 
     //todo recyclerview
     private lateinit var recyclerView: RecyclerView
@@ -58,7 +54,7 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
             binding.imageView.setImageURI(uri)
 
-            funcaoSalvaFotoFireBase(uri)
+            funcaoSalvaFotoPerfil(uri)
 
             mensagemToast("Imagem Selecionada com Sucesso")
 
@@ -73,7 +69,7 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
         if (caminhoDaImagem != null) {
 
-            funcaoSalvaFotoFireBaseAdapter(caminhoDaImagem)
+            funcaoSalvaImagemAdapter(caminhoDaImagem)
 
             mensagemToast("Imagem Selecionada com Sucesso")
 
@@ -166,9 +162,7 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
         binding.btnListaTodos.setOnClickListener {
 
-            lifecycle.coroutineScope.launch {
                 funcaoListarTodos()
-            }
         }
         binding.btnAbrirGaleria.setOnClickListener {
 
@@ -189,16 +183,20 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
     }
 
-    private suspend fun funcaoListarTodos() {
+    private fun funcaoListarTodos() {
 
-        delay(3000)
+        viewModelFireBaseMVVM.funcaoListarTodosPeloViewModel()
+    }
+    private suspend fun funcaoListarImagemAdapter() {
+
+        delay(5000)
         viewModelFireBaseMVVM.funcaoListarTodosPeloViewModel()
     }
     private fun funcaoAbrirGaleria() {
 
         abrirGaleria.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
-    private fun funcaoSalvaFotoFireBase ( uri: Uri ) {
+    private fun funcaoSalvaFotoPerfil (uri: Uri ) {
 
         //todo referencia da imagem
         FirebaseStorage.getInstance() .getReference("image") .child("image.jpg") .putFile(uri)
@@ -215,14 +213,18 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
                 mensagemToast("Erro: $erro \n\n Causa: $causa")
             }
     }
-    private fun funcaoSalvaFotoFireBaseAdapter (caminhoDaImagem: Uri) {
+    private fun funcaoSalvaImagemAdapter (caminhoDaImagem: Uri) {
 
         //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("imagens").child( idImagemAdapter ).child("dados.jpg") .putFile(caminhoDaImagem)
+        FirebaseStorage.getInstance() .getReference("imagens").child( idImagemAdapter + ".jpg" ) .putFile(caminhoDaImagem)
 
             .addOnSuccessListener {
 
                 mensagemSnackBar(getString(R.string.MENSAGEM_FIREBASE_SUCESSO_SALVAR_FOTO))
+
+                //todo atualiza a foto adapter
+                interfaceRepositorioFireBaseMVVM.funcaoAtualizaImagemDocumentAdapterPeloRepositorio(idImagemAdapter)
+
             }
             .addOnFailureListener { falha ->
 
@@ -295,18 +297,19 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         }
     }
 
-    //todo interface
+    //todo interface.
     override fun funcaoInterfaceFireBaseMvvmListarImagensNotyfy() {
 
         lifecycle.coroutineScope.launch {
-            funcaoListarTodos ()
+            funcaoListarImagemAdapter()
+
+            println(" fragmentFireBaseMVVM listar fotos notyfy ")
         }
     }
     override fun funcaoInterfaceFireBaseMvvmDeleteNotyfy( position: Int) {
 
-        lifecycle.coroutineScope.launch {
             funcaoListarTodos()
-        }
+
     }
     override fun funcaoInterfaceFireBaseMvvmSalvarImagem ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) {
 
@@ -332,12 +335,11 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
         super.onStart()
 
         lifecycle.coroutineScope.launch {
+
             funcaoListarImage()
         }
 
-        lifecycle.coroutineScope.launch {
             funcaoListarTodos()
-        }
     }
 }
 

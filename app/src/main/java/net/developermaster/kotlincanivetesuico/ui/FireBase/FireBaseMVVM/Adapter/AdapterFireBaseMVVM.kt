@@ -12,12 +12,12 @@ import com.squareup.picasso.Picasso
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Adapter.InterfaceFireBaseMVVM
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Model.ClasseDeDadosFireBaseMVVM
-import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Repositorio.InterfaceRepositorioFireBaseMVVM
 import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.ViewModel.ViewModelFireBaseMVVM
 
 class AdapterFireBaseMVVM(private val interfaceFireBaseMVVM: InterfaceFireBaseMVVM) :
     RecyclerView.Adapter<AdapterFireBaseMVVM.ViewHolder>() {
 
+    //todo lista de dados
     private var listaRetornada: List<ClasseDeDadosFireBaseMVVM> = emptyList()
 
     inner class ViewHolder(itensDaView: View) : RecyclerView.ViewHolder(itensDaView) {
@@ -63,15 +63,13 @@ class AdapterFireBaseMVVM(private val interfaceFireBaseMVVM: InterfaceFireBaseMV
 
         holder.imageView.setOnClickListener {
 
-            val interfaceRepositorioFireBaseMVVM = InterfaceRepositorioFireBaseMVVM()
-
+            //todo salva a imagem
             interfaceFireBaseMVVM.funcaoInterfaceFireBaseMvvmSalvarImagem(classeDeDadosFireBaseMVVM)
 
-            interfaceRepositorioFireBaseMVVM.funcaoAtualizaFotoAdapterPeloRepositorio(classeDeDadosFireBaseMVVM)
-
-            //todo notifica o adapter
+            //todo atualiza a foto adapter
             interfaceFireBaseMVVM.funcaoInterfaceFireBaseMvvmListarImagensNotyfy()
         }
+
         holder.btnAtualizar.setOnClickListener {
 
             val bundleId = Bundle().apply {
@@ -92,12 +90,15 @@ class AdapterFireBaseMVVM(private val interfaceFireBaseMVVM: InterfaceFireBaseMV
                 putBundle("bundleIdade", bundleIdade)
             }
 
+            //todo instancia o viewmodel
             interfaceFireBaseMVVM.funcaoInterfaceFireBaseMvvmAdicionar(bundle, position)
         }
         holder.btnDeletar.setOnClickListener {
 
+            //todo instancia o viewmodel
             val viewModelFireBaseMVVM = ViewModelFireBaseMVVM()
 
+            //todo deleta o item
             viewModelFireBaseMVVM.funcaoDeletarPeloViewModel(classeDeDadosFireBaseMVVM)
 
             //todo notifica o adapter

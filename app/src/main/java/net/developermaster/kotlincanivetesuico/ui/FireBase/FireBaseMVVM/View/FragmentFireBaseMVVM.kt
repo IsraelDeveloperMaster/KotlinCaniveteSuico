@@ -33,11 +33,7 @@ import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.ViewMode
 class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
 
     //todo foto perfil
-    private var fotoPerfil = ""
     private var idImagemAdapter = ""
-
-    //todo classe de dados
-    private val classeDeDadosFireBaseMVVM = ClasseDeDadosFireBaseMVVM(  )
 
     //todo recyclerview
     private lateinit var recyclerView: RecyclerView
@@ -220,7 +216,7 @@ class FragmentFireBaseMVVM : Fragment() , InterfaceFireBaseMVVM {
     private fun funcaoSalvaImagemAdapter (caminhoDaImagem: Uri) {
 
         //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("imagens").child( idImagemAdapter ).child("dados.jpg") .putFile(caminhoDaImagem)
+        FirebaseStorage.getInstance() .getReference("imagens").child( idImagemAdapter + ".jpg" ) .putFile(caminhoDaImagem)
 
             .addOnSuccessListener {
 

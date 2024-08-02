@@ -19,7 +19,7 @@ class InterfaceRepositorioFireBaseMVVM {
     fun funcaoAtualizaImagemDocumentAdapterPeloRepositorio (idImagem: String ) {
 
         //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("imagens").child( idImagem ).child("dados.jpg")  .downloadUrl
+        FirebaseStorage.getInstance() .getReference("imagens").child( idImagem + ".jpg"  ) .downloadUrl
 
             .addOnSuccessListener { urlRetornada , ->
 
@@ -95,6 +95,14 @@ class InterfaceRepositorioFireBaseMVVM {
             .document(classeDeDadosFireBaseMVVM.id).delete()
             .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM deletar sucesso ") }
             .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM deletar erro ") }
+
+
+
+
+
+        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id + ".jpg"  ).delete()
+            .addOnSuccessListener { println(" interfaceRepositorioFireBaseMVVM deletar child sucesso ") }
+            .addOnFailureListener { println(" interfaceRepositorioFireBaseMVVM deletar child erro ") }
     }
 
     fun funcaoListarNomePeloRepositorio ( nome: String ) : LiveData<List<ClasseDeDadosFireBaseMVVM>> {
@@ -178,7 +186,7 @@ class InterfaceRepositorioFireBaseMVVM {
     fun funcaoListarImagensPeloRepositorio ( classeDeDadosFireBaseMVVM: ClasseDeDadosFireBaseMVVM ) : String {
 
         //todo referencia da imagem
-        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id ).child("dados.jpg") .downloadUrl
+        FirebaseStorage.getInstance() .getReference("imagens").child( classeDeDadosFireBaseMVVM.id ) .downloadUrl
 
             .addOnSuccessListener { imagensRetornada , ->
 

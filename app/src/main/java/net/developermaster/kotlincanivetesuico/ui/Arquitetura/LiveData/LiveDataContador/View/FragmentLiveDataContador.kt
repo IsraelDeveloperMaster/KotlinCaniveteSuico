@@ -9,12 +9,12 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.kotlincanivetesuico.R
-import net.developermaster.kotlincanivetesuico.databinding.FragmentLivedataContadorBinding
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.LiveData.LiveDataContador.Model.ClasseViewModelLiveDataContador
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
 import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.R
+import net.developermaster.kotlincanivetesuico.databinding.FragmentLivedataContadorBinding
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.LiveData.LiveDataContador.Model.ClasseViewModelLiveDataContador
 
 class FragmentLiveDataContador : Fragment()  {
 
@@ -68,7 +68,7 @@ class FragmentLiveDataContador : Fragment()  {
         }
 
         //todo botoes
-        binding.btnContar.setOnClickListener { view ->
+        binding.btnContar.setOnClickListener {
 
             mensagemToast(getString(R.string.NAV_LIVEDATA_CONTADOR))
 

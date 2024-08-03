@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/fragment_FireBase_Mvvm">
+    app:startDestination="@id/fragment_Room_MVVM">
 
 
     <!--    //////////////////// HOME ////////////////////-->
@@ -289,18 +289,18 @@
 
     <fragment
         android:id="@+id/fragment_Room_Main"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Room.Main.FragmentRoomMain"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.Room.Main.FragmentRoomMain"
         android:label="@string/EXT_ROOM"
         tools:layout="@layout/fragment_room_main" />
     <fragment
         android:id="@+id/fragment_Room_Simples"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Room.RoomSimples.View.FragmentRoomSimples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.Room.RoomSimples.View.FragmentRoomSimples"
         android:label="@string/NAV_ROOM_SIMPLES"
         tools:layout="@layout/fragment_room_simples" />
 
     <fragment
         android:id="@+id/fragment_Room_MVVM"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Room.RoomMVVM.View.FragmentRoomMVVM"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.Room.RoomMVVM.View.FragmentRoomMVVM"
         android:label="@string/NAV_ROOM_MVVM"
         tools:layout="@layout/fragment_room_mvvm" />
     <!--    //////////////////// ROOM ////////////////////-->
@@ -324,22 +324,22 @@
 
     <fragment
         android:id="@+id/fragment_FireBase_Main"
-        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.Main.FragmentFireBaseMain"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.FireBase.Main.FragmentFireBaseMain"
         android:label="@string/EXT_FIREBASE"
         tools:layout="@layout/fragment_firebase_main" />
     <fragment
         android:id="@+id/fragment_FireBase_Simples"
-        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseSimples.View.FragmentFireBaseSimples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.FireBase.FireBaseSimples.View.FragmentFireBaseSimples"
         android:label="@string/NAV_FIREBASE_SIMPLES"
         tools:layout="@layout/fragment_firebase_simples" />
     <fragment
         android:id="@+id/fragment_FireBase_Mvvm"
-        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM"
         android:label="@string/MAIN_FIREBASE_MVVM"
         tools:layout="@layout/fragment_firebase_mvvm" />
     <fragment
         android:id="@+id/fragment_FireBase_Mvvm_Adicionar"
-        android:name="net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM_Adicionar"
+        android:name="net.developermaster.kotlincanivetesuico.ui.BancoDeDados.FireBase.FireBaseMVVM.View.FragmentFireBaseMVVM_Adicionar"
         android:label="@string/MAIN_FIREBASE_MVVM_ADICIONAR"
         tools:layout="@layout/fragment_firebase_mvvm_adicionar" />
     <!--    //////////////////// FIREBASE ////////////////////-->

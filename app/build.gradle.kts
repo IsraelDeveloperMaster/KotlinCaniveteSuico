@@ -71,6 +71,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.core.ktx)
     implementation(libs.androidx.lifecycle.livedata.core.ktx)
     implementation(libs.androidx.lifecycle.livedata.core.ktx)
+    implementation(libs.com.google.devtools.ksp.gradle.plugin)
+    implementation(libs.ksp.com.google.devtools.ksp.gradle.plugin)
     kapt(libs.androidx.room.compiler)
     /////////////  Romm ///////////////////
 

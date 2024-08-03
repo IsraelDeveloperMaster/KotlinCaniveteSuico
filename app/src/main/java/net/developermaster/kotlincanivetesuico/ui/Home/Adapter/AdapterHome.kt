@@ -140,9 +140,9 @@ class AdapterHome(val classeDeDadosHome: List<ClasseDeDadosHome>, val interfaceH
                 if (constraint.isNullOrEmpty()) {
                     filteredList.addAll(classeDeDadosHome)
                 } else {
-                    val filterPattern = constraint.toString().toLowerCase(Locale.ROOT).trim()
+                    val filterPattern = constraint.toString().lowercase(Locale.ROOT).trim()
                     classeDeDadosHome.forEach {
-                        if (it.name.toLowerCase(Locale.ROOT).contains(filterPattern)) {
+                        if (it.name.lowercase(Locale.ROOT).contains(filterPattern)) {
                             filteredList.add(it)
                         }
                     }

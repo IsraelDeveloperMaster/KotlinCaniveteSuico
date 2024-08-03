@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.1"
+agp = "8.7.0-alpha01"
 converterGson = "2.11.0"
 fragmentKtx = "1.8.2"
 hiltAndroid = "2.51.1"
@@ -32,6 +32,7 @@ roomRuntime = "2.6.1"
 firebaseDatabaseKtx = "21.0.0"
 media3Common = "1.4.0"
 lifecycleLivedataCoreKtx = "2.8.4"
+comGoogleDevtoolsKspGradlePluginVersion = "2.0.0-1.0.24"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -80,6 +81,8 @@ androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = 
 room-ktx = { module = "androidx.room:room.ktx" }
 androidx-media3-common = { group = "androidx.media3", name = "media3-common", version.ref = "media3Common" }
 androidx-lifecycle-livedata-core-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-core-ktx", version.ref = "lifecycleLivedataCoreKtx" }
+com-google-devtools-ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version = "2.0.0-1.0.24" }
+ksp-com-google-devtools-ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "comGoogleDevtoolsKspGradlePluginVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

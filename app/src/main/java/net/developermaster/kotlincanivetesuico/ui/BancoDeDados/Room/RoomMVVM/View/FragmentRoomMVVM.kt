@@ -90,7 +90,7 @@ class FragmentRoomMVVM : Fragment() {
 
 //            funcaoListarTodosComListView()
 
-            funcaoListarTodos()
+            funcaoListarTodos2()
         }
 
         binding.fabCodigo.setOnClickListener {
@@ -351,7 +351,7 @@ class FragmentRoomMVVM : Fragment() {
 
 
                 //todo mostra na tela
-                listaResultado += (" id: ${listaDeUsuariosRetornados.id} \nNome: ${ listaDeUsuariosRetornados.nome} \n idade: ${ listaDeUsuariosRetornados.idade}\n\n")
+                listaResultado += " id: ${listaDeUsuariosRetornados.id} \nNome: ${ listaDeUsuariosRetornados.nome} \n idade: ${ listaDeUsuariosRetornados.idade}\n\n"
 
                     println("fragmetRoomMVVM 2 $listaDeUsuariosRetornados")
 
@@ -363,6 +363,29 @@ class FragmentRoomMVVM : Fragment() {
 
 
 //        binding.textView.text = listaResultado
+
+        funcaoLimpaCampos()
+    }
+    private fun funcaoListarTodos2() {
+
+        //todo lista de resultados
+        var listaResultado = ""
+
+        lifecycleScope.launch {
+
+            val usuariosRetornados = interfaceDaoRoomMVVM?.listarTodos()
+
+            if (usuariosRetornados != null) {
+
+                for (listaDeUsuariosRetornados in usuariosRetornados) {
+
+                    //todo mostra na tela
+                    listaResultado += (" id: ${listaDeUsuariosRetornados.id} \n Nome: ${ listaDeUsuariosRetornados.nome} \n idade: ${ listaDeUsuariosRetornados.idade} \n \n")
+
+                    binding.textView.text = listaResultado
+              }
+            }
+        }
 
         funcaoLimpaCampos()
     }

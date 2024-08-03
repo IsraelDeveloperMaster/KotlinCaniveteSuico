@@ -76,9 +76,9 @@ class AdapterSearchRecyclerView (val classeDeDadosSearchRecyclerView : List<Clas
                 if (constraint.isNullOrEmpty()) {
                     filteredList.addAll(classeDeDadosSearchRecyclerView)
                 } else {
-                    val filterPattern = constraint.toString().toLowerCase(Locale.ROOT).trim()
+                    val filterPattern = constraint.toString().lowercase(Locale.ROOT).trim()
                     classeDeDadosSearchRecyclerView.forEach {
-                        if (it.name.toLowerCase(Locale.ROOT).contains(filterPattern)) {
+                        if (it.name.lowercase(Locale.ROOT).contains(filterPattern)) {
                             filteredList.add(it)
                         }
                     }

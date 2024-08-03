@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentSearchRecyclerviewBinding
-import net.developermaster.kotlincanivetesuico.ui.FireBase.FireBaseMVVM.Model.ClasseDeDadosFireBaseMVVM
+import net.developermaster.kotlincanivetesuico.ui.BancoDeDados.FireBase.FireBaseMVVM.Model.ClasseDeDadosFireBaseMVVM
 import net.developermaster.kotlincanivetesuico.ui.SearchView.SearchViewRecyclerView.Interface.InterfaceSearchRecyclerView
 import net.developermaster.kotlincanivetesuico.ui.SearchView.SearchViewRecyclerView.Model.ClasseDeDadosSearchRecyclerView
 

@@ -8,13 +8,13 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.kotlincanivetesuico.R
-import net.developermaster.kotlincanivetesuico.databinding.FragmentMvvmApiBinding
-import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvvm.MvvmApi.ViewModelMvvmApi.ViewModel_MvvmApi
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
 import net.developermaster.classes_de_utilizade_geral.InterfaceCarregando
 import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.R
+import net.developermaster.kotlincanivetesuico.databinding.FragmentMvvmApiBinding
+import net.developermaster.kotlincanivetesuico.ui.Arquitetura.Mvvm.MvvmApi.ViewModelMvvmApi.ViewModel_MvvmApi
 
 class FragmentMvvmApi : Fragment(), InterfaceCarregando {
 
@@ -108,9 +108,9 @@ class FragmentMvvmApi : Fragment(), InterfaceCarregando {
         _binding = null
     }
 
-    override fun progressBar(Carregando: Boolean) {
+    override fun progressBar(carregando: Boolean) {
 
-        if (Carregando) {
+        if (carregando) {
 
             binding.progressBar.visibility = View.VISIBLE
             binding.progressBar2.visibility = View.VISIBLE

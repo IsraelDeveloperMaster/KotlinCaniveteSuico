@@ -1,0 +1,16 @@
+package net.developermaster.kotlincanivetesuico.ui.Testing.unitarios.viewModel
+
+import androidx.lifecycle.ViewModel
+import net.developermaster.kotlincanivetesuico.ui.Testing.unitarios.model.ModelTestUnitario
+import net.developermaster.kotlincanivetesuico.ui.Testing.unitarios.Repository.InterfaceRepositorioTestUnitSuspend
+
+class ViewModel(private val interfaceRepositorioTestUnitSuspend: InterfaceRepositorioTestUnitSuspend) : ViewModel() {
+
+    suspend fun metodoLogarUsuarioViewModelFake(email: String, senha: String): Boolean {
+        return interfaceRepositorioTestUnitSuspend.metodoLogarUsuarioRepositorioTestUnitSuspend( email, senha )
+    }
+
+    suspend fun metodoListarUsuarioViewModelFake(): List<ModelTestUnitario> {
+        return interfaceRepositorioTestUnitSuspend.metodoListarUsuarioRepositorioTestUnitSuspend()
+    }
+}

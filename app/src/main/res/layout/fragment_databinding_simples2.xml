@@ -1,0 +1,38 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="String"/>
+<!--            type="net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.DataBindingSimples.Model.ClasseDeDadosRoom"/>-->
+
+        <!--"net.developermaster.kotlincanivetesuico.ui.Arquitetura.DataBinding.DataBindingSimples.Model.ClasseDeDadosRoom"-->
+
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="ui.arquitetura.dataBinding.DataBindingSimples">
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user}" />
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={user}" />
+
+    </LinearLayout>
+
+</layout>

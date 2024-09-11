@@ -1,0 +1,8 @@
+package net.developermaster.kotlincanivetesuico.ui.Arquitetura.Hilt.HiltClearArchitectureDomainApiDummy_Usuarios.Domain.UseCase
+
+class GetMotoristaUseCaseUsuarios{
+
+    fun recuperarMotorista() {}
+    fun notificarMotorista() {}
+
+}

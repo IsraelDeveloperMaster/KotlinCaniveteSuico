@@ -56,7 +56,8 @@ class FragmentHome : Fragment() , InterfaceHome {
             ModelHome(getString(R.string.EXT_MVVM) , R.drawable.java),
             ModelHome(getString(R.string.EXT_CLEAN_ARCHITECTURE) , R.drawable.java),
             ModelHome(getString(R.string.EXT_HILT) , R.drawable.java),
-            ModelHome(getString(R.string.EXT_TEST) , R.drawable.java)
+            ModelHome(getString(R.string.EXT_TEST) , R.drawable.java),
+            ModelHome(getString(R.string.EXT_FLOW) , R.drawable.java)
         )
 
         // Configura a RecyclerView
@@ -168,6 +169,12 @@ findNavController().navigate(R.id.fragment_Arquitetura_Main) }
     override fun TEST() {
         findNavController().navigate(R.id.fragment_Test_Main) }
     ////////////////////////// TEST //////////////////////////////////////
+
+
+    ////////////////////////// FLOW //////////////////////////////////////
+    override fun FLOW() {
+        findNavController().navigate(R.id.fragment_Flow_Main) }
+    ////////////////////////// FLOW //////////////////////////////////////
 
     override fun onDestroyView() {
         super.onDestroyView()

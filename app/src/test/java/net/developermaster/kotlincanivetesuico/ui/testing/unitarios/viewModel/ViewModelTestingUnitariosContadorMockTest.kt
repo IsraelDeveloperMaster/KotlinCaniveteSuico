@@ -16,7 +16,7 @@ import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith( MockitoJUnitRunner :: class ) //todo anotacao mock
-class ViewModelContadorMockTest {
+class ViewModelTestingUnitariosContadorMockTest {
 
     //todo instancia de ViewModelFake
     lateinit var viewModelMock : ViewModelMock

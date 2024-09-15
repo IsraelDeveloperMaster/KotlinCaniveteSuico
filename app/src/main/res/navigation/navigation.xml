@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/Compose_Scaffold_Mvvm">
+    app:startDestination="@id/fragment_Flow_Simples">
 
     <!--    //////////////////// HOME ////////////////////-->
     <activity android:id="@+id/__________________________" />
@@ -419,25 +419,25 @@
     <activity android:id="@+id/FLOW" />
 
     <fragment
-        android:id="@+id/fragment_flow_main"
+        android:id="@+id/fragment_Flow_Main"
         android:name="net.developermaster.kotlincanivetesuico.ui.flow.main.FragmentFlowMain"
         android:label="@string/EXT_FLOW"
         tools:layout="@layout/fragment_main" />
 
     <fragment
-        android:id="@+id/fragment_flow_simples"
+        android:id="@+id/fragment_Flow_Simples"
         android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowSimples.view.FragmentSimples"
         android:label="@string/MAIN_FLOW_SIMPLES"
         tools:layout="@layout/fragment_flow_simples" />
 
     <fragment
-        android:id="@+id/fragment_flow_mvvm"
+        android:id="@+id/fragment_Flow_Mvvm"
         android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FragmentFlowMvvm"
         android:label="@string/MAIN_FLOW_MVVM"
         tools:layout="@layout/fragment_flow_mvvm" />
 
     <fragment
-        android:id="@+id/fragment_flow_firebase"
+        android:id="@+id/fragment_Flow_FireBase"
         android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.view.FragmentFlowFireBase"
         android:label="@string/MAIN_FLOW_FIREBASE"
             tools:layout="@layout/fragment_flow_firebase" />

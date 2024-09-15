@@ -135,6 +135,12 @@ class AdapterHome(val modelHome: List<ModelHome>, val interfaceHome: InterfaceHo
                    interfaceHome.TEST()
                    Toast.makeText(contexto, getString(contexto, R.string.EXT_TEST), Toast.LENGTH_SHORT).show() }
                    ////////////////////////// TEST //////////////////////////////////////
+
+                  ////////////////////////// TEST //////////////////////////////////////
+                   if (modelHome.name == getString(contexto, R.string.EXT_FLOW)) {
+                   interfaceHome.FLOW()
+                   Toast.makeText(contexto, getString(contexto, R.string.EXT_FLOW), Toast.LENGTH_SHORT).show() }
+                  ////////////////////////// TEST //////////////////////////////////////
            }
        }
    }

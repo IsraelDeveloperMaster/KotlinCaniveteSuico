@@ -19,7 +19,7 @@ import org.mockito.junit.MockitoJUnitRunner
 
 //todo Fake vs Mock
 @RunWith( MockitoJUnitRunner::class )
-class UsuarioViewModelContadorTest {
+class UsuarioViewModelTestingUnitariosContadorTest {
 
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()

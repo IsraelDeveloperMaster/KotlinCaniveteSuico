@@ -15,6 +15,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHome"
         android:label="@string/NAV_HOME"
         tools:layout="@layout/fragment_home" />
+    <!--    //////////////////// HOME ////////////////////-->
+
 
     <!--    //////////////////// ARQUITETURA ////////////////////-->
     <!--todo ARQUITETURA-->
@@ -26,6 +28,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.main.FragmentArquiteturaMain"
         android:label="@string/MAIN_ARQUITETURA"
         tools:layout="@layout/fragment_arquitetura_main" />
+    <!--    //////////////////// ARQUITETURA ////////////////////-->
+
 
     <!--    //////////////////// MVC ////////////////////-->
     <activity android:id="@+id/___________" />
@@ -36,6 +40,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.mvc.view.FragmentMVC"
         android:label="@string/EXT_MVC"
         tools:layout="@layout/fragment_mvc" />
+    <!--    //////////////////// MVC ////////////////////-->
+
 
     <!--    //////////////////// MVP ////////////////////-->
     <activity android:id="@+id/____________" />
@@ -56,6 +62,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpApi.view.FragmentMvpApi"
         android:label="@string/MAIN_MVP_API"
         tools:layout="@layout/fragment_mvp_api" />
+    <!--    //////////////////// MVP ////////////////////-->
+
 
     <!--    //////////////////// VIEWMODEL ////////////////////-->
     <activity android:id="@+id/_____________" />
@@ -76,8 +84,10 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.viewModel.viewModelContador.view.FragmentViewModelContador"
         android:label="@string/MAIN_VIEWMODEL_CONTADOR"
         tools:layout="@layout/fragment_viewmodel_contador" />
+    <!--    //////////////////// VIEWMODEL ////////////////////-->
 
-<!--    //////////////////// MVVM ////////////////////-->
+
+    <!--    //////////////////// MVVM ////////////////////-->
     <activity android:id="@+id/___________________" />
     <activity android:id="@+id/MVVM" />
 
@@ -96,6 +106,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.mvvm.mvvmApi.view.FragmentMvvmApi"
         android:label="@string/NAV_MVVM_API"
         tools:layout="@layout/fragment_mvvm_api" />
+    <!--    //////////////////// MVVM ////////////////////-->
+
 
     <!--    //////////////////// HILT ////////////////////-->
     <activity android:id="@+id/____________________" />
@@ -132,6 +144,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyProdutos.view.FragmentHiltDummyProdutos"
         android:label="@string/NAV_HILT_DOMAIN_API_DUMMY_PRODUTOS"
         tools:layout="@layout/fragment_hilt_domain_api_dummy_produtos" />
+    <!--    //////////////////// HILT ////////////////////-->
+
 
     <!--    //////////////////// LIVEDATA ////////////////////-->
     <activity android:id="@+id/_____________________" />
@@ -152,6 +166,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.liveData.liveDataContador.view.FragmentLiveDataContador"
         android:label="@string/NAV_LIVEDATA_CONTADOR"
         tools:layout="@layout/fragment_livedata_contador" />
+    <!--    //////////////////// LIVEDATA ////////////////////-->
+
 
     <!--    //////////////////// DATABINDING ////////////////////-->
     <activity android:id="@+id/______________________" />
@@ -177,6 +193,8 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.dataBinding.dataBindingClique.view.FragmentDataBindingClique"
         android:label="@string/NAV_DATABINDING_CLIQUE"
         tools:layout="@layout/fragment_databinding_com_evento_de_clique" />
+    <!--    //////////////////// DATABINDING ////////////////////-->
+
 
     <!--    //////////////////// CLEN ARCHITECTURE ////////////////////-->
     <activity android:id="@+id/_______________________" />
@@ -197,6 +215,7 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.view.FragmentCleanDomain"
         android:label="@string/NAV_CLEAN_ARCHITECTURE_DOMAIN"
         tools:layout="@layout/fragment_clean_domain" />
+    <!--    //////////////////// CLEN ARCHITECTURE ////////////////////-->
 
 
     <!--    //////////////////// GIT ////////////////////-->
@@ -211,19 +230,19 @@
 
     <fragment
         android:id="@+id/fragment_Test_Main"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Testing.main.FragmentTestMain"
+        android:name="net.developermaster.kotlincanivetesuico.ui.testing.main.FragmentTestMain"
         android:label="@string/EXT_TEST"
         tools:layout="@layout/fragment_test_main" />
 
     <fragment
         android:id="@+id/fragment_Test_Unitario_Simples"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Testing.unitarios.view.FragmentTestUnitarioSimples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.testing.unitarios.view.FragmentTestUnitarioSimples"
         android:label="@string/INT_TEST_UNITARIO_SIMPLES"
         tools:layout="@layout/fragment_test_unitario_simples" />
 
     <fragment
         android:id="@+id/fragment_Test_Instrumentado"
-        android:name="net.developermaster.kotlincanivetesuico.ui.Testing.instrumentados.view.FragmentTestInstrumentado"
+        android:name="net.developermaster.kotlincanivetesuico.ui.testing.instrumentados.view.FragmentTestInstrumentado"
         android:label="@string/MAIN_TEST_INSTRUMENTADO"
         tools:layout="@layout/fragment_test_instrumentado" />
     <!--    //////////////////// TEST ////////////////////-->
@@ -239,7 +258,6 @@
         android:label="@string/NAV_CODIGOS"
         tools:layout="@layout/fragment_codigo" />
     <!--    //////////////////// CODIGO ////////////////////-->
-
 
 
     <!--    //////////////////// RECYCLER VIEW ////////////////////-->
@@ -297,7 +315,6 @@
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.main.FragmentComposeMain"
         android:label="@string/EXT_COMPOSE"
         tools:layout="@layout/fragment_compose_main" />
-
 
     <activity
         android:id="@+id/Compose_Atributos"
@@ -396,6 +413,35 @@
         android:label="@string/NAV_FIREBASE_MVVM_ADICIONAR"
         tools:layout="@layout/fragment_firebase_mvvm_adicionar" />
     <!--    //////////////////// FIREBASE ////////////////////-->
+
+    <!--    //////////////////// FLOW ////////////////////-->
+    <activity android:id="@+id/________________________________________" />
+    <activity android:id="@+id/FLOW" />
+
+    <fragment
+        android:id="@+id/fragment_flow_main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.main.FragmentFlowMain"
+        android:label="@string/EXT_FLOW"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/fragment_flow_simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowSimples.view.FragmentSimples"
+        android:label="@string/MAIN_FLOW_SIMPLES"
+        tools:layout="@layout/fragment_flow_simples" />
+
+    <fragment
+        android:id="@+id/fragment_flow_mvvm"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FragmentFlowMvvm"
+        android:label="@string/MAIN_FLOW_MVVM"
+        tools:layout="@layout/fragment_flow_mvvm" />
+
+    <fragment
+        android:id="@+id/fragment_flow_firebase"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.view.FragmentFlowFireBase"
+        android:label="@string/MAIN_FLOW_FIREBASE"
+            tools:layout="@layout/fragment_flow_firebase" />
+    <!--    //////////////////// FLOW ////////////////////-->
 
 
 

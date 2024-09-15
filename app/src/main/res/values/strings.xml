@@ -2,21 +2,16 @@
     <string name="appName">Kotlin Canivete Suiço</string>
     <string name="nav_header_email">dev@developermaster.net</string>
 
-    <!--todo//////////////////////// XXX ////////////////////////-->
-
-    ////////// XXX //////////
+    ////////// MODELO //////////
     <!--todo//////// BTN EXTERNOS ////////-->
-    <string name="XXX">MVP</string>
+    <string name="EXT_X">X</string>
     <!--todo//////// BTN MAIN ////////-->
-    <string name="XXXX">MVP Simples</string>
-    <string name="XXXXX">MVP com API</string>
+    <string name="MAIN_X"> xxx </string>
     <!--todo//////// BTN INTERNOS ////////-->
-    <string name="XXXXXX">Recupera Usuarios com MVP Simples</string>
-    <string name="XXXXXXX">Recupera Postagens API com MVP</string>
+    <string name="INT_X"> xxx </string>
     <!--todo//////// NAV ////////-->
-    <string name="XXXXXXXX">MVP Simples</string>
-    <string name="XXXXXXXXX">MVP com API</string>
-    ////////// XXX //////////
+    <string name="NAV_X"> xxx </string>
+    ////////// MODELO //////////
 
 
     ////////// BUTTON //////////
@@ -315,8 +310,8 @@
     <!--todo//////// BTN EXTERNOS ////////-->
     <string name="EXT_TEST">TEST</string>
     <!--todo//////// BTN MAIN ////////-->
-    <string name="MAIN_TEST_UNITARIO">Test Unitario</string>
-    <string name="MAIN_TEST_INSTRUMENTADO">Test Instrumentado</string>
+    <string name="MAIN_TEST_UNITARIO">TEST UNITARIO</string>
+    <string name="MAIN_TEST_INSTRUMENTADO">TEST INSTRUMENTADO</string>
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_TEST_UNITARIO">Test Unitario</string>
     <string name="INT_TEST_UNITARIO_SIMPLES">Test Unitario Simples</string>
@@ -329,6 +324,23 @@
     <string name="title_activity_scaffold">Scaffold</string>
     <string name="title_activity_scaffold_mvvm">ScaffoldMVVM</string>
     ////////// TEST //////////
+
+    ////////// FLOW //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_FLOW">FLOW</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_FLOW_SIMPLES"> FLOW SIMPLES </string>
+    <string name="MAIN_FLOW_MVVM"> FLOW COM MVVM </string>
+    <string name="MAIN_FLOW_FIREBASE"> FLOW COM FIREBASE </string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_FLOW_SIMPLES"> Flow Simples </string>
+    <string name="INT_FLOW_MVVM"> Flow com MVVM </string>
+    <string name="INT_FLOW_FIREBASE"> Flow com Firebase </string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_FLOW_SIMPLES"> Flow Simples </string>
+    <string name="NAV_FLOW_MVVM"> Flow com MVVM </string>
+    <string name="NAV_FLOW_FIREBASE"> Flow com Firebase </string>
+    ////////// FLOW //////////
 
 
 </resources>

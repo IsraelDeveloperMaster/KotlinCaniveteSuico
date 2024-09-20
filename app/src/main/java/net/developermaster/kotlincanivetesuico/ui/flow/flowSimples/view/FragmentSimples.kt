@@ -12,7 +12,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowSimplesBinding
-import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel.ViewModelFlowMvvm
 
 
 class FragmentSimples : Fragment() {
@@ -38,7 +37,6 @@ class FragmentSimples : Fragment() {
         //todo botoes
         binding.btn01.setOnClickListener {
 
-            ViewModelFlowMvvm().example3()
 
         }
 
@@ -61,7 +59,7 @@ class FragmentSimples : Fragment() {
                     bombitas += 1
                     emit(bombitas)
                     delay(1000)
-                    Log.d("bombitas", "${bombitas}")
+                    Log.d("bombitas", "$bombitas")
             }
         }
     }

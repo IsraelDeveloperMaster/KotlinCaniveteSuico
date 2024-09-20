@@ -15,15 +15,25 @@ import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.Repos
 
 class MainViewModel : ViewModel() {
 
+    //todo instancia de repository
     val repositoryFlowMvvm = RepositoryFlowMvvm()
 
-    private val _uiState = MutableStateFlow<MainUIState>(MainUIState.Loading)
-    val uiState: StateFlow<MainUIState> =
-        _uiState
+    private val estadoFlowPrivado = MutableStateFlow<MainUIState>(MainUIState.Loading)
+    val estadoFlowPublico: StateFlow<MainUIState> =
+        estadoFlowPrivado
 
-    fun example() {
+    fun example0() {
+
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
+            repositoryFlowMvvm.contador.collect { bombitas ->
+                    Log.i("bombitas", bombitas.toString())
+                }
+        }
+    }
+
+    fun example1() {
+        viewModelScope.launch {
+            repositoryFlowMvvm.contador
                 .map { it.toString() } //numSuscribers
                 .collect { bombitas: String ->
                     Log.i("bombitas", bombitas)
@@ -33,7 +43,7 @@ class MainViewModel : ViewModel() {
 
     fun example2() {
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
+            repositoryFlowMvvm.contador
                 .map { it.toString() } //numSuscribers
                 .onEach { save(it) }
                 .catch { error ->
@@ -47,11 +57,11 @@ class MainViewModel : ViewModel() {
 
     fun example3() {
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
-                .catch { _uiState.value = MainUIState.Error(it.message.orEmpty()) }
+            repositoryFlowMvvm.contador
+                .catch { estadoFlowPrivado.value = MainUIState.Error(it.message.orEmpty()) }
                 .flowOn(Dispatchers.IO)
                 .collect {
-                    _uiState.value = MainUIState.Success(it)
+                    estadoFlowPrivado.value = MainUIState.Success(it)
                 }
         }
     }

@@ -18,14 +18,26 @@ class ViewModelFlowMvvm : ViewModel() {
 
     val repositoryFlowMvvm = RepositoryFlowMvvm()
 
-    private val _uiState = MutableStateFlow<MainUIState>(MainUIState.Loading)
+    private val estadoFlowPrivado = MutableStateFlow<MainUIState>(MainUIState.Loading)
 
-    val uiState: StateFlow<MainUIState> = _uiState
+    val estadoFlowPublico: StateFlow<MainUIState> = estadoFlowPrivado
 
-    fun example() {
+    fun example1() {
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
+            repositoryFlowMvvm.contador.collect {
+                bombitas ->
+
+                Log.i("bombitas", bombitas.toString())
+            }
+        }
+    }
+
+    fun example2() {
+        viewModelScope.launch {
+            repositoryFlowMvvm.contador
+
                 .map { it.toString() } //numSuscribers
+
                 .collect { bombitas: String ->
 
                     Log.d("bombitas", bombitas)
@@ -33,27 +45,44 @@ class ViewModelFlowMvvm : ViewModel() {
         }
     }
 
-    fun example2() {
+    fun example3() {
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
+            repositoryFlowMvvm.contador
                 .map { it.toString() } //numSuscribers
+
                 .onEach { save(it) }
-                .catch { error ->
-                    Log.i("aristiCurso", "Error: ${error.message}")
-                }
+
                 .collect { bombitas: String ->
-                    Log.i("aristiCurso", bombitas)
+                    Log.i("bombitas", bombitas)
                 }
         }
     }
 
-    fun example3() {
+    fun example4() {
         viewModelScope.launch {
-            repositoryFlowMvvm.counter
-                .catch { _uiState.value = MainUIState.Error(it.message.orEmpty()) }
+            repositoryFlowMvvm.contador
+                .map { it.toString() } //numSuscribers
+                .onEach { save(it) }
+
+                .catch { error ->
+                    Log.i("bombitas", "Error: ${error.message}")
+                }
+
+                .collect { bombitas: String ->
+
+                    Log.i("bombitas", bombitas)
+                }
+        }
+    }
+
+
+    fun example5() {
+        viewModelScope.launch {
+            repositoryFlowMvvm.contador
+                .catch { estadoFlowPrivado.value = MainUIState.Error(it.message.orEmpty()) }
                 .flowOn(Dispatchers.IO)
                 .collect {
-                    _uiState.value = MainUIState.Success(it)
+                    estadoFlowPrivado.value = MainUIState.Success(it)
                 }
         }
     }

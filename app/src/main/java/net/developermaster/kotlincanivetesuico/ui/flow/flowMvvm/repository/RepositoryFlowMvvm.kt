@@ -7,14 +7,16 @@ import kotlinx.coroutines.flow.flow
 
 class RepositoryFlowMvvm {
 
-    val counter: Flow<Int> = flow {
+    val contador: Flow<Int> = flow {
+
         var bombitas = 1
         while (true){
             bombitas += 1
             emit(bombitas)
+
             delay(1000)
 
-            Log.d("bombitas", "${bombitas}")
+            Log.d("bombitas", "$bombitas")
         }
     }
 }

@@ -1,6 +1,7 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel
 
 import android.util.Log
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
@@ -11,6 +12,8 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ListaFlowMvvm
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ModelFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.RepositoryFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
@@ -18,9 +21,20 @@ class ViewModelFlowMvvm : ViewModel() {
 
     val repositoryFlowMvvm = RepositoryFlowMvvm()
 
+    //todo estado Flow
     private val estadoFlowPrivado = MutableStateFlow <FlowEstado> (FlowEstado.Loading)
-
     val estadoFlowPublico : StateFlow< FlowEstado > = estadoFlowPrivado
+
+    //todo observe modelflowmvvm
+    val modelFlowMvvmMutableLiveData = MutableLiveData<ModelFlowMvvm>()
+
+        fun funcaoViewModelRandom() {
+
+            val listaRecuperadaViewModel = ListaFlowMvvm.funcaoRandom()
+
+            modelFlowMvvmMutableLiveData.postValue(listaRecuperadaViewModel)
+
+    }
 
     fun example1() {
         viewModelScope.launch {

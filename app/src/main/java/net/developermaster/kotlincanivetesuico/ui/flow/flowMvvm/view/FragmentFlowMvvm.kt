@@ -88,6 +88,16 @@ class FragmentFlowMvvm : Fragment() {
             viewModelFlowMvvm.example5()
         }
 
+        binding.btn03.setOnClickListener {
+
+            viewModelFlowMvvm.funcaoViewModelRandom()
+
+            viewModelFlowMvvm.modelFlowMvvmMutableLiveData.observe(viewLifecycleOwner) { dadosRecuperadosPeloViewModel ->
+
+                binding.textView.text = " Frase: ${ dadosRecuperadosPeloViewModel.texto } \n \n  Autor: ${ dadosRecuperadosPeloViewModel.autor } \n "
+            }
+        }
+
         binding.fabCodigo.setOnClickListener {
 
             codigo()

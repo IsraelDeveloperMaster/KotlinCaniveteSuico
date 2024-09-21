@@ -9,14 +9,14 @@ class RepositoryFlowMvvm {
 
     val contador: Flow<Int> = flow {
 
-        var bombitas = 1
+        var clientes = 1
         while (true){
-            bombitas += 1
-            emit(bombitas)
+            clientes += 1
+            emit(clientes)
 
             delay(1000)
 
-            Log.d("bombitas", "$bombitas")
+            Log.d("clientes", "$clientes")
         }
     }
 }

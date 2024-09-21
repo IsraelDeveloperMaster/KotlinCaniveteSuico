@@ -12,22 +12,22 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.RepositoryFlowMvvm
-import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.MainUIState
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
 class ViewModelFlowMvvm : ViewModel() {
 
     val repositoryFlowMvvm = RepositoryFlowMvvm()
 
-    private val estadoFlowPrivado = MutableStateFlow<MainUIState>(MainUIState.Loading)
+    private val estadoFlowPrivado = MutableStateFlow <FlowEstado> (FlowEstado.Loading)
 
-    val estadoFlowPublico: StateFlow<MainUIState> = estadoFlowPrivado
+    val estadoFlowPublico : StateFlow< FlowEstado > = estadoFlowPrivado
 
     fun example1() {
         viewModelScope.launch {
             repositoryFlowMvvm.contador.collect {
-                bombitas ->
+                clientes ->
 
-                Log.i("bombitas", bombitas.toString())
+                Log.i("clientes", clientes.toString())
             }
         }
     }
@@ -36,11 +36,11 @@ class ViewModelFlowMvvm : ViewModel() {
         viewModelScope.launch {
             repositoryFlowMvvm.contador
 
-                .map { it.toString() } //numSuscribers
+                .map { it.toString() }
 
-                .collect { bombitas: String ->
+                .collect { clientes: String ->
 
-                    Log.d("bombitas", bombitas)
+                    Log.d("clientes", clientes)
                 }
         }
     }
@@ -48,41 +48,46 @@ class ViewModelFlowMvvm : ViewModel() {
     fun example3() {
         viewModelScope.launch {
             repositoryFlowMvvm.contador
-                .map { it.toString() } //numSuscribers
+                .map { it.toString() }
 
                 .onEach { save(it) }
 
-                .collect { bombitas: String ->
-                    Log.i("bombitas", bombitas)
+                .collect { clientes: String ->
+                    Log.i("clientes", clientes)
                 }
         }
     }
 
     fun example4() {
         viewModelScope.launch {
+
             repositoryFlowMvvm.contador
-                .map { it.toString() } //numSuscribers
+                .map { it.toString() }
                 .onEach { save(it) }
 
                 .catch { error ->
-                    Log.i("bombitas", "Error: ${error.message}")
+                    Log.i("clientes", "Error: ${error.message}")
                 }
 
-                .collect { bombitas: String ->
+                .collect { clientes: String ->
 
-                    Log.i("bombitas", bombitas)
+                    Log.i("clientes", clientes)
                 }
         }
     }
 
-
     fun example5() {
         viewModelScope.launch {
+
             repositoryFlowMvvm.contador
-                .catch { estadoFlowPrivado.value = MainUIState.Error(it.message.orEmpty()) }
+
+                .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty())
+                }
+
                 .flowOn(Dispatchers.IO)
+
                 .collect {
-                    estadoFlowPrivado.value = MainUIState.Success(it)
+                        estadoFlowPrivado.value = FlowEstado.Success(it)
                 }
         }
     }

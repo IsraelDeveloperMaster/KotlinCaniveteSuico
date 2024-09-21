@@ -1,5 +1,6 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,13 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.launch
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
+import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowMvvmBinding
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel.ViewModelFlowMvvm
@@ -33,6 +40,7 @@ class FragmentFlowMvvm : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("UnsafeRepeatOnLifecycleDetector")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -43,7 +51,41 @@ class FragmentFlowMvvm : Fragment() {
         binding.btn01.setOnClickListener {
 
             viewModelFlowMvvm.example1()
+        }
 
+        binding.btn02.setOnClickListener {
+
+            lifecycleScope.launch {
+
+                repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+                    viewModelFlowMvvm.estadoFlowPublico.collect { estado ->
+
+                        when (estado) {
+                            is FlowEstado.Error -> {
+
+                                binding.textView.text = estado.mensagemError
+
+                                mensagemToast( getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError )
+                            }
+
+                            FlowEstado.Loading -> {
+
+                                binding.progressBar
+                            }
+
+                            is FlowEstado.Success -> {
+
+                                binding.textView.text = estado.clientes.toString()
+
+                                mensagemSnackBar(getString(R.string.MENSAGEM_FLOW_SUCESSO)  + " \n " + estado.clientes.toString() )
+                            }
+                        }
+                    }
+                }
+            }
+
+            viewModelFlowMvvm.example5()
         }
 
         binding.fabCodigo.setOnClickListener {
@@ -69,6 +111,7 @@ class FragmentFlowMvvm : Fragment() {
     private fun codigoXml() {
 
         val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
+
 //        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }
 

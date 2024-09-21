@@ -10,9 +10,9 @@ import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
-class ViewModelContadorTest : TestCase() {
+class ViewModelTestingUnitariosContadorTest : TestCase() {
 
-    private lateinit var viewModel: ViewModel
+    private lateinit var viewModelTestingUnitarios: ViewModelTestingUnitarios
     private lateinit var fakeRepositoryTestUnitSuspend: FakeRepositoryTestUnitSuspend
 
     @Before
@@ -20,7 +20,7 @@ class ViewModelContadorTest : TestCase() {
 
         fakeRepositoryTestUnitSuspend = FakeRepositoryTestUnitSuspend()
 
-        viewModel = ViewModel( fakeRepositoryTestUnitSuspend )
+        viewModelTestingUnitarios = ViewModelTestingUnitarios( fakeRepositoryTestUnitSuspend )
     }
 
     @Test
@@ -30,7 +30,7 @@ class ViewModelContadorTest : TestCase() {
             val email = "email4@email.com"
             val senha = "12345678"
             //Quando
-            val resultado = viewModel.metodoLogarUsuarioViewModelFake(email, senha)
+            val resultado = viewModelTestingUnitarios.metodoLogarUsuarioViewModelFake(email, senha)
             //Então
             assertThat(resultado).isTrue()
         }

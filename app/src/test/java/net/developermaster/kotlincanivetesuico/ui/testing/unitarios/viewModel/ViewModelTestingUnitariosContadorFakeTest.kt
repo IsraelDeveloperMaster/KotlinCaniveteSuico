@@ -7,7 +7,7 @@ import net.developermaster.kotlincanivetesuico.ui.testing.unitarios.fakeReposito
 import org.junit.Before
 import org.junit.Test
 
-class ViewModelContadorFakeTest {
+class ViewModelTestingUnitariosContadorFakeTest {
 
     //todo instancia de ViewModelFake
      lateinit var viewModelFake : ViewModelFake

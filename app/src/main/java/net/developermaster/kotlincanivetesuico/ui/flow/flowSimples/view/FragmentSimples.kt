@@ -1,15 +1,16 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowSimples.view
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
-import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowSimplesBinding
 
 
@@ -33,17 +34,9 @@ class FragmentSimples : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo instancia de string
-        val variavelMensagens = getString(R.string.EXT_MVC)
-
         //todo botoes
         binding.btn01.setOnClickListener {
 
-            mensagemToast(variavelMensagens)
-
-            mensagemSnackBar(variavelMensagens)
-
-//            findNavController().navigate(R.id.)
 
         }
 
@@ -55,6 +48,19 @@ class FragmentSimples : Fragment() {
         binding.fabXml.setOnClickListener {
 
             codigoXml()
+        }
+    }
+
+    fun funcaoFlow(): Unit {
+
+            val counter: Flow<Int> = flow {
+                var bombitas = 1
+                while (true){
+                    bombitas += 1
+                    emit(bombitas)
+                    delay(1000)
+                    Log.d("bombitas", "$bombitas")
+            }
         }
     }
 

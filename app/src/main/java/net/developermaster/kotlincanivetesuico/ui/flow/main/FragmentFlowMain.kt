@@ -30,19 +30,19 @@ class FragmentFlowMain : Fragment()  {
         //todo botoes
         binding.btn01.setOnClickListener {
 
-            findNavController().navigate(R.id.fragment_flow_simples)
+            findNavController().navigate(R.id.fragment_Flow_Simples)
 
         }
 
         binding.btn02.setOnClickListener {
 
-            findNavController().navigate(R.id.fragment_flow_mvvm)
+            findNavController().navigate(R.id.fragment_Flow_Mvvm)
 
         }
 
         binding.btn03.setOnClickListener {
 
-            findNavController().navigate(R.id.fragment_flow_firebase)
+            findNavController().navigate(R.id.fragment_Flow_FireBase)
 
         }
     }

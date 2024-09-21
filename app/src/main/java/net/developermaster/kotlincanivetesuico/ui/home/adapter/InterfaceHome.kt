@@ -16,4 +16,5 @@ interface InterfaceHome {
     fun CLEAN()
     fun HILT()
     fun TEST()
+    fun FLOW()
 }

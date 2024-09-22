@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.domain.UseCaseFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ListaFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ModelFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.RepositoryFlowMvvm
@@ -19,6 +20,10 @@ import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
 class ViewModelFlowMvvm : ViewModel() {
 
+    //todo instancia de usecase
+    val useCaseFlowMvvm = UseCaseFlowMvvm()
+
+    //todo instancia de repository
     val repositoryFlowMvvm = RepositoryFlowMvvm()
 
     //todo estado Flow
@@ -38,9 +43,7 @@ class ViewModelFlowMvvm : ViewModel() {
 
     fun example1() {
         viewModelScope.launch {
-            repositoryFlowMvvm.contador.collect {
-                clientes ->
-
+            repositoryFlowMvvm.contador.collect { clientes ->
                 Log.i("clientes", clientes.toString())
             }
         }
@@ -91,6 +94,7 @@ class ViewModelFlowMvvm : ViewModel() {
     }
 
     fun example5() {
+
         viewModelScope.launch {
 
             repositoryFlowMvvm.contador
@@ -101,10 +105,48 @@ class ViewModelFlowMvvm : ViewModel() {
                 .flowOn(Dispatchers.IO)
 
                 .collect {
-                        estadoFlowPrivado.value = FlowEstado.Success(it)
+
+                    estadoFlowPrivado.value = FlowEstado.Loading
+
+                        estadoFlowPrivado.value = FlowEstado.Sucesso1(it)
+
+                    Log.d("clientes", it.toString())
                 }
         }
     }
+
+    fun example6() {
+
+        viewModelScope.launch {
+
+            repositoryFlowMvvm.listar
+
+                .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty())
+                }
+
+                .flowOn(Dispatchers.IO)
+
+                .collect { lista ->
+
+                estadoFlowPrivado.value = FlowEstado.Loading
+
+                estadoFlowPrivado.value = FlowEstado.Sucesso2(lista)
+
+                Log.d("lista", lista )
+            }
+        }
+    }
+
+    fun example7() {
+
+        viewModelScope.launch {
+
+            repositoryFlowMvvm.listar
+
+//            useCaseFlowMvvm()
+        }
+    }
+
 
     private fun save(info: String) {
 

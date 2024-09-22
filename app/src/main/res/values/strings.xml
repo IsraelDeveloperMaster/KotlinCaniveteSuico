@@ -338,6 +338,8 @@
     <string name="INT_FLOW_FIREBASE"> Flow com Firebase </string>
     <string name="INT_FLOW_EXEMPLO_SIMPLES"> Flow Exemplo Simples </string>
     <string name="INT_STATE_FLOW"> State Flow </string>
+    <string name="INT_STATE_VIEWMODEL_FLOW">State Flow com ViewModel </string>
+    <string name="INT_STATE_USECASE_FLOW">State Flow com UseCase </string>
     <!--todo//////// NAV ////////-->
     <string name="NAV_FLOW_SIMPLES"> Flow Simples </string>
     <string name="NAV_FLOW_MVVM"> Flow com MVVM </string>

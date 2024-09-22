@@ -1,5 +1,5 @@
 [versions]
-agp = "8.6.0"
+agp = "8.6.1"
 androidxJunit = "1.2.1"
 coilCompose = "2.7.0"
 converterGson = "2.11.0"
@@ -16,22 +16,22 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 kotlinxCoroutinesTest = "1.9.0-RC.2"
-lifecycleLivedataKtxVersion = "2.8.5"
-lifecycleRuntimeKtx = "2.8.5"
-lifecycleViewmodelCompose = "2.8.5"
-lifecycleViewmodelKtxVersion = "2.8.5"
+lifecycleLivedataKtxVersion = "2.8.6"
+lifecycleRuntimeKtx = "2.8.6"
+lifecycleViewmodelCompose = "2.8.6"
+lifecycleViewmodelKtxVersion = "2.8.6"
 material = "1.12.0"
 constraintlayout = "2.1.4"
-lifecycleLivedataKtx = "2.8.5"
-lifecycleViewmodelKtx = "2.8.5"
+lifecycleLivedataKtx = "2.8.6"
+lifecycleViewmodelKtx = "2.8.6"
 materialVersion = "1.12.0"
 mockitoCore = "5.12.0"
-navigationFragmentKtx = "2.8.0"
-navigationUiKtx = "2.8.0"
+navigationFragmentKtx = "2.8.1"
+navigationUiKtx = "2.8.1"
 picasso = "2.71828"
 retrofit = "2.11.0"
 activityCompose = "1.9.2"
-composeBom = "2024.09.00"
+composeBom = "2024.09.02"
 activity = "1.9.2"
 robolectric = "4.10.3"
 roomCommon = "2.6.1"
@@ -40,11 +40,11 @@ roomKtx = "2.6.1"
 roomRuntime = "2.6.1"
 firebaseDatabaseKtx = "21.0.0"
 media3Common = "1.4.1"
-lifecycleLivedataCoreKtx = "2.8.5"
+lifecycleLivedataCoreKtx = "2.8.6"
 comGoogleDevtoolsKspGradlePluginVersion = "2.0.0-1.0.24"
 rules = "1.6.1"
 runner = "1.6.2"
-runtimeLivedata = "1.7.0"
+runtimeLivedata = "1.7.2"
 testng = "6.9.6"
 junitJunit = "4.13.2"
 junitKtx = "1.2.1"
@@ -54,10 +54,8 @@ truth = "1.4.4"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
-androidx-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib" }
 androidx-espresso-contrib-v330 = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoContribVersion" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
-androidx-fragment-testing = { module = "androidx.fragment:fragment-testing", version.ref = "fragmentKtx" }
 androidx-junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
 androidx-lifecycle-livedata-ktx-v270 = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtxVersion" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }

@@ -8,7 +8,7 @@ import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ListaFlowM
 
 class RepositoryFlowMvvm {
 
-    val listaFlowMvvm = ListaFlowMvvm
+    private val listaFlowMvvm = ListaFlowMvvm
 
     val contador: Flow<Int> = flow {
 
@@ -20,14 +20,14 @@ class RepositoryFlowMvvm {
         }
     }
 
-        val listar : Flow<String> = flow {
+        val frases : Flow<String> = flow {
 
             while (true) {
                 emit(listaFlowMvvm.funcaoRandom().texto)
                 delay(2000)
                 emit(listaFlowMvvm.funcaoRandom().autor)
 
-                Log.d("lista", listaFlowMvvm.funcaoRandom().texto)
+                Log.d("frases", listaFlowMvvm.funcaoRandom().texto)
             }
         }
 }

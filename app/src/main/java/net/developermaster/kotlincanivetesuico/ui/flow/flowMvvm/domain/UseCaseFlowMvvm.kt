@@ -1,12 +1,14 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.domain
 
+import kotlinx.coroutines.flow.Flow
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.RepositoryFlowMvvm
 
 class UseCaseFlowMvvm {
 
-    val repositoryFlowMvvm = RepositoryFlowMvvm()
+    private val repositoryFlowMvvm = RepositoryFlowMvvm()
 
-    operator fun invoke()  {
-        repositoryFlowMvvm.listar
-   }
+    operator fun invoke() : Flow<String> {
+
+        return repositoryFlowMvvm.frases
+    }
 }

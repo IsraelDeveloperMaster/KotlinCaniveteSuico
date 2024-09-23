@@ -24,14 +24,14 @@ class ViewModelFlowMvvm : ViewModel() {
     val useCaseFlowMvvm = UseCaseFlowMvvm()
 
     //todo instancia de repository
-    val repositoryFlowMvvm = RepositoryFlowMvvm()
+    private val repositoryFlowMvvm = RepositoryFlowMvvm()
 
     //todo estado Flow
     private val estadoFlowPrivado = MutableStateFlow <FlowEstado> (FlowEstado.Loading)
     val estadoFlowPublico : StateFlow< FlowEstado > = estadoFlowPrivado
 
     //todo observe modelflowmvvm
-    val modelFlowMvvmMutableLiveData = MutableLiveData<ModelFlowMvvm>()
+    private val modelFlowMvvmMutableLiveData = MutableLiveData<ModelFlowMvvm>()
 
         fun funcaoViewModelRandom() {
 
@@ -99,11 +99,12 @@ class ViewModelFlowMvvm : ViewModel() {
 
             repositoryFlowMvvm.contador
 
-                .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty())
-                }
+                .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty()) }
 
-                .flowOn(Dispatchers.IO)
+                //todo mudar a thread de processamento para IO
+                .flowOn( Dispatchers.IO )
 
+                //todo valor emitido pelo flow
                 .collect {
 
                     estadoFlowPrivado.value = FlowEstado.Loading
@@ -119,20 +120,22 @@ class ViewModelFlowMvvm : ViewModel() {
 
         viewModelScope.launch {
 
-            repositoryFlowMvvm.listar
+            repositoryFlowMvvm.frases
 
                 .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty())
                 }
 
-                .flowOn(Dispatchers.IO)
+                //todo mudar a thread de processamento para IO
+                .flowOn( Dispatchers.IO )
 
-                .collect { lista ->
+                //todo valor emitido pelo flow
+                .collect { frases ->
 
                 estadoFlowPrivado.value = FlowEstado.Loading
 
-                estadoFlowPrivado.value = FlowEstado.Sucesso2(lista)
+                estadoFlowPrivado.value = FlowEstado.Sucesso2(frases)
 
-                Log.d("lista", lista )
+                Log.d("frases", frases )
             }
         }
     }
@@ -141,12 +144,22 @@ class ViewModelFlowMvvm : ViewModel() {
 
         viewModelScope.launch {
 
-            repositoryFlowMvvm.listar
+            useCaseFlowMvvm()
 
-//            useCaseFlowMvvm()
+                .catch { estadoFlowPrivado.value = FlowEstado.Error(it.message.orEmpty()) }
+
+                //todo mudar a thread de processamento para IO
+                .flowOn( Dispatchers.IO )
+
+                //todo valor emitido pelo flow
+                .collect{ frases ->
+
+                estadoFlowPrivado.value = FlowEstado.Loading
+
+                estadoFlowPrivado.value = FlowEstado.Sucesso2(frases)
+            }
         }
     }
-
 
     private fun save(info: String) {
 

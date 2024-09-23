@@ -17,17 +17,13 @@ import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowMvvmBinding
-import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.repository.RepositoryFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel.ViewModelFlowMvvm
 
 
 class FragmentFlowMvvm : Fragment() {
 
     //todo instancia de viewModel
-    val viewModelFlowMvvm: ViewModelFlowMvvm by viewModels()
-
-    //todo instancia de repository
-    val repositoryFlowMvvm = RepositoryFlowMvvm()
+    private val viewModelFlowMvvm: ViewModelFlowMvvm by viewModels()
 
     //todo instancia de classe onde estao os codigos e xml
     val dados = ClasseDeDadosCodigos()
@@ -47,9 +43,6 @@ class FragmentFlowMvvm : Fragment() {
     @SuppressLint("UnsafeRepeatOnLifecycleDetector")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        //todo instancia de string
-        val variavelMensagens = getString(R.string.EXT_MVC)
 
         //todo botoes
         binding.btn01.setOnClickListener {
@@ -87,6 +80,7 @@ class FragmentFlowMvvm : Fragment() {
                             }
 
                             is FlowEstado.Sucesso2 ->
+
                                 binding.textView.text = estado.clientes
 
                         }
@@ -148,19 +142,43 @@ class FragmentFlowMvvm : Fragment() {
 
         binding.btn04.setOnClickListener {
 
-//            viewModelFlowMvvm.example7()
-
-//            val useCase = UseCaseFlowMvvm()
-
-//            useCase()
-
             lifecycleScope.launch {
+
                 repeatOnLifecycle(Lifecycle.State.STARTED) {
-                    repositoryFlowMvvm.listar.collect { lista ->
-                        binding.textView.text = lista
+
+                    viewModelFlowMvvm.estadoFlowPublico.collect { estado ->
+
+                        when (estado) {
+
+                            is FlowEstado.Error -> {
+
+                                binding.textView.text = estado.mensagemError
+
+                                mensagemToast(getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError)
+                            }
+
+                            FlowEstado.Loading -> {
+
+                                binding.progressBar
+                            }
+
+                            is FlowEstado.Sucesso1 -> {
+
+                                binding.textView.text = ""
+
+                                mensagemSnackBar(getString(R.string.MENSAGEM_FLOW_SUCESSO) + " \n " + estado.clientes.toString())
+                            }
+
+                            is FlowEstado.Sucesso2 ->
+
+                                binding.textView.text = estado.clientes
+
+                        }
                     }
                 }
             }
+
+            viewModelFlowMvvm.example7()
         }
 
         binding.fabCodigo.setOnClickListener {

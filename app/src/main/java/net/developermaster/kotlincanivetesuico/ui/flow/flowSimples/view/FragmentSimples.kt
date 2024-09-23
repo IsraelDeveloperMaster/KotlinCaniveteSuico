@@ -7,10 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.launch
 import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowSimplesBinding
 
 
@@ -34,10 +37,30 @@ class FragmentSimples : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //todo variavel flow simples
+        val contador: Flow<Int> = flow {
+            var clientes = 1
+            while (true){
+                clientes += 1
+                emit(clientes)
+                delay(1000)
+            }
+        }
+
         //todo botoes
         binding.btn01.setOnClickListener {
 
+            lifecycleScope.launch {
 
+                contador.collect { clientes ->
+
+                    binding.textView.text = "Cliente: $clientes"
+
+                    mensagemSnackBar( "Cliente: $clientes" )
+
+                    Log.d("clientes", "Cliente: $clientes" )
+                }
+            }
         }
 
         binding.fabCodigo.setOnClickListener {
@@ -48,19 +71,6 @@ class FragmentSimples : Fragment() {
         binding.fabXml.setOnClickListener {
 
             codigoXml()
-        }
-    }
-
-    fun funcaoFlow(): Unit {
-
-            val counter: Flow<Int> = flow {
-                var bombitas = 1
-                while (true){
-                    bombitas += 1
-                    emit(bombitas)
-                    delay(1000)
-                    Log.d("bombitas", "$bombitas")
-            }
         }
     }
 

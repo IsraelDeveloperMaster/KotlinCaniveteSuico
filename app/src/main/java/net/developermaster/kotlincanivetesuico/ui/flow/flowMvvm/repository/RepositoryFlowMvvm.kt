@@ -10,7 +10,7 @@ class RepositoryFlowMvvm {
 
     private val listaFlowMvvm = ListaFlowMvvm
 
-    val contador: Flow<Int> = flow {
+    val contador: Flow< Int > = flow {
 
         var clientes = 1
         while (true){

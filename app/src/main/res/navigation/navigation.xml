@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/fragment_Flow_Simples">
+    app:startDestination="@id/Compose_Flow_FireBase">
 
     <!--    //////////////////// HOME ////////////////////-->
     <activity android:id="@+id/__________________________" />
@@ -438,9 +438,15 @@
 
     <fragment
         android:id="@+id/fragment_Flow_FireBase"
-        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.view.FragmentFlowFireBase"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.FragmentFlowFireBase"
         android:label="@string/MAIN_FLOW_FIREBASE"
             tools:layout="@layout/fragment_flow_firebase" />
+
+    <activity
+        android:id="@+id/Compose_Flow_FireBase"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.ComposeFlowFireBase"
+        android:label="@string/NAV_COMPOSE_SCAFFOLD"
+        tools:layout="@layout/fragment_compose_main" />
     <!--    //////////////////// FLOW ////////////////////-->
 
 

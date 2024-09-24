@@ -46,6 +46,7 @@ class ViewModelFlowMvvm : ViewModel() {
         viewModelScope.launch {
 
             repositoryFlowMvvm.contador.collect { clientes ->
+
                 Log.i("clientes", clientes.toString())
             }
         }

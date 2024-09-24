@@ -44,13 +44,7 @@ class FragmentFlowMvvm : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo botoes
         binding.btn01.setOnClickListener {
-
-            viewModelFlowMvvm.example1()
-        }
-
-        binding.btn02.setOnClickListener {
 
             lifecycleScope.launch {
 
@@ -91,7 +85,7 @@ class FragmentFlowMvvm : Fragment() {
             viewModelFlowMvvm.example5()
         }
 
-        binding.btn03.setOnClickListener {
+        binding.btn02.setOnClickListener {
 
             lifecycleScope.launch {
 
@@ -140,7 +134,7 @@ class FragmentFlowMvvm : Fragment() {
             */
         }
 
-        binding.btn04.setOnClickListener {
+        binding.btn03.setOnClickListener {
 
             lifecycleScope.launch {
 

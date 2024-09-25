@@ -1,5 +1,6 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -38,19 +39,56 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import coil.compose.AsyncImage
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.launch
+import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.theme.KotlinCaniveteSuicoTheme
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.viewModel.ViewModelFlowComposeFireBase
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
 class ComposeFlowFireBase : ComponentActivity() {
 
     private var imagemRetornadaPelaInternet = ""
 
     private val viewModelFlowComposeFireBase = ViewModelFlowComposeFireBase()
+
+    var imagemFlow : Flow<String> = flow {
+
+        while (true) {
+
+            emit(imagemRetornadaPelaInternet)
+
+            delay(2000)
+
+            Log.d("imagem", imagemRetornadaPelaInternet)
+
+        }
+    }
+
+
+    fun funcaoImagemFlow(){
+
+        var imagemFlow : Flow<String> = flow {
+
+            while (true) {
+
+                emit(imagemRetornadaPelaInternet)
+
+                delay(2000)
+
+                Log.d("imagem", imagemRetornadaPelaInternet)
+
+            }
+        }
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {//todo inicio do onCreate
         super.onCreate(savedInstanceState)
@@ -111,7 +149,7 @@ class ComposeFlowFireBase : ComponentActivity() {
             modifier = Modifier
                 .fillMaxWidth()//todo largura
                 .fillMaxHeight()//todo altura
-                .padding(start = 100.dp , top = 24.dp),
+                .padding(start = 100.dp, top = 24.dp),
 
         ) {
 
@@ -195,12 +233,12 @@ class ComposeFlowFireBase : ComponentActivity() {
         {
 
             Text(text = "Função que chama os dados do firebase")
-            funcaoListarImageDoFireBase()
+            FuncaoListarImageDoFireBase()
         }
     }
 
     @Composable
-    fun funcaoListarImageDoFireBase() {
+    fun FuncaoListarImageDoFireBase() {
 
             //todo referencia da imagem
             FirebaseStorage.getInstance() .getReference("imagens") .child("imagens.jpg") .downloadUrl
@@ -219,7 +257,7 @@ class ComposeFlowFireBase : ComponentActivity() {
     }
 
     @Composable
-    fun funcaoListarImageDoFireBase2(caminhoDaImagem: String): Flow<String> = flow {
+    fun FuncaoListarImageDoFireBase2(caminhoDaImagem: String): Flow<String> = flow {
 
             //todo referencia da imagem
             FirebaseStorage.getInstance() .getReference("imagens") .child("imagens.jpg") .downloadUrl
@@ -239,22 +277,11 @@ class ComposeFlowFireBase : ComponentActivity() {
 
     }
 
+    @SuppressLint("CoroutineCreationDuringComposition")
     @Composable
     fun MyScreen() {
 
         val myData by viewModelFlowComposeFireBase.myDataFlow.collectAsState(initial = "")
-
-        val imagemFlow : Flow<String> = flow {
-
-            while (true) {
-
-                emit(myData)
-
-                delay(2000)
-
-                Log.d("imagem", myData)
-            }
-        }
 
 
         Column {
@@ -263,7 +290,7 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             AsyncImage(
 
-                model = imagemFlow,
+                model = myData,
 
                 modifier = Modifier
                     .clickable {
@@ -288,6 +315,45 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             onClick = { viewModelFlowComposeFireBase.updateData() }) {
 
+                lifecycleScope.launch {
+
+                    repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+                        viewModelFlowComposeFireBase.estadoFlowPublico.collect { estado ->
+
+                            when (estado) {
+
+                                is FlowEstado.Error -> {
+
+//                                    binding.textView.text = estado.mensagemError
+
+                                    MensagemToast( getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError )
+                                }
+
+                                FlowEstado.Loading -> {
+
+//                                    binding.progressBar
+                                }
+
+                                is FlowEstado.Sucesso1 -> {
+
+//                                    binding.textView.text = ""
+
+                                    MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO)  + " \n " + estado.clientes.toString() )
+                                }
+
+                                is FlowEstado.Sucesso2 ->
+
+//                                    binding.textView.text = estado.clientes
+
+                                    MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO)  + " \n " + estado.clientes.toString() )
+
+                            }
+                        }
+                    }
+                }
+
+                viewModelFlowComposeFireBase.example6()
         }
             Text(text = "Atualizar dados")
 

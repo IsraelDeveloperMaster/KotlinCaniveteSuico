@@ -50,6 +50,7 @@ junitJunit = "4.13.2"
 junitKtx = "1.2.1"
 core = "1.45.0"
 truth = "1.4.4"
+androidxLifecycleViewmodelKtx = "2.6.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -117,6 +118,7 @@ junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 core = { group = "com.google.ar", name = "core", version.ref = "core" }
 truth = { module = "com.google.truth:truth", version.ref = "truth" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycleViewmodelKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -42,7 +42,7 @@ class FragmentFlowMain : Fragment()  {
 
         binding.btn03.setOnClickListener {
 
-            findNavController().navigate(R.id.fragment_Flow_FireBase)
+            findNavController().navigate(R.id.compose_Flow_FireBase)
 
         }
     }

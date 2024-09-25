@@ -332,6 +332,7 @@
     <string name="MAIN_FLOW_SIMPLES"> FLOW SIMPLES </string>
     <string name="MAIN_FLOW_MVVM"> FLOW COM MVVM </string>
     <string name="MAIN_FLOW_FIREBASE"> FLOW COM FIREBASE </string>
+    <string name="MAIN_FLOW_COMPOSE_FIREBASE"> FLOW COMPOSE E FIREBASE </string>
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_FLOW_SIMPLES"> Flow Simples </string>
     <string name="INT_FLOW_MVVM"> Flow com MVVM </string>

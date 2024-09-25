@@ -102,6 +102,7 @@ dependencies {
     implementation(libs.ksp.com.google.devtools.ksp.gradle.plugin)
     implementation(libs.androidx.junit.ktx)
     implementation(libs.core)
+    implementation(libs.lifecycle.viewmodel.ktx)
     kapt(libs.androidx.room.compiler)
     /////////////  ROOM ///////////////////
 

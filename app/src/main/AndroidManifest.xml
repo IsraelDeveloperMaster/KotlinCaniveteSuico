@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- INTERNET -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- FOTOS -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- FOTOS -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
     <application
         android:name=".ui.arquitetura.hilt.classeDeAplicacao.ClasseDeAplicacao"
@@ -19,6 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCaniveteSuico"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.flow.flowFireBase.ui.ComposeFlowFireBase"
+            android:exported="false"
+            android:label="@string/title_activity_compose_flow_fire_base"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
         <activity
             android:name=".ui.compose.scaffoldMVVM.view.ScaffoldMVVM"
             android:exported="false"
@@ -39,9 +42,6 @@
             android:exported="false"
             android:label="@string/title_activity_compose_recycler_view"
             android:theme="@style/Theme.KotlinCaniveteSuico" />
-        <activity
-            android:name=".ui.git.main.GitActivity"
-            android:exported="false" />
         <activity
             android:name=".ui.compose.View.Atributos.ComposeAtributos"
             android:exported="false"

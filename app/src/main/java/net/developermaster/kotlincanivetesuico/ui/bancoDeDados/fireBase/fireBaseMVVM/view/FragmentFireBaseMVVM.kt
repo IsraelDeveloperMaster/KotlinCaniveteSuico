@@ -129,7 +129,7 @@ class FragmentFireBaseMVVM : Fragment(), InterfaceFireBaseMVVM {
 
             adapter.atualizaTodaListaDiffUtil(dados)
 
-            Log.i("ViewModelContador observe", "$dados")
+            Log.i("ViewModelContador", "$dados")
         }
 
         //todo observa o repositorio viewmodel

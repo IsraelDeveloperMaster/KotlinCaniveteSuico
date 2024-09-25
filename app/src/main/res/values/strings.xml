@@ -225,6 +225,10 @@
     <string name="NAV_COMPOSE_LAZYCOLUMN_GRID">Compose LazyColumn Grid</string>
     <string name="NAV_COMPOSE_SCAFFOLD">Compose Scaffold</string>
     <string name="NAV_COMPOSE_SCAFFOLD_MVVM">Compose Scaffold Mvvm</string>
+    <string name="title_activity_compose_recycler_view">ComposeRecyclerView</string>
+    <string name="title_activity_compose_recycler_view_grid">ComposeRecyclerViewGrid</string>
+    <string name="title_activity_scaffold">Scaffold</string>
+    <string name="title_activity_scaffold_mvvm">ScaffoldMVVM</string>
     ////////// COMPOSE //////////
 
 
@@ -319,10 +323,6 @@
     <!--todo//////// NAV ////////-->
     <string name="NAV_TEST_UNITARIO">Test Unitario</string>
     <string name="NAV_TEST_INSTRUMENTADO">Test Instrumentado</string>
-    <string name="title_activity_compose_recycler_view">ComposeRecyclerView</string>
-    <string name="title_activity_compose_recycler_view_grid">ComposeRecyclerViewGrid</string>
-    <string name="title_activity_scaffold">Scaffold</string>
-    <string name="title_activity_scaffold_mvvm">ScaffoldMVVM</string>
     ////////// TEST //////////
 
     ////////// FLOW //////////
@@ -332,14 +332,24 @@
     <string name="MAIN_FLOW_SIMPLES"> FLOW SIMPLES </string>
     <string name="MAIN_FLOW_MVVM"> FLOW COM MVVM </string>
     <string name="MAIN_FLOW_FIREBASE"> FLOW COM FIREBASE </string>
+    <string name="MAIN_FLOW_COMPOSE_FIREBASE"> FLOW COMPOSE E FIREBASE </string>
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_FLOW_SIMPLES"> Flow Simples </string>
     <string name="INT_FLOW_MVVM"> Flow com MVVM </string>
     <string name="INT_FLOW_FIREBASE"> Flow com Firebase </string>
+    <string name="INT_FLOW_COMPOSE_SIMPLES"> Flow Compose e Firebase </string>
+    <string name="INT_FLOW_EXEMPLO_SIMPLES"> Flow Exemplo Simples </string>
+    <string name="INT_STATE_FLOW"> State Flow </string>
+    <string name="INT_STATE_FLOW_VIEWMODEL">State Flow com ViewModel </string>
+    <string name="INT_STATE_FLOW_USECASE">State Flow com UseCase </string>
     <!--todo//////// NAV ////////-->
     <string name="NAV_FLOW_SIMPLES"> Flow Simples </string>
     <string name="NAV_FLOW_MVVM"> Flow com MVVM </string>
     <string name="NAV_FLOW_FIREBASE"> Flow com Firebase </string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_FLOW_SUCESSO">Flow Sucesso</string>
+    <string name="MENSAGEM_FLOW_ERRO">Flow Erro</string>
+    <string name="title_activity_compose_flow_fire_base">ComposeFlowFireBase</string>
     ////////// FLOW //////////
 
 

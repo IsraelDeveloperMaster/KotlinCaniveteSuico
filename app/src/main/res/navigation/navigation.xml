@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/fragment_Flow_Mvvm">
+    app:startDestination="@id/compose_Flow_FireBase">
 
     <!--    //////////////////// HOME ////////////////////-->
     <activity android:id="@+id/__________________________" />
@@ -317,31 +317,31 @@
         tools:layout="@layout/fragment_compose_main" />
 
     <activity
-        android:id="@+id/Compose_Atributos"
+        android:id="@+id/compose_Atributos"
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.Atributos.ComposeAtributos"
         android:label="@string/NAV_COMPOSE_ATRIBUTOS"
         tools:layout="@layout/fragment_compose_main" />
 
     <activity
-        android:id="@+id/Compose_LazyColumn"
+        android:id="@+id/compose_LazyColumn"
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumn.ComposeLazyColumn"
         android:label="@string/NAV_COMPOSE_LAZYCOLUMN_GRID"
         tools:layout="@layout/fragment_compose_main" />
 
     <activity
-        android:id="@+id/Compose_LazyColumn_Grid"
+        android:id="@+id/compose_LazyColumn_Grid"
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumnGrid.ComposeLazyColumnGrid"
         android:label="@string/NAV_COMPOSE_LAZYCOLUMN"
         tools:layout="@layout/fragment_compose_main" />
 
     <activity
-        android:id="@+id/Compose_Scaffold"
+        android:id="@+id/compose_Scaffold"
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.scaffold.view.Scaffold"
         android:label="@string/NAV_COMPOSE_SCAFFOLD"
         tools:layout="@layout/fragment_compose_main" />
 
     <activity
-        android:id="@+id/Compose_Scaffold_Mvvm"
+        android:id="@+id/compose_Scaffold_Mvvm"
         android:name="net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.view.ScaffoldMVVM"
         android:label="@string/NAV_COMPOSE_SCAFFOLD_MVVM"
         tools:layout="@layout/fragment_compose_main" />
@@ -438,9 +438,15 @@
 
     <fragment
         android:id="@+id/fragment_Flow_FireBase"
-        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.view.FragmentFlowFireBase"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.FragmentFlowFireBase"
         android:label="@string/MAIN_FLOW_FIREBASE"
             tools:layout="@layout/fragment_flow_firebase" />
+
+    <activity
+        android:id="@+id/compose_Flow_FireBase"
+        android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.ComposeFlowFireBase"
+        android:label="@string/MAIN_FLOW_COMPOSE_FIREBASE"
+        tools:layout="@layout/fragment_compose_main" />
     <!--    //////////////////// FLOW ////////////////////-->
 
 

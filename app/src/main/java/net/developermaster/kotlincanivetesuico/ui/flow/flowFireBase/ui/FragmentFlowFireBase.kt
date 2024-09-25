@@ -1,4 +1,4 @@
-package net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.view
+package net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

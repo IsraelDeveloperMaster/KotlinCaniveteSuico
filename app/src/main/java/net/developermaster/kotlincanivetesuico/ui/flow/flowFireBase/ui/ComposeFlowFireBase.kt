@@ -57,25 +57,26 @@ class ComposeFlowFireBase : ComponentActivity() {
 
     private var imagemRetornadaPelaInternet = ""
 
+    private var variavelFrase = ""
+
     private val viewModelFlowComposeFireBase = ViewModelFlowComposeFireBase()
 
-    var imagemFlow : Flow<String> = flow {
+    var imagemFlow: Flow<String> = flow {
 
         while (true) {
 
-            emit(imagemRetornadaPelaInternet)
+            emit(variavelFrase)
 
             delay(2000)
 
-            Log.d("imagem", imagemRetornadaPelaInternet)
+            Log.d("imagemFlow1", variavelFrase)
 
         }
     }
 
+    fun funcaoImagemFlow() {
 
-    fun funcaoImagemFlow(){
-
-        var imagemFlow : Flow<String> = flow {
+        var imagemFlow: Flow<String> = flow {
 
             while (true) {
 
@@ -83,7 +84,7 @@ class ComposeFlowFireBase : ComponentActivity() {
 
                 delay(2000)
 
-                Log.d("imagem", imagemRetornadaPelaInternet)
+                Log.d("imagemFlow2", imagemRetornadaPelaInternet)
 
             }
         }
@@ -117,11 +118,16 @@ class ComposeFlowFireBase : ComponentActivity() {
             item {
 
                 TextRowSimples()
-                FlowImagens()
-                CaixaDeTextoOutLineTextField()
-                BotaoSemIcone()
-                MyScreen()
 
+                FlowImagens()
+
+                FuncaoFlowToastRepet()
+
+//                FuncaoTextoFlow()
+
+                CaixaDeTextoOutLineTextField()
+
+                BotaoSemIcone()
             }
         }
 
@@ -137,7 +143,7 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             text = "Altere os dados do firebase na internet",//todo texto
             color = Color.Black,//todo cor vermelha
-            fontSize = 24.sp,//todo tamanho da fonte
+            fontSize = 18.sp,//todo tamanho da fonte
             fontFamily = FontFamily.SansSerif,//todo tipo de fonte
         )
     }
@@ -151,7 +157,7 @@ class ComposeFlowFireBase : ComponentActivity() {
                 .fillMaxHeight()//todo altura
                 .padding(start = 100.dp, top = 24.dp),
 
-        ) {
+            ) {
 
             AsyncImage(
 
@@ -159,13 +165,14 @@ class ComposeFlowFireBase : ComponentActivity() {
 
                 modifier = Modifier
                     .clickable {
-//                                MensagemToast("${user.firstName} Clicado")
+
+                        funcaoImagemFlow()
+
                     }
                     .size(200.dp) //todo tamanho da imagem
                     .clip(CircleShape)
                     .border(1.dp, Color.Black, CircleShape)
                     .background(Color.White),
-
 
                 contentDescription = null, //todo conteudo da imagem
                 contentScale = ContentScale.Crop //todo escala da imagem para o conteudo
@@ -234,59 +241,120 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             Text(text = "Função que chama os dados do firebase")
             FuncaoListarImageDoFireBase()
+            viewModelFlowComposeFireBase.example6()
         }
     }
 
     @Composable
     fun FuncaoListarImageDoFireBase() {
 
-            //todo referencia da imagem
-            FirebaseStorage.getInstance() .getReference("imagens") .child("imagens.jpg") .downloadUrl
+        //todo referencia da imagem
+        FirebaseStorage.getInstance().getReference("imagens").child("imagens.jpg").downloadUrl
 
-                .addOnSuccessListener { fotoPerfilRetornada ->
+            .addOnSuccessListener { fotoPerfilRetornada ->
 
-                    imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
+                imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
 
-                    println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
+                println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
 
+            }.addOnFailureListener { falha ->
+
+                println("composeFireBaseMVVM listar fotos erro -> $falha ")
+            }
+    }
+
+    @SuppressLint("CoroutineCreationDuringComposition")
+    @Composable
+    fun FuncaoFlowToastRepet(){
+
+            lifecycleScope.launch {
+
+                repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+                    viewModelFlowComposeFireBase.estadoFlowPublico.collect { estado ->
+
+                        when (estado) {
+
+                                    is FlowEstado.Error -> {
+
+//                                    binding.textView.text = estado.mensagemError
+
+                                MensagemToast(getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError)
+                            }
+
+                            FlowEstado.Loading -> {
+
+//                                    binding.progressBar
+                            }
+
+                            is FlowEstado.Sucesso1 -> {
+
+//                                    binding.textView.text = estado.clientes
+
+                                variavelFrase = estado.clientes.toString()
+
+//                                MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO) + " \n " + estado.clientes.toString() )
+                            }
+
+                            is FlowEstado.Sucesso2 ->
+
+//                                    binding.textView.text = estado.clientes
+
+                            MensagemToast(estado.clientes)
+
+                        }
+                    }
                 }
-                .addOnFailureListener { falha ->
+            }
 
-                    println("composeFireBaseMVVM listar fotos erro -> $falha ")
-                }
+                viewModelFlowComposeFireBase.example6()
+
+        FuncaoTextoFlow()
+    }
+
+    @Composable
+    fun FuncaoTextoFlow(){
+
+            Text(
+                modifier = Modifier
+                    .background(Color.White)//todo cor branca
+                    .padding(start = 8.dp, top = 24.dp),//todo padding
+
+                text = variavelFrase,//todo texto
+                color = Color.Red,//todo cor vermelha
+                fontSize = 16.sp,//todo tamanho da fonte
+                fontFamily = FontFamily.SansSerif,//todo tipo de fonte
+            )
     }
 
     @Composable
     fun FuncaoListarImageDoFireBase2(caminhoDaImagem: String): Flow<String> = flow {
 
-            //todo referencia da imagem
-            FirebaseStorage.getInstance() .getReference("imagens") .child("imagens.jpg") .downloadUrl
+        //todo referencia da imagem
+        FirebaseStorage.getInstance().getReference("imagens").child("imagens.jpg").downloadUrl
 
-                .addOnSuccessListener { fotoPerfilRetornada ->
+            .addOnSuccessListener { fotoPerfilRetornada ->
 
-                    imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
+                imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
 
 
-                    println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
+                println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
 
-                }
-                .addOnFailureListener { falha ->
+            }.addOnFailureListener { falha ->
 
-                    println("composeFireBaseMVVM listar fotos erro -> $falha ")
-                }
+                println("composeFireBaseMVVM listar fotos erro -> $falha ")
+            }
 
     }
 
-    @SuppressLint("CoroutineCreationDuringComposition")
     @Composable
     fun MyScreen() {
 
         val myData by viewModelFlowComposeFireBase.myDataFlow.collectAsState(initial = "")
 
-
         Column {
 
-            Text(text = "My Data: $myData")
+            Text( text = "My Data: $myData")
 
             AsyncImage(
 
@@ -301,65 +369,22 @@ class ComposeFlowFireBase : ComponentActivity() {
                     .border(1.dp, Color.Black, CircleShape)
                     .background(Color.White),
 
-
                 contentDescription = null, //todo conteudo da imagem
                 contentScale = ContentScale.Crop //todo escala da imagem para o conteudo
 
-
             )
 
-            Button(
-                modifier = Modifier
-                    .fillMaxWidth()//todo largura
-                    .padding(all = 24.dp) , //todo padding all
+            Button(modifier = Modifier
+                .fillMaxWidth()//todo largura
+                .padding(all = 24.dp), //todo padding all
 
-            onClick = { viewModelFlowComposeFireBase.updateData() }) {
-
-                lifecycleScope.launch {
-
-                    repeatOnLifecycle(Lifecycle.State.STARTED) {
-
-                        viewModelFlowComposeFireBase.estadoFlowPublico.collect { estado ->
-
-                            when (estado) {
-
-                                is FlowEstado.Error -> {
-
-//                                    binding.textView.text = estado.mensagemError
-
-                                    MensagemToast( getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError )
-                                }
-
-                                FlowEstado.Loading -> {
-
-//                                    binding.progressBar
-                                }
-
-                                is FlowEstado.Sucesso1 -> {
-
-//                                    binding.textView.text = ""
-
-                                    MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO)  + " \n " + estado.clientes.toString() )
-                                }
-
-                                is FlowEstado.Sucesso2 ->
-
-//                                    binding.textView.text = estado.clientes
-
-                                    MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO)  + " \n " + estado.clientes.toString() )
-
-                            }
-                        }
-                    }
-                }
-
-                viewModelFlowComposeFireBase.example6()
-        }
-            Text(text = "Atualizar dados")
+                onClick = { viewModelFlowComposeFireBase.updateData() }) {
 
             }
-        }
 
+            Text(text = "Atualizar dados")
+        }
+    }
 
     fun MensagemToast(messagem: String) {
         Toast.makeText(this, messagem, Toast.LENGTH_SHORT).show()

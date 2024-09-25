@@ -34,7 +34,6 @@ class ViewModelFlowComposeFireBase : ViewModel()  {
             delay(2000)
 
             Log.d("imagem", imagemRetornadaPelaInternet)
-
         }
     }
 
@@ -75,7 +74,7 @@ class ViewModelFlowComposeFireBase : ViewModel()  {
                 //todo mudar a thread de processamento para IO
                 .flowOn( Dispatchers.IO )
 
-                //todo valor emitido pelo flow
+                //todo: valor emitido pelo flow
                 .collect { frases ->
 
                     estadoFlowPrivado.value = FlowEstado.Loading

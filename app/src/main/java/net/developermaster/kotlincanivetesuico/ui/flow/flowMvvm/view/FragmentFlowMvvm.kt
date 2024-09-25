@@ -19,7 +19,6 @@ import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowMvvmBinding
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel.ViewModelFlowMvvm
 
-
 class FragmentFlowMvvm : Fragment() {
 
     //todo instancia de viewModel
@@ -76,7 +75,6 @@ class FragmentFlowMvvm : Fragment() {
                             is FlowEstado.Sucesso2 ->
 
                                 binding.textView.text = estado.clientes
-
                         }
                     }
                 }

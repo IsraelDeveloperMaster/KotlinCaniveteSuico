@@ -1,6 +1,7 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -39,10 +40,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import net.developermaster.kotlincanivetesuico.ui.bancoDeDados.fireBase.fireBaseMVVM.repository.RepositorioFireBaseMVVM
-import net.developermaster.kotlincanivetesuico.ui.bancoDeDados.fireBase.fireBaseMVVM.viewModel.ViewModelFireBaseMVVM
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.theme.KotlinCaniveteSuicoTheme
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.viewModel.ViewModelFlowComposeFireBase
 
@@ -51,12 +51,6 @@ class ComposeFlowFireBase : ComponentActivity() {
     private var imagemRetornadaPelaInternet = ""
 
     private val viewModelFlowComposeFireBase = ViewModelFlowComposeFireBase()
-
-    //todo viewmodel
-    private lateinit var viewModelFireBaseMVVM: ViewModelFireBaseMVVM
-
-    //todo repositorio
-    private lateinit var repositorioFireBaseMVVM: RepositorioFireBaseMVVM
 
     override fun onCreate(savedInstanceState: Bundle?) {//todo inicio do onCreate
         super.onCreate(savedInstanceState)
@@ -201,8 +195,27 @@ class ComposeFlowFireBase : ComponentActivity() {
         {
 
             Text(text = "Função que chama os dados do firebase")
-            funcaoListarImageDoFireBase2(imagemRetornadaPelaInternet)
+            funcaoListarImageDoFireBase()
         }
+    }
+
+    @Composable
+    fun funcaoListarImageDoFireBase() {
+
+            //todo referencia da imagem
+            FirebaseStorage.getInstance() .getReference("imagens") .child("imagens.jpg") .downloadUrl
+
+                .addOnSuccessListener { fotoPerfilRetornada ->
+
+                    imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
+
+                    println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
+
+                }
+                .addOnFailureListener { falha ->
+
+                    println("composeFireBaseMVVM listar fotos erro -> $falha ")
+                }
     }
 
     @Composable
@@ -231,19 +244,60 @@ class ComposeFlowFireBase : ComponentActivity() {
 
         val myData by viewModelFlowComposeFireBase.myDataFlow.collectAsState(initial = "")
 
-        Column {
-            Text(text = "My Data: $myData")
+        val imagemFlow : Flow<String> = flow {
 
-            Button(onClick = { viewModelFlowComposeFireBase.updateData() }) {
-                Text(text = "Update Data")
+            while (true) {
+
+                emit(myData)
+
+                delay(2000)
+
+                Log.d("imagem", myData)
             }
         }
-    }
+
+
+        Column {
+
+            Text(text = "My Data: $myData")
+
+            AsyncImage(
+
+                model = imagemFlow,
+
+                modifier = Modifier
+                    .clickable {
+//                                MensagemToast("${user.firstName} Clicado")
+                    }
+                    .size(50.dp) //todo tamanho da imagem
+                    .clip(CircleShape)
+                    .border(1.dp, Color.Black, CircleShape)
+                    .background(Color.White),
+
+
+                contentDescription = null, //todo conteudo da imagem
+                contentScale = ContentScale.Crop //todo escala da imagem para o conteudo
+
+
+            )
+
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()//todo largura
+                    .padding(all = 24.dp) , //todo padding all
+
+            onClick = { viewModelFlowComposeFireBase.updateData() }) {
+
+        }
+            Text(text = "Atualizar dados")
+
+            }
+        }
+
 
     fun MensagemToast(messagem: String) {
         Toast.makeText(this, messagem, Toast.LENGTH_SHORT).show()
     }
-
 
     /*    @Preview(showBackground = true)
 

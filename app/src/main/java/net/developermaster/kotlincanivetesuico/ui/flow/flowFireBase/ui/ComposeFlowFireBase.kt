@@ -27,6 +27,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -51,9 +52,12 @@ import kotlinx.coroutines.launch
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.theme.KotlinCaniveteSuicoTheme
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.viewModel.ViewModelFlowComposeFireBase
+import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ListaFlowMvvm
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
 class ComposeFlowFireBase : ComponentActivity() {
+
+    private val listaFlowMvvn = ListaFlowMvvm
 
     private var imagemRetornadaPelaInternet = ""
 
@@ -117,11 +121,15 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             item {
 
-                TextRowSimples()
+                TextoFlowFrases()
 
                 FlowImagens()
 
-                FuncaoFlowToastRepet()
+                TextoFlowFrases()
+
+                TextoFlowContador1()
+
+//                FuncaoFlowToastRepet()
 
 //                FuncaoTextoFlow()
 
@@ -134,17 +142,53 @@ class ComposeFlowFireBase : ComponentActivity() {
     }//todo fim da funcao Home
 
     @Composable
-    fun TextRowSimples() {
+    fun TextoFlowContador1() {
+
+        var clientes by remember { mutableStateOf(0) }
+
+        LaunchedEffect(Unit) {
+            while (true) {
+
+                clientes += (1..100).random()
+                delay(200)
+            }
+        }
+
+
+        Text(text = "Cliente: $clientes")
+
+    }
+
+    @SuppressLint("CoroutineCreationDuringComposition")
+    @Composable
+    fun TextoFlowFrases() {
+
+        //todo variavel flow simples
+        val frases: Flow<String> = flow {
+
+            while (true){
+                emit(listaFlowMvvn.funcaoRandom().texto)
+                delay(2000)
+            }
+        }
+
+        lifecycleScope.launch {
+
+            frases.collect { frases ->
+
+//                binding.textView.text = "Cliente: $frases"
+
+                MensagemToast( "frases: $frases" )
+
+                variavelFrase = frases
+
+//                Log.d("frases", "frases: $frases" )
+            }
+        }
 
         Text(
-            modifier = Modifier
-                .background(Color.White)
-                .padding(start = 8.dp, top = 24.dp),
 
-            text = "Altere os dados do firebase na internet",//todo texto
-            color = Color.Black,//todo cor vermelha
-            fontSize = 18.sp,//todo tamanho da fonte
-            fontFamily = FontFamily.SansSerif,//todo tipo de fonte
+            text = "Frases: $variavelFrase",
         )
     }
 
@@ -300,8 +344,8 @@ class ComposeFlowFireBase : ComponentActivity() {
 
 //                                    binding.textView.text = estado.clientes
 
-                            MensagemToast(estado.clientes)
 
+                            MensagemToast(estado.clientes)
                         }
                     }
                 }

@@ -457,7 +457,7 @@ class FragmentFireBaseSimples : Fragment() {
 
             listaRetornada?.forEach { documents ->
 
-                val dados = documents?.data
+                val dados = documents?.data //todo dados do documento retornado
 
                 if (dados != null) {
 

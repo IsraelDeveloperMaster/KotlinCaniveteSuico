@@ -1,6 +1,5 @@
 package net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -12,8 +11,10 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -40,60 +41,27 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import coil.compose.AsyncImage
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
-import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.theme.KotlinCaniveteSuicoTheme
 import net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.viewModel.ViewModelFlowComposeFireBase
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.model.ListaFlowMvvm
-import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.view.FlowEstado
 
 class ComposeFlowFireBase : ComponentActivity() {
 
+    //todo lista de frases randomizadas
     private val listaFlowMvvn = ListaFlowMvvm
 
-    private var imagemRetornadaPelaInternet = ""
+    //todo referencia da imagem na internet com o firebase
+    private var imagemRetornadaPelaInternetFireBase = ""
 
-    private var variavelFrase = ""
+    //todo lista de resultados
+    var listaResultadaDaInternetFireBase = ""
 
+    //todo view model flow com firebase
     private val viewModelFlowComposeFireBase = ViewModelFlowComposeFireBase()
-
-    var imagemFlow: Flow<String> = flow {
-
-        while (true) {
-
-            emit(variavelFrase)
-
-            delay(2000)
-
-            Log.d("imagemFlow1", variavelFrase)
-
-        }
-    }
-
-    fun funcaoImagemFlow() {
-
-        var imagemFlow: Flow<String> = flow {
-
-            while (true) {
-
-                emit(imagemRetornadaPelaInternet)
-
-                delay(2000)
-
-                Log.d("imagemFlow2", imagemRetornadaPelaInternet)
-
-            }
-        }
-
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {//todo inicio do onCreate
         super.onCreate(savedInstanceState)
@@ -121,17 +89,21 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             item {
 
-                TextoFlowFrases()
+                Espaco()
+
+                TextRowSimples()
 
                 FlowImagens()
 
+                Espaco()
+
                 TextoFlowFrases()
 
-                TextoFlowContador1()
+                Espaco()
 
-//                FuncaoFlowToastRepet()
+                Espaco()
 
-//                FuncaoTextoFlow()
+                Espaco()
 
                 CaixaDeTextoOutLineTextField()
 
@@ -142,58 +114,39 @@ class ComposeFlowFireBase : ComponentActivity() {
     }//todo fim da funcao Home
 
     @Composable
-    fun TextoFlowContador1() {
-
-        var clientes by remember { mutableStateOf(0) }
-
-        LaunchedEffect(Unit) {
-            while (true) {
-
-                clientes += (1..100).random()
-                delay(200)
-            }
-        }
-
-
-        Text(text = "Cliente: $clientes")
-
-    }
-
-    @SuppressLint("CoroutineCreationDuringComposition")
-    @Composable
-    fun TextoFlowFrases() {
-
-        //todo variavel flow simples
-        val frases: Flow<String> = flow {
-
-            while (true){
-                emit(listaFlowMvvn.funcaoRandom().texto)
-                delay(2000)
-            }
-        }
-
-        lifecycleScope.launch {
-
-            frases.collect { frases ->
-
-//                binding.textView.text = "Cliente: $frases"
-
-                MensagemToast( "frases: $frases" )
-
-                variavelFrase = frases
-
-//                Log.d("frases", "frases: $frases" )
-            }
-        }
-
+    fun TextRowSimples() {
         Text(
-
-            text = "Frases: $variavelFrase",
+            modifier = Modifier
+                .background(Color.White)
+                .padding(start = 8.dp, top = 24.dp),
+            text = "Altere os dados do firebase na internet",//todo texto
+            color = Color.Black,//todo cor vermelha
+            fontSize = 24.sp,//todo tamanho da fonte
+            fontFamily = FontFamily.SansSerif,//todo tipo de fonte
         )
     }
 
     @Composable
     fun FlowImagens() {
+
+        //todo remember para atualizar a imagem
+        var imagemRetornadaPelaInternetRemember by remember { mutableStateOf("") }
+
+        LaunchedEffect(Unit) {
+
+            while (true) {
+
+                imagemRetornadaPelaInternetRemember = imagemRetornadaPelaInternetFireBase //todo imagem da internet remember
+
+                delay(2000)
+
+                Log.d("imagemFlowFireBase", imagemRetornadaPelaInternetRemember)
+
+                funcaoListarImageDoFireBase()
+
+                funcaoListarTodosFireBase()
+            }
+        }
 
         Row(
             modifier = Modifier
@@ -205,12 +158,13 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             AsyncImage(
 
-                model = imagemRetornadaPelaInternet,
+                model = imagemRetornadaPelaInternetRemember,
 
                 modifier = Modifier
+
                     .clickable {
 
-                        funcaoImagemFlow()
+                        funcaoListarImageDoFireBase()
 
                     }
                     .size(200.dp) //todo tamanho da imagem
@@ -225,9 +179,53 @@ class ComposeFlowFireBase : ComponentActivity() {
     }
 
     @Composable
+    fun TextoFlowFrases() {
+
+        var frases by remember { mutableStateOf (listaFlowMvvn.funcaoRandom().texto) }
+
+        LaunchedEffect(Unit) {
+
+            while (true) {
+
+                frases = listaFlowMvvn.funcaoRandom().texto
+
+                delay(2000)
+            }
+        }
+
+        Text(text = "Frases: $frases")
+    }
+
+    @Composable
     private fun CaixaDeTextoOutLineTextField() {
 
-        var texto by remember { mutableStateOf("") }
+        //todo remember para atualizar a imagem
+        var textoRetornadoPelaInternetRemember by remember { mutableStateOf("") }
+
+        textoRetornadoPelaInternetRemember = listaResultadaDaInternetFireBase //todo texto da internet remember
+
+        LaunchedEffect(Unit) {
+
+            while (true) {
+
+                if ( textoRetornadoPelaInternetRemember == listaResultadaDaInternetFireBase ) {
+
+                    MensagemToast("Texto Antigo")
+
+//                    Log.d("textoFlowFireBase", textoRetornadoPelaInternetRemember)
+
+                    delay(2000)
+
+                }
+
+                if (  textoRetornadoPelaInternetRemember != listaResultadaDaInternetFireBase ) {
+
+                    delay(2000)
+
+                    MensagemToast("Texto Atualizado")
+                }
+            }
+        }
 
         OutlinedTextField( //todo caixa de texto com borda
 
@@ -236,13 +234,13 @@ class ComposeFlowFireBase : ComponentActivity() {
                 .fillMaxWidth()
                 .padding(start = 16.dp, top = 50.dp),
 
-            value = texto,//todo valor do texto
+            value = textoRetornadoPelaInternetRemember,//todo valor do texto
 
             onValueChange = { textoDigitado ->
 
-                texto = textoDigitado//todo valor do texto digitado na variavel texto
+                textoRetornadoPelaInternetRemember = textoDigitado//todo valor do texto digitado na variavel texto
 
-                MensagemToast(texto)
+                MensagemToast(textoRetornadoPelaInternetRemember)
             },
 
             label = {
@@ -273,6 +271,8 @@ class ComposeFlowFireBase : ComponentActivity() {
         Button(//todo botao com clique
             onClick = {
 
+                funcaoListarTodosFireBase()
+
                 MensagemToast("Botão clicado")
 
             },//todo clique
@@ -284,112 +284,54 @@ class ComposeFlowFireBase : ComponentActivity() {
         {
 
             Text(text = "Função que chama os dados do firebase")
-            FuncaoListarImageDoFireBase()
+            funcaoListarImageDoFireBase()
             viewModelFlowComposeFireBase.example6()
         }
     }
 
-    @Composable
-    fun FuncaoListarImageDoFireBase() {
+    fun funcaoListarImageDoFireBase() {
 
         //todo referencia da imagem
         FirebaseStorage.getInstance().getReference("imagens").child("imagens.jpg").downloadUrl
 
             .addOnSuccessListener { fotoPerfilRetornada ->
 
-                imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
+                imagemRetornadaPelaInternetFireBase = fotoPerfilRetornada.toString()
 
-                println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
+                println("composeFireBase listar fotos sucesso -> $imagemRetornadaPelaInternetFireBase")
 
             }.addOnFailureListener { falha ->
 
-                println("composeFireBaseMVVM listar fotos erro -> $falha ")
+                println("composeFireBase listar fotos erro -> $falha ")
             }
     }
 
-    @SuppressLint("CoroutineCreationDuringComposition")
-    @Composable
-    fun FuncaoFlowToastRepet(){
+    fun funcaoListarTodosFireBase() {
 
-            lifecycleScope.launch {
+        val listaDeDadosRetornadas = FirebaseFirestore.getInstance() .collection("FireBaseSimples")//todo collection
 
-                repeatOnLifecycle(Lifecycle.State.STARTED) {
+        listaDeDadosRetornadas.addSnapshotListener { dadosRetornados, error ->
 
-                    viewModelFlowComposeFireBase.estadoFlowPublico.collect { estado ->
+            val listaRetornada = dadosRetornados?.documents//todo document
 
-                        when (estado) {
+            listaRetornada?.forEach { documents ->
 
-                                    is FlowEstado.Error -> {
+                val dados = documents?.data //todo dados do documento retornado
 
-//                                    binding.textView.text = estado.mensagemError
+                if (dados != null) {
 
-                                MensagemToast(getString(R.string.MENSAGEM_FLOW_ERRO) + " \n " + estado.mensagemError)
-                            }
+                    val id = documents.id
+                    val nome = dados["nome"]
+                    val idade = dados["idade"]
 
-                            FlowEstado.Loading -> {
+                    listaResultadaDaInternetFireBase += (" id: ${id} \n Nome: ${nome} \n idade: ${idade} \n \n ")
 
-//                                    binding.progressBar
-                            }
-
-                            is FlowEstado.Sucesso1 -> {
-
-//                                    binding.textView.text = estado.clientes
-
-                                variavelFrase = estado.clientes.toString()
-
-//                                MensagemToast(getString(R.string.MENSAGEM_FLOW_SUCESSO) + " \n " + estado.clientes.toString() )
-                            }
-
-                            is FlowEstado.Sucesso2 ->
-
-//                                    binding.textView.text = estado.clientes
-
-
-                            MensagemToast(estado.clientes)
-                        }
-                    }
+                    println("composeFireBaseListaTodos -> $listaResultadaDaInternetFireBase ")
                 }
             }
-
-                viewModelFlowComposeFireBase.example6()
-
-        FuncaoTextoFlow()
+        }
     }
 
-    @Composable
-    fun FuncaoTextoFlow(){
-
-            Text(
-                modifier = Modifier
-                    .background(Color.White)//todo cor branca
-                    .padding(start = 8.dp, top = 24.dp),//todo padding
-
-                text = variavelFrase,//todo texto
-                color = Color.Red,//todo cor vermelha
-                fontSize = 16.sp,//todo tamanho da fonte
-                fontFamily = FontFamily.SansSerif,//todo tipo de fonte
-            )
-    }
-
-    @Composable
-    fun FuncaoListarImageDoFireBase2(caminhoDaImagem: String): Flow<String> = flow {
-
-        //todo referencia da imagem
-        FirebaseStorage.getInstance().getReference("imagens").child("imagens.jpg").downloadUrl
-
-            .addOnSuccessListener { fotoPerfilRetornada ->
-
-                imagemRetornadaPelaInternet = fotoPerfilRetornada.toString()
-
-
-                println("composeFireBaseMVVM listar fotos no firebase -> $imagemRetornadaPelaInternet")
-
-            }.addOnFailureListener { falha ->
-
-                println("composeFireBaseMVVM listar fotos erro -> $falha ")
-            }
-
-    }
 
     @Composable
     fun MyScreen() {
@@ -432,6 +374,14 @@ class ComposeFlowFireBase : ComponentActivity() {
 
     fun MensagemToast(messagem: String) {
         Toast.makeText(this, messagem, Toast.LENGTH_SHORT).show()
+    }
+
+    @Composable
+    private fun Espaco() {
+
+        Spacer(//todo espaçamento
+            modifier = Modifier.height(16.dp)
+        )//todo espaçamento de 16 dp
     }
 
     /*    @Preview(showBackground = true)

@@ -208,22 +208,9 @@ class ComposeFlowFireBase : ComponentActivity() {
 
             while (true) {
 
-                if ( textoRetornadoPelaInternetRemember == listaResultadaDaInternetFireBase ) {
+                textoRetornadoPelaInternetRemember = listaResultadaDaInternetFireBase
 
-                    MensagemToast("Texto Antigo")
-
-//                    Log.d("textoFlowFireBase", textoRetornadoPelaInternetRemember)
-
-                    delay(2000)
-
-                }
-
-                if (  textoRetornadoPelaInternetRemember != listaResultadaDaInternetFireBase ) {
-
-                    delay(2000)
-
-                    MensagemToast("Texto Atualizado")
-                }
+                delay(3000)
             }
         }
 
@@ -324,7 +311,7 @@ class ComposeFlowFireBase : ComponentActivity() {
                     val nome = dados["nome"]
                     val idade = dados["idade"]
 
-                    listaResultadaDaInternetFireBase += (" id: ${id} \n Nome: ${nome} \n idade: ${idade} \n \n ")
+                    listaResultadaDaInternetFireBase += ("Nome: ${nome} \n \n ")
 
                     println("composeFireBaseListaTodos -> $listaResultadaDaInternetFireBase ")
                 }

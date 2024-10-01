@@ -5,19 +5,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFlowMvvmBinding
 import net.developermaster.kotlincanivetesuico.ui.flow.flowMvvm.viewModel.ViewModelFlowMvvm
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentFlowMvvm : Fragment() {
 
@@ -25,7 +24,7 @@ class FragmentFlowMvvm : Fragment() {
     private val viewModelFlowMvvm: ViewModelFlowMvvm by viewModels()
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentFlowMvvmBinding? = null
@@ -186,16 +185,16 @@ class FragmentFlowMvvm : Fragment() {
 
     private fun codigo() {
 
-        val bundle1 = Bundle().apply {
-            putString("codigo", "${dados.mvc()}")
-        }
+//        val bundle1 = Bundle().apply {
+//            putString("codigo", "${dados.mvc()}")
+//        }
 
 //        findNavController().navigate(R.id.fragment_Codigo, bundle1)
     }
 
     private fun codigoXml() {
 
-        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
+//        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
 
 //        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }

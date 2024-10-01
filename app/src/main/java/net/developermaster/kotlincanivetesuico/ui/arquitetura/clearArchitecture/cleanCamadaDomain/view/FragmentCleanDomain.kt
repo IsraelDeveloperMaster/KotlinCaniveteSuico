@@ -8,23 +8,21 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.InterfaceCarregando
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentCleanDomainBinding
-import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.data.remoto.ClasseRetrofitDomain
-import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.data.repository.RepositorioFireBaseDomain
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.data.repository.RepositorioDomain
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.domain.userCase.PostagemUseCase
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.viewModel.ViewModelDomain
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanCamadaDomain.viewModel.ViewModelFactoryDomain
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.InterfaceCarregando
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentCleanDomain : Fragment(), InterfaceCarregando {
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentCleanDomainBinding? = null
@@ -45,13 +43,13 @@ class FragmentCleanDomain : Fragment(), InterfaceCarregando {
         super.onViewCreated(view, savedInstanceState)
 
         //todo instanciando postagem interface retrofit
-        val classeRetrofit = ClasseRetrofitDomain.recuperaPostagensApi_Domain()
+//        val classeRetrofit = ClasseRetrofitDomain.recuperaPostagensApi_Domain()
 
         ////todo instanciando postagem repositorio
         val postagemRepositorioDomain = RepositorioDomain()
 
         //todo instanciando postagem repositoty firebase
-        val postagemRepositorioFireBaseDomain = RepositorioFireBaseDomain()
+//        val postagemRepositorioFireBaseDomain = RepositorioFireBaseDomain()
 
         //todo instanciando postagem usecase
         val postagemUseCase = PostagemUseCase(postagemRepositorioDomain)
@@ -66,7 +64,7 @@ class FragmentCleanDomain : Fragment(), InterfaceCarregando {
             progressBar(true)
 
             //todo criando o observador
-            val observadorLiveData = this.viewModel.recuperaPostagensApiJsonPlaceHolder()
+//            val observadorLiveData = this.viewModel.recuperaPostagensApiJsonPlaceHolder()
             viewModel.listaDePostagens.observe(viewLifecycleOwner) { lista ->
 
                 //todo lista onde serao exibido as postagens

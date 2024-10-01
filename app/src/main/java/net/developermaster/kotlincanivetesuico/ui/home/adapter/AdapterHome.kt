@@ -165,7 +165,9 @@ class AdapterHome(val modelHome: List<ModelHome>, val interfaceHome: InterfaceHo
             }
 
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+
                 filtro = results?.values as List<ModelHome>
+
                 notifyDataSetChanged()
             }
         }

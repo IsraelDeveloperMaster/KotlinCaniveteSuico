@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 import net.developermaster.kotlincanivetesuico.databinding.FragmentRecyclerviewSimplesBinding
 import net.developermaster.kotlincanivetesuico.ui.recyclerViewSimples.adapter.AdapterRecyclerviewSimples
 import net.developermaster.kotlincanivetesuico.ui.recyclerViewSimples.adapter.InterfaceRecyclerViewSimples

@@ -9,6 +9,7 @@ class UsuarioViewModelFactory(
 ) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
+
         return UsuarioViewModel( usuarioUseCase ) as T
     }
 }

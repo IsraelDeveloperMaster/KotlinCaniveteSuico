@@ -213,10 +213,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
 
     ///todo Dependências classes de utilidade
-    implementation(project(":core-classes_de_Utilizade_Geral"))
 
     ///todo Dependências classes de dados
-    implementation(project(":core-classe_de_Dados_Codigos"))
 
     ///todo Dependências activity compose
     implementation(libs.androidx.activity.compose)

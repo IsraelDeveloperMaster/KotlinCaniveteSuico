@@ -307,9 +307,9 @@ class ComposeFlowFireBase : ComponentActivity() {
 
                 if (dados != null) {
 
-                    val id = documents.id
+//                    val id = documents.id
                     val nome = dados["nome"]
-                    val idade = dados["idade"]
+//                    val idade = dados["idade"]
 
                     listaResultadaDaInternetFireBase += ("Nome: ${nome} \n \n ")
 

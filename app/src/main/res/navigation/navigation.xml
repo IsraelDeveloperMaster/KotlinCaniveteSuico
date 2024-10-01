@@ -254,7 +254,7 @@
 
     <fragment
         android:id="@+id/fragment_Codigo"
-        android:name="net.developermaster.classe_de_dados_codigos.FragmentCodigos"
+        android:name="net.developermaster.kotlincanivetesuico.utils.codigos.FragmentCodigo"
         android:label="@string/NAV_CODIGOS"
         tools:layout="@layout/fragment_codigo" />
     <!--    //////////////////// CODIGO ////////////////////-->

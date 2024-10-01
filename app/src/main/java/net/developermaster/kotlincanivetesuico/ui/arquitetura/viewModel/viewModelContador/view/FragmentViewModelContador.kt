@@ -9,17 +9,17 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentViewmodelContadorBinding
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.viewModel.viewModelContador.viewModel.ViewModelContador
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentViewModelContador( ) : Fragment()  {
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding : FragmentViewmodelContadorBinding? = null
@@ -50,7 +50,7 @@ class FragmentViewModelContador( ) : Fragment()  {
         viewModelContador = ViewModelProvider( this ).get(  ViewModelContador::class.java )
 
         //todo recupera o valor da variavel contador que esta na classeviewmodel
-        val resultadoTextoContador = viewModelContador.recuperarContador()
+//        val resultadoTextoContador = viewModelContador.recuperarContador()
 
         //todo depois recebe novamento o nome Lucia
 //        binding.textViewNome.text = " Nome: ${viewModelContador.recuperaTextoDigitado()} "

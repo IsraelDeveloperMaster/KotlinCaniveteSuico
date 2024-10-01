@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentSearchListviewBinding
 
@@ -19,7 +19,7 @@ class FragmentSearchListView() : Fragment() {
     private lateinit var searchView: SearchView
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentSearchListviewBinding? = null

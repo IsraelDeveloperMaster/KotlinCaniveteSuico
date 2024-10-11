@@ -1,20 +1,15 @@
 package net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
-import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapSimplesBinding
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
-class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
-
-    private lateinit var map: GoogleMap
+class FragmentGoogleMapSimples : Fragment() {
 
     //todo instancia de classe onde estao os codigos e xml
     val dados = modelCodigos()
@@ -34,11 +29,25 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val mapFragment = childFragmentManager.findFragmentById(R.id.fragmentMap) as SupportMapFragment
+        //todo botoes
+        binding.btn01.setOnClickListener {
 
+//            findNavController().navigate(R.id.ActivityGoogleMap)
 
-        mapFragment.getMapAsync(this)
+            Intent(requireContext(), ActivityGoogleMap::class.java).apply {
+                startActivity(this)
+            }
+        }
 
+        binding.fabCodigo.setOnClickListener {
+
+            codigo()
+        }
+
+        binding.fabXml.setOnClickListener {
+
+            codigoXml()
+        }
     }
 
     private fun codigo() {
@@ -59,9 +68,5 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    override fun onMapReady(googleMap: GoogleMap) {
-        map = googleMap
     }
 }

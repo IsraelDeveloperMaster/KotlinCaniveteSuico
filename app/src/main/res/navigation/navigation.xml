@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/fragment_Home">
+    app:startDestination="@id/fragment_googleMap_Simples">
 
     <!--    //////////////////// HOME ////////////////////-->
     <activity android:id="@+id/__________________________" />
@@ -414,6 +414,31 @@
         tools:layout="@layout/fragment_firebase_mvvm_adicionar" />
     <!--    //////////////////// FIREBASE ////////////////////-->
 
+
+    <!--    //////////////////// GOOGLE MAPS ////////////////////-->
+    <activity android:id="@+id/_____________________________________________________" />
+    <activity android:id="@+id/GOOGLE_MAP" />
+
+    <fragment
+        android:id="@+id/fragment_GoogleMap_Main"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.main.FragmentGoogleMapMain"
+        android:label="@string/EXT_GOOGLE_MAP"
+        tools:layout="@layout/fragment_google_map_main" />
+
+    <fragment
+        android:id="@+id/fragment_googleMap_Simples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.FragmentGoogleMapSimples"
+        android:label="@string/MAIN_GOOGLE_MAP_SIMPLES"
+        tools:layout="@layout/fragment_google_map_simples" />
+
+    <fragment
+        android:id="@+id/fragment_GoogleMap_Compose"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.FragmentGoogleMapCompose"
+        android:label="@string/MAIN_GOOGLE_MAP_COMPOSE"
+        tools:layout="@layout/fragment_flow_mvvm" />
+    <!--    //////////////////// GOOGLE MAP ////////////////////-->
+
+
     <!--    //////////////////// FLOW ////////////////////-->
     <activity android:id="@+id/________________________________________" />
     <activity android:id="@+id/FLOW" />
@@ -440,7 +465,7 @@
         android:id="@+id/fragment_Flow_FireBase"
         android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.FragmentFlowFireBase"
         android:label="@string/MAIN_FLOW_FIREBASE"
-            tools:layout="@layout/fragment_flow_firebase" />
+        tools:layout="@layout/fragment_flow_firebase" />
 
     <activity
         android:id="@+id/compose_Flow_FireBase"

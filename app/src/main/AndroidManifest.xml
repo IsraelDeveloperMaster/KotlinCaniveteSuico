@@ -17,6 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCaniveteSuico"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="google_maps_key" />" />
+
+<!--        <meta-data
+            android:name="com.google.android.gms.maps.maptype"
+            android:value="google_maps_key" />" />-->
+
         <activity
             android:name=".ui.flow.flowFireBase.ui.ComposeFlowFireBase"
             android:exported="false"

@@ -29,6 +29,7 @@ mockitoCore = "5.12.0"
 navigationFragmentKtx = "2.8.1"
 navigationUiKtx = "2.8.1"
 picasso = "2.71828"
+playServicesLocation = "21.3.0"
 retrofit = "2.11.0"
 activityCompose = "1.9.2"
 composeBom = "2024.09.02"
@@ -51,6 +52,7 @@ junitKtx = "1.2.1"
 core = "1.45.0"
 truth = "1.4.4"
 androidxLifecycleViewmodelKtx = "2.6.2"
+playServicesMaps = "19.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -94,6 +96,7 @@ material-v130 = { module = "com.google.android.material:material", version = "1.
 material-v140 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -119,6 +122,7 @@ androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.
 core = { group = "com.google.ar", name = "core", version.ref = "core" }
 truth = { module = "com.google.truth:truth", version.ref = "truth" }
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycleViewmodelKtx" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

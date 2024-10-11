@@ -236,6 +236,10 @@ dependencies {
 
     ///todo Dependências coil
     implementation(libs.coil.compose)
+
+    //todo Dependências google maps
+    implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)
 }
 
 //todo Dependências Kapt

@@ -435,7 +435,13 @@
         android:id="@+id/fragment_GoogleMap_Compose"
         android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.FragmentGoogleMapCompose"
         android:label="@string/MAIN_GOOGLE_MAP_COMPOSE"
-        tools:layout="@layout/fragment_flow_mvvm" />
+        tools:layout="@layout/fragment_google_map_compose" />
+
+    <fragment
+        android:id="@+id/fragment_GoogleMap_View"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.FragmentMapView"
+        android:label="@string/MAIN_GOOGLE_MAP_VIEW"
+        tools:layout="@layout/fragment_google_map_view" />
     <!--    //////////////////// GOOGLE MAP ////////////////////-->
 
 

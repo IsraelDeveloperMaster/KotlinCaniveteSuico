@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapSimplesBinding
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
@@ -26,8 +27,6 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
 
-        binding.mapView as SupportMapFragment
-
         _binding = FragmentGoogleMapSimplesBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -35,23 +34,11 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo botoes
-        binding.btn01.setOnClickListener {
+        val mapFragment = childFragmentManager.findFragmentById(R.id.fragmentMap) as SupportMapFragment
 
 
-//            findNavController().navigate(R.id.)
+        mapFragment.getMapAsync(this)
 
-        }
-
-        binding.fabCodigo.setOnClickListener {
-
-            codigo()
-        }
-
-        binding.fabXml.setOnClickListener {
-
-            codigoXml()
-        }
     }
 
     private fun codigo() {

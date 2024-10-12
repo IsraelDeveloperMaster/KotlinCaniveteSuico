@@ -358,8 +358,6 @@
     <!--todo//////// BTN MAIN ////////-->
     <string name="MAIN_GOOGLE_MAP_SIMPLES">GOOLE MAP SIMPLES </string>
     <string name="MAIN_GOOGLE_MAP_COMPOSE">GOOLE MAP COMPOSE </string>
-    <string name="MAIN_GOOGLE_MAP_VIEW">GOOLE MAP VIEW </string>
-
 
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_GOOGLE_MAP_SIMPLES">Google Map Simples </string>">

@@ -65,10 +65,9 @@ class FragmentTestUnitarioSimples : Fragment() {
 
     private fun codigo() {
 
-//        val bundle1 = Bundle().apply {
-//            putString("codigo", "${dados.mvc()}")
-
-//        }
+        val bundle1 = Bundle().apply {
+            putString("codigo", "${dados.mvc()}")
+        }
 
 //        findNavController().navigate(R.id.fragment_Codigo, bundle1)
     }

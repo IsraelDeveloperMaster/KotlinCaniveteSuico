@@ -2,6 +2,7 @@ package net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.location.Location
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +10,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.content.PermissionChecker
 import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.GoogleMap.OnMyLocationClickListener
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
@@ -21,19 +22,30 @@ import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapSimplesBinding
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
-class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
+class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback ,
+    GoogleMap.OnMyLocationButtonClickListener , OnMyLocationClickListener {
 
     //////// GOOGLE MAP ////////
 
     //todo variavel do googleMap
     private lateinit var googleMap: GoogleMap
 
+    //todo verifica se tem permissao para acessar a localização
+    companion object {
+        const val REQUEST_CODE_LOCATION = 0
+    }
+
     //todo configuracao de googleMap aqui
     override fun onMapReady(googleMap: GoogleMap) {
         this.googleMap = googleMap
         this.googleMap.uiSettings.isZoomControlsEnabled = true
+
         criandoMarcadores()
+
         habilitandoLocalizacao()
+
+        googleMap.setOnMyLocationButtonClickListener(this)
+
     }
 
     //todo cria os marcadores
@@ -45,93 +57,96 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
 
         //todo animacao da camera
         googleMap.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(lugarFavorito, 10f),
-            4000,
-            null
+            CameraUpdateFactory.newLatLngZoom(lugarFavorito, 100f), 4000, null
         )
     }
 
     //todo verifica se tem permissao para acessar a localização
-    private fun isPermissionsGranted() = ContextCompat.checkSelfPermission(
-        requireContext(),
-        Manifest.permission.ACCESS_FINE_LOCATION
-    ) == PermissionChecker.PERMISSION_GRANTED
+    private fun verificaPermissaoUsuario() = ContextCompat.checkSelfPermission(
+        requireContext(), Manifest.permission.ACCESS_FINE_LOCATION
+    ) == PackageManager.PERMISSION_GRANTED
 
     //todo habilita a localização no mapa
     private fun habilitandoLocalizacao() {
+
         if (!::googleMap.isInitialized) return
-        if (isPermissionsGranted()) {
+
+        if (verificaPermissaoUsuario()) {
+
             if (ActivityCompat.checkSelfPermission(
-                    requireContext(),
-                    Manifest.permission.ACCESS_FINE_LOCATION
+                    requireContext(), Manifest.permission.ACCESS_FINE_LOCATION
                 ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                    requireContext(),
-                    Manifest.permission.ACCESS_COARSE_LOCATION
+                    requireContext(), Manifest.permission.ACCESS_COARSE_LOCATION
                 ) != PackageManager.PERMISSION_GRANTED
             ) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
                 return
             }
             googleMap.isMyLocationEnabled = true
         } else {
-
-            requestLocationPermission()
+            verificaPermissaoLocalizacao()
         }
     }
 
     //todo verifica se tem permissao para acessar a localização
-    companion object {
-        const val REQUEST_CODE_LOCATION = 0
-    }
-    private fun requestLocationPermission() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(),
-                Manifest.permission.ACCESS_FINE_LOCATION)) {
-            Toast.makeText(requireContext(), "Ve a ajustes y acepta los permisos", Toast.LENGTH_SHORT).show()
+    private fun verificaPermissaoLocalizacao() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(
+                requireActivity(), Manifest.permission.ACCESS_FINE_LOCATION
+            )
+        ) {
+            Toast.makeText(
+                requireContext(), "Ve a ajustes y acepta los permisos", Toast.LENGTH_SHORT
+            ).show()
         } else {
-            ActivityCompat.requestPermissions(requireActivity(),
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_CODE_LOCATION)
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                REQUEST_CODE_LOCATION
+            )
         }
     }
 
     //todo verifica se tem permissao para acessar a localização
     override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
+        requestCode: Int, permissions: Array<out String>, grantResults: IntArray
     ) {
-        when(requestCode){
-            REQUEST_CODE_LOCATION -> if(grantResults.isNotEmpty() && grantResults[0]== PackageManager.PERMISSION_GRANTED){
+        when (requestCode) {
+
+            REQUEST_CODE_LOCATION -> if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
                 if (ActivityCompat.checkSelfPermission(
-                        requireContext(),
-                        Manifest.permission.ACCESS_FINE_LOCATION
+                        requireContext(), Manifest.permission.ACCESS_FINE_LOCATION
                     ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                        requireContext(),
-                        Manifest.permission.ACCESS_COARSE_LOCATION
+                        requireContext(), Manifest.permission.ACCESS_COARSE_LOCATION
                     ) != PackageManager.PERMISSION_GRANTED
                 ) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
+
                     return
                 }
+
                 googleMap.isMyLocationEnabled = true
-            }else{
-                Toast.makeText(requireContext(), "Para activar la localización ve a ajustes y acepta los permisos", Toast.LENGTH_SHORT).show()
+
+            } else {
+
+                Toast.makeText(
+                    requireContext(),
+                    "Para activar la localización ve a ajustes y acepta los permisos",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
+
             else -> {}
         }
     }
 
+    //todo implementacao do metodo OnMyLocationButtonClickListener
+    override fun onMyLocationButtonClick(): Boolean {
+        Toast.makeText(requireContext(), "Localização atual clicada com sucesso!", Toast.LENGTH_SHORT).show()
+        return false
+    }
+
+    override fun onMyLocationClick(localizacao: Location) {
+        Toast.makeText(requireContext(), "voce esta em ${localizacao.latitude}, ${localizacao.longitude}", Toast.LENGTH_SHORT).show()
+    }
 
     //////// GOOGLE MAP ////////
 
@@ -184,13 +199,6 @@ class FragmentGoogleMapSimples : Fragment() , OnMapReadyCallback {
         super.onDestroyView()
         _binding = null
     }
-
-
-
-
-
-
-
 
 
 

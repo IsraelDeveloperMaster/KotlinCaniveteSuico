@@ -16,8 +16,12 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.GoogleMap.OnMyLocationClickListener
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.Dash
+import com.google.android.gms.maps.model.Dot
+import com.google.android.gms.maps.model.Gap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolylineOptions
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapSimplesBinding
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
@@ -26,6 +30,12 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback ,
     GoogleMap.OnMyLocationButtonClickListener , OnMyLocationClickListener {
 
     //////// GOOGLE MAP ////////
+
+    //todo desenho de linha
+    val pattern = listOf(
+        Dot(), Gap(10F), Dash(50F), Gap(10F)
+    )
+//    polyline.pattern = pattern
 
     //todo variavel do googleMap
     private lateinit var googleMap: GoogleMap
@@ -42,10 +52,34 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback ,
 
         criandoMarcadores()
 
+        //todo desenhos
+        criandoDesenhos()
+
         habilitandoLocalizacao()
 
+        //todo implementacao do metodo OnMyLocationButtonClickListener
         googleMap.setOnMyLocationButtonClickListener(this)
 
+        //todo implementacao do metodo OnMyLocationClickListener
+        googleMap.setOnMyLocationClickListener(this)
+
+    }
+
+    private fun criandoDesenhos(){
+        val polylineOptions = PolylineOptions()
+            //todo linha
+            .add(LatLng(40.419173113350965,-3.705976009368897))
+            .add(LatLng( 40.4150807746539, -3.706072568893432))
+            .add(LatLng( 40.41517062907432, -3.7012016773223873))
+            .add(LatLng( 40.41713105928677, -3.7037122249603267))
+            .add(LatLng( 40.41926296230622,  -3.701287508010864))
+            .add(LatLng( 40.419173113350965, -3.7048280239105225))
+            .add(LatLng(40.419173113350965,-3.705976009368897))
+
+            //todo espessura da linhavvvf
+            .width(30f)
+
+        val polyline = googleMap.addPolyline(polylineOptions)
     }
 
     //todo cria os marcadores
@@ -57,7 +91,7 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback ,
 
         //todo animacao da camera
         googleMap.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(lugarFavorito, 100f), 4000, null
+            CameraUpdateFactory.newLatLngZoom(lugarFavorito, 20f), 4000, null
         )
     }
 

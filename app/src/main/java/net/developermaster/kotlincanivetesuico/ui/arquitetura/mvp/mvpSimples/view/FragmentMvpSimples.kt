@@ -13,14 +13,14 @@ import net.developermaster.kotlincanivetesuico.databinding.FragmentMvpSimplesBin
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpSimples.model.ModelMvpSimples
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpSimples.presenter.InterfacePresenterMvpSimples
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpSimples.presenter.UsuariosPresenterMvpSimples
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentMvpSimples : Fragment(), InterfacePresenterMvpSimples {
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentMvpSimplesBinding? = null

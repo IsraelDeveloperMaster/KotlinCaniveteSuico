@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHiltMainBinding
 
 class FragmentHiltMain : Fragment() {
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentHiltMainBinding? = null

@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.1"
+androidMapsUtils = "1.1.0"
 androidxJunit = "1.2.1"
 coilCompose = "2.7.0"
 converterGson = "2.11.0"
@@ -20,6 +21,7 @@ lifecycleLivedataKtxVersion = "2.8.6"
 lifecycleRuntimeKtx = "2.8.6"
 lifecycleViewmodelCompose = "2.8.6"
 lifecycleViewmodelKtxVersion = "2.8.6"
+mapsKtx = "5.0.0"
 material = "1.12.0"
 constraintlayout = "2.1.4"
 lifecycleLivedataKtx = "2.8.6"
@@ -29,6 +31,7 @@ mockitoCore = "5.12.0"
 navigationFragmentKtx = "2.8.1"
 navigationUiKtx = "2.8.1"
 picasso = "2.71828"
+playServicesLocation = "21.3.0"
 retrofit = "2.11.0"
 activityCompose = "1.9.2"
 composeBom = "2024.09.02"
@@ -51,8 +54,10 @@ junitKtx = "1.2.1"
 core = "1.45.0"
 truth = "1.4.4"
 androidxLifecycleViewmodelKtx = "2.6.2"
+playServicesMaps = "19.0.0"
 
 [libraries]
+android-maps-utils = { module = "com.google.maps.android:android-maps-utils", version.ref = "androidMapsUtils" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
 androidx-espresso-contrib-v330 = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoContribVersion" }
@@ -84,6 +89,7 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+maps-ktx = { module = "com.google.maps.android:maps-ktx", version.ref = "mapsKtx" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
@@ -94,6 +100,7 @@ material-v130 = { module = "com.google.android.material:material", version = "1.
 material-v140 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -119,6 +126,7 @@ androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.
 core = { group = "com.google.ar", name = "core", version.ref = "core" }
 truth = { module = "com.google.truth:truth", version.ref = "truth" }
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycleViewmodelKtx" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

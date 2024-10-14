@@ -1,4 +1,4 @@
-package net.developermaster.kotlincanivetesuico.fragmentModelo
+package net.developermaster.kotlincanivetesuico.utils.fragmentModelo
 
 import android.os.Bundle
 import android.view.LayoutInflater

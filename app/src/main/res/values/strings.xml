@@ -352,5 +352,24 @@
     <string name="title_activity_compose_flow_fire_base">ComposeFlowFireBase</string>
     ////////// FLOW //////////
 
+    ////////// GOOGLE MAP //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_GOOGLE_MAP">GOOLE MAP</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_GOOGLE_MAP_SIMPLES">GOOLE MAP SIMPLES </string>
+    <string name="MAIN_GOOGLE_MAP_COMPOSE">GOOLE MAP COMPOSE </string>
+
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_GOOGLE_MAP_SIMPLES">Google Map Simples </string>">
+    <string name="INT_GOOLE_MAP_COMPOSE">Google Map Compose </string>
+
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_GOOLE_MAP_SIMPLES">Google Map Simples </string>
+    <string name="NAV_GOOGLE_MAP_COMPOSE">Google Map Compose </string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_GOOLE_MAP_SUCESSO">Google Map Sucesso</string>
+    <string name="MENSAGEM_GOOLE_MAP_ERRO">Google Map Erro</string>
+    ////////// GOOGLE MAP //////////
+
 
 </resources>

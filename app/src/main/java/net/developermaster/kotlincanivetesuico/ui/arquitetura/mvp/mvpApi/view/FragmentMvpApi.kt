@@ -13,14 +13,14 @@ import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpApi.model.M
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpApi.model.PostagemJsonPlaceHolderMvpApi
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpApi.presenter.InterfacePresenterPostagemJsonPlaceHolderMvpApi
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvp.mvpApi.presenter.PostagemPresenterJsonPlaceHolderMvpApi
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentMvpApi : Fragment(), InterfacePresenterPostagemJsonPlaceHolderMvpApi { //todo interface presenter postagens
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentMvpApiBinding? = null

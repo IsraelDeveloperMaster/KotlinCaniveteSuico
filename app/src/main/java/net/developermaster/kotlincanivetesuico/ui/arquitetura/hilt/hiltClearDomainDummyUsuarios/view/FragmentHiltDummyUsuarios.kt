@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.InterfaceCarregando
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.InterfaceCarregando
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHiltDomainApiDummyUsuariosBinding
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyUsuarios.viewModel.ViewModelDomainUsuarios
@@ -21,7 +21,7 @@ import net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDoma
 class FragmentHiltDummyUsuarios : Fragment(), InterfaceCarregando {
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo chamo o binding
     private var _binding: FragmentHiltDomainApiDummyUsuariosBinding? = null

@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHomeBinding
 import net.developermaster.kotlincanivetesuico.ui.home.adapter.InterfaceHome
@@ -25,7 +25,7 @@ class FragmentHome : Fragment() , InterfaceHome {
     private lateinit var modelHome: List<ModelHome>
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentHomeBinding? = null

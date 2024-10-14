@@ -1,7 +1,7 @@
 package net.developermaster.kotlincanivetesuico.ui.compose.View.ScaffoldMVVM.data.Repository
 
-import net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.di.User
 import net.developermaster.kotlincanivetesuico.ui.compose.View.ScaffoldMVVM.data.remote.InterfaceComposeDummyApi
+import net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.di.User
 import javax.inject.Inject
 
 class RepositoryComposeMvvmImpl @Inject constructor( private val interfaceComposeDummyApi: InterfaceComposeDummyApi ) : RepositoryComposeMvvm {
@@ -17,10 +17,7 @@ class RepositoryComposeMvvmImpl @Inject constructor( private val interfaceCompos
 
                 val listaDeUsuariosRetornada = respostaRequisicaoDummyApi.body()!!.users
 
-                if ( listaDeUsuariosRetornada != null ) {
-
-                    return listaDeUsuariosRetornada
-                }
+                return listaDeUsuariosRetornada
             }
 
         } catch ( ErroRequisicaoDummyApi : Exception )  {

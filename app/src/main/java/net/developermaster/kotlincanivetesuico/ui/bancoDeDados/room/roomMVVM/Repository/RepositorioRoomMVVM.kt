@@ -47,7 +47,5 @@ class RepositorioRoomMVVM(private val interfaceDaoRoomMVVM: InterfaceDaoRoomMVVM
         return interfaceDaoRoomMVVM.listarIdade( pesquisaIdade )
 
         println("repositorio listar idade -> $pesquisaIdade")
-
-
     }
 }

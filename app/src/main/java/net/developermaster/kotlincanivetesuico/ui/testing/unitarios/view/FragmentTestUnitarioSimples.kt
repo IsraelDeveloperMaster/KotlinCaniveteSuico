@@ -4,18 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
 import net.developermaster.kotlincanivetesuico.databinding.FragmentTestUnitarioSimplesBinding
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class FragmentTestUnitarioSimples : Fragment() {
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentTestUnitarioSimplesBinding? = null
@@ -75,7 +74,7 @@ class FragmentTestUnitarioSimples : Fragment() {
 
     private fun codigoXml() {
 
-        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
+//        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
 //        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }
 

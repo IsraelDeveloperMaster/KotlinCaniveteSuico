@@ -8,20 +8,20 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.InterfaceCarregando
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentCleanMvvmBinding
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanMvvm.data.repository.RepositorioDataFireBaseMvvmClean
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanMvvm.viewModel.ViewModelMvvmClean
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.clearArchitecture.cleanMvvm.viewModel.ViewModelMvvmCleanFactory
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.InterfaceCarregando
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentCleanMvvm : Fragment(), InterfaceCarregando {
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentCleanMvvmBinding? = null
@@ -55,7 +55,7 @@ class FragmentCleanMvvm : Fragment(), InterfaceCarregando {
             progressBar(true)
 
             //todo criando o observador
-            val observadorLiveData = this.classeViewModel.recuperaPostagensApiJsonPlaceHolder()
+//            val observadorLiveData = this.classeViewModel.recuperaPostagensApiJsonPlaceHolder()
             classeViewModel.listaDePostagens.observe(viewLifecycleOwner) { lista ->
 
                 //todo lista onde serao exibido as postagens

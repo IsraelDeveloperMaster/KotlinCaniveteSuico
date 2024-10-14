@@ -8,9 +8,9 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentMvvmSimplesBinding
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvvm.mvvmSimples.viewModel.ViewModelMvvmSimples
@@ -18,7 +18,7 @@ import net.developermaster.kotlincanivetesuico.ui.arquitetura.mvvm.mvvmSimples.v
 class FragmentMvvmSimples : Fragment() {
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo instancia classe viewmodel
     private lateinit var viewModelMvvmSimples: ViewModelMvvmSimples

@@ -213,10 +213,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
 
     ///todo Dependências classes de utilidade
-    implementation(project(":core-classes_de_Utilizade_Geral"))
 
     ///todo Dependências classes de dados
-    implementation(project(":core-classe_de_Dados_Codigos"))
 
     ///todo Dependências activity compose
     implementation(libs.androidx.activity.compose)
@@ -238,6 +236,13 @@ dependencies {
 
     ///todo Dependências coil
     implementation(libs.coil.compose)
+
+    //todo Dependências google maps
+    implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)
+    implementation(libs.maps.ktx)//todo mapa ktx
+    implementation(libs.android.maps.utils)//todo mapa cluster
+
 }
 
 //todo Dependências Kapt

@@ -11,16 +11,16 @@ import dagger.hilt.android.AndroidEntryPoint
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentHiltSimplesBinding
 import net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltSimples.classes.ClasseSendoInjetada
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class FragmentHiltSimples : Fragment() {
 
     //todo instancia de classe onde estao os codigo e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     @Inject //todo instancia da classe Que Esta Sendo Injetada
     lateinit var classeSendoInjetada: ClasseSendoInjetada//todo dentro desta classe esta sendo injetada a interface

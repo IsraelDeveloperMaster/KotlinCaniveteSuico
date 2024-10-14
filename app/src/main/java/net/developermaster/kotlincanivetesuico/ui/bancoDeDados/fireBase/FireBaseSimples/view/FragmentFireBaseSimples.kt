@@ -8,18 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentFirebaseSimplesBinding
 import net.developermaster.kotlincanivetesuico.ui.bancoDeDados.fireBase.FireBaseSimples.model.ModelFireBaseSimples
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentFireBaseSimples : Fragment() {
 
@@ -43,7 +42,7 @@ class FragmentFireBaseSimples : Fragment() {
     private var listaItens = mutableListOf<ModelFireBaseSimples>()
 
     //todo instancia de classe onde estao os codigos e xml
-    private val dados = ClasseDeDadosCodigos()
+    private val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentFirebaseSimplesBinding? = null
@@ -457,7 +456,7 @@ class FragmentFireBaseSimples : Fragment() {
 
             listaRetornada?.forEach { documents ->
 
-                val dados = documents?.data
+                val dados = documents?.data //todo dados do documento retornado
 
                 if (dados != null) {
 
@@ -577,7 +576,7 @@ class FragmentFireBaseSimples : Fragment() {
     }
     private fun codigoXml() {
 
-        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
+//        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
 //        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }
 

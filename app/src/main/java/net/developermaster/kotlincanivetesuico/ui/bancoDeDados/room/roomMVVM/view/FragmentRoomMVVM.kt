@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -16,9 +15,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
-import net.developermaster.classe_de_dados_codigos.ClasseDeDadosCodigos
-import net.developermaster.classes_de_utilizade_geral.mensagemSnackBar
-import net.developermaster.classes_de_utilizade_geral.mensagemToast
+import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
+import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentRoomMvvmBinding
 import net.developermaster.kotlincanivetesuico.ui.bancoDeDados.room.roomMVVM.adapter.InterfaceRoomMVVM
@@ -42,7 +41,7 @@ class FragmentRoomMVVM : Fragment(), InterfaceRoomMVVM {
     private var interfaceDaoRoomMVVM: InterfaceDaoRoomMVVM? = null
 
     //todo instancia de classe onde estao os codigos e xml
-    val dados = ClasseDeDadosCodigos()
+    val dados = modelCodigos()
 
     //todo binding
     private var _binding: FragmentRoomMvvmBinding? = null
@@ -330,15 +329,15 @@ class FragmentRoomMVVM : Fragment(), InterfaceRoomMVVM {
 
     private fun codigo() {
 
-        val bundle1 = Bundle().apply {
-            putString("codigo", "${dados.mvc()}")
-        }
+//        val bundle1 = Bundle().apply {
+//            putString("codigo", "${dados.mvc()}")
+//        }
 
 //        findNavController().navigate(R.id.fragment_Codigo, bundle1)
     }
     private fun codigoXml() {
 
-        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
+//        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
 //        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }
 

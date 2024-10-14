@@ -240,6 +240,8 @@ dependencies {
     //todo Dependências google maps
     implementation(libs.play.services.location)
     implementation(libs.play.services.maps)
+    implementation(libs.maps.ktx)//todo mapa ktx
+
 }
 
 //todo Dependências Kapt

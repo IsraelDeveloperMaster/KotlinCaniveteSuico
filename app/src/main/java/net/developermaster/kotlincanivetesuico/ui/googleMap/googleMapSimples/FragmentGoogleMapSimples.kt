@@ -28,28 +28,26 @@ import com.google.android.gms.maps.model.PolylineOptions
 import com.google.android.gms.maps.model.RoundCap
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapSimplesBinding
-import net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.classes.ClasseInformacaoJanelaInformacao
-import net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.classes.JsonLugares
 import net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.classes.ModelLugares
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
 class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
-    GoogleMap.OnMyLocationButtonClickListener, OnMyLocationClickListener  {
+    GoogleMap.OnMyLocationButtonClickListener, OnMyLocationClickListener {
 
     //////// GOOGLE MAP ////////
 
-        val classeInformacaoJanelaInformacao = ClasseInformacaoJanelaInformacao(requireContext())
+    private var marcadorNovo: LatLng? = null
 
-    //todo lista de lugares
-    private val ModelLugares: List<ModelLugares> by lazy {
-        JsonLugares(requireContext()).read()
-    }
+
+    //todo model de lugares
+    private lateinit var modelLugares: ModelLugares
 
     //todo variavel do googleMap
     private lateinit var googleMap: GoogleMap
 
     //todo desenho de linha ( Dot() = Ponto, Gap() = Espaço, Dash() = Linha)
-    val pattern = listOf( Dot(), Gap(10F), Dash(50F), Gap(10F)
+    val pattern = listOf(
+        Dot(), Gap(10F), Dash(50F), Gap(10F)
     )
 
     //todo verifica se tem permissao para acessar a localização
@@ -58,31 +56,36 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
     }
 
     //todo configuracao de googleMap aqui
-    override fun onMapReady(googleMap: GoogleMap) {
+    override fun onMapReady( googleMap: GoogleMap ) {
 
-        //todo configuracao de googleMap aqui
+        /*
+        todo this.googleMap para googleMap / agora nao precisa declarar:
+         exemplo this.googleMap.isBuildingsEnabled = true
+         agora sera assim
+         googleMap.isBuildingsEnabled = true
+        */
         this.googleMap = googleMap
 
         //todo edifícios 3D
-        this.googleMap.isBuildingsEnabled = true
+        googleMap.isBuildingsEnabled = true
 
         //todo habilitar mapas internos
-        this.googleMap.isIndoorEnabled = true
+        googleMap.isIndoorEnabled = true
 
         //todo rota do mapa
-        this.googleMap.isTrafficEnabled = true
+        googleMap.isTrafficEnabled = true
 
         //todo habilitar os controles de zoom
-        this.googleMap.uiSettings.isZoomGesturesEnabled = true
+        googleMap.uiSettings.isZoomGesturesEnabled = true
 
         //todo habilitar controles de zoom
-        this.googleMap.uiSettings.isZoomControlsEnabled = true
+        googleMap.uiSettings.isZoomControlsEnabled = true
 
         //todo Ativa ou desativa a bússola
-        this.googleMap.uiSettings.isCompassEnabled = true
+        googleMap.uiSettings.isCompassEnabled = true
 
         //todo Ativa ou desativa a butao de localização
-        this.googleMap.uiSettings.isMyLocationButtonEnabled = true
+        googleMap.uiSettings.isMyLocationButtonEnabled = true
 
         //todo implementacao do metodo OnMyLocationButtonClickListener
         googleMap.setOnMyLocationButtonClickListener(this)
@@ -91,41 +94,29 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
         googleMap.setOnMyLocationClickListener(this)
 
         //todo Ativa ou desativa a barra de ferramentas
-        this.googleMap.uiSettings.isMapToolbarEnabled = true
+        googleMap.uiSettings.isMapToolbarEnabled = true
+
+        //todo Adiciona um marcador no mapa com um clique
+        googleMap.setOnMapClickListener { latitudeLongitude ->
+
+            criandoMarcadoresNovo(latitudeLongitude)
+        }
 
         criandoMarcadores()
 
         criandoDesenhos()
 
         habilitandoLocalizacao()
-
-//        listaDeLugares()
-
     }
 
-    private fun listaDeLugares() {
+    private fun criandoMarcadoresNovo( latitudeLongitude : LatLng) {
 
-         val london = LatLng(51.403186, -0.126446)
-         val sanFrancisco = LatLng( 37.7576, -122.4194)
+        // Armazena a posição do marcador
+        marcadorNovo = latitudeLongitude
 
-        googleMap.addMarker(MarkerOptions().position(london).title("london").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)))
-        googleMap.addMarker(MarkerOptions().position(sanFrancisco).title("sanFrancisco"))
+        googleMap.addMarker( MarkerOptions().position(latitudeLongitude).title("Novo marcador") .snippet("Descrição do marcador").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_architecture)) )
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(london, 10f))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sanFrancisco, 10f))
-
-        googleMap.animateCamera(CameraUpdateFactory.zoomTo(10f), 2000, null)
-
-
-
-
-/*
-        ModelLugares.forEach { lugares ->
-
-            googleMap.addMarker( MarkerOptions() .title(lugares.name) .position(lugares.latLng) )
-        }
-*/
-
+        Toast.makeText(requireContext(), "Novo marcador criado", Toast.LENGTH_SHORT).show()
     }
 
     private fun criandoDesenhos() {
@@ -149,19 +140,19 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
 
         val polyline = googleMap.addPolyline(polylineOptions)
 
-        //todo cantos da linha
+//todo cantos da linha
         polyline.startCap = RoundCap()
 
-        //todo figura no final da linha
+//todo figura no final da linha
         polyline.endCap = CustomCap(BitmapDescriptorFactory.fromResource(R.drawable.kotlin), 500f)
 
-        //todo linhas pontilhadas
+//todo linhas pontilhadas
         polyline.pattern = pattern
 
-        //todo polylines clicáveis
+//todo polylines clicáveis
         polyline.isClickable = true
 
-        //todo polylines clicáveis
+//todo polylines clicáveis
         googleMap.setOnPolylineClickListener {
 
             mundaCorPolylineRandom(polyline)
@@ -173,15 +164,16 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
     //todo cria os marcadores fixos
     private fun criandoMarcadores() {
 
-        //todo marcador
-        val lugarFavorito = LatLng(28.044195, -16.5363842 )
+//todo marcador
+        val lugarFavorito = LatLng(28.044195, -16.5363842)
 
-        googleMap.addMarker(MarkerOptions().position(lugarFavorito).title("Mi playa favorita!").icon(BitmapDescriptorFactory.fromResource(
-            R.drawable.ic_architecture
-        )).snippet("Ilhas Canarias") )
+        googleMap.addMarker(
+            MarkerOptions().position(lugarFavorito).title("Mi playa favorita!")
+                .snippet("Ilhas Canarias")
+        )
 
-        //todo animacao da camera
-        googleMap.animateCamera( CameraUpdateFactory.newLatLngZoom(lugarFavorito, 20f), 4000, null )
+//todo animacao da camera
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lugarFavorito, 20f), 4000, null)
     }
 
     //todo verifica se tem permissao para acessar a localização
@@ -277,9 +269,9 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
         ).show()
     }
 
-    fun mundaCorPolylineRandom(polyline: Polyline){
+    fun mundaCorPolylineRandom(polyline: Polyline) {
         val color = (0..3).random()
-        when(color){
+        when (color) {
             0 -> polyline.color = ContextCompat.getColor(requireContext(), R.color.red)
             1 -> polyline.color = ContextCompat.getColor(requireContext(), R.color.yellow)
             2 -> polyline.color = ContextCompat.getColor(requireContext(), R.color.green)
@@ -287,7 +279,7 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
         }
     }
 
-    //////// GOOGLE MAP ////////
+//////// GOOGLE MAP ////////
 
     //todo instancia de classe onde estao os codigos e xml
     val dados = modelCodigos()
@@ -312,9 +304,10 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
 
     private fun funcaoChamaFragmentGoogleMap() {
 
-        val fragmentGoogleMap = childFragmentManager.findFragmentById(R.id.fragmentGoogleMap) as SupportMapFragment
+        val fragmentGoogleMap =
+            childFragmentManager.findFragmentById(R.id.fragmentGoogleMap) as SupportMapFragment
 
-        fragmentGoogleMap.getMapAsync( this)
+        fragmentGoogleMap.getMapAsync(this)
     }
 
     private fun codigo() {
@@ -336,6 +329,5 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
         super.onDestroyView()
         _binding = null
     }
-
 }
 

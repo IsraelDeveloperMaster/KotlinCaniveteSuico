@@ -241,6 +241,7 @@ dependencies {
     implementation(libs.play.services.location)
     implementation(libs.play.services.maps)
     implementation(libs.maps.ktx)//todo mapa ktx
+    implementation(libs.android.maps.utils)//todo mapa cluster
 
 }
 

@@ -1,5 +1,6 @@
 package net.developermaster.kotlincanivetesuico.ui.googleMap.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import net.developermaster.kotlincanivetesuico.R
 import net.developermaster.kotlincanivetesuico.databinding.FragmentGoogleMapMainBinding
+import net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose
 
 class FragmentGoogleMapMain : Fragment()  {
 
@@ -36,8 +38,9 @@ class FragmentGoogleMapMain : Fragment()  {
 
         binding.btn02.setOnClickListener {
 
-            findNavController().navigate(R.id.fragment_GoogleMap_Compose)
-
+            //todo chamando compose googleMap
+            val intent = Intent(activity, GoogleMapCompose::class.java)
+            startActivity(intent)
         }
 
         binding.btn03.setOnClickListener {

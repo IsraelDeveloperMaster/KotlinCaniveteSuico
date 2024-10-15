@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- GOOGLE MAP -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <!-- INTERNET -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- FOTOS -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
 
     <application
@@ -24,14 +25,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinCaniveteSuico"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"
+            android:exported="false"
+            android:label="@string/title_activity_google_map_compose"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />" />
-
-<!--        <meta-data
-            android:name="com.google.android.gms.maps.maptype"
-            android:value="google_maps_key" />" />-->
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".ui.flow.flowFireBase.ui.ComposeFlowFireBase"

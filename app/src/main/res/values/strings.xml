@@ -369,6 +369,8 @@
     <!--todo//////// MENSAGEM ////////-->
     <string name="MENSAGEM_GOOLE_MAP_SUCESSO">Google Map Sucesso</string>
     <string name="MENSAGEM_GOOLE_MAP_ERRO">Google Map Erro</string>
+    <string name="title_activity_google_map_compose">googleMapCompose</string>
+    <string name="title_activity_compose_google_map">composeGoogleMap</string>
     ////////// GOOGLE MAP //////////
 
 

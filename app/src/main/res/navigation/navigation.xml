@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
 
-    app:startDestination="@id/fragment_googleMap_Simples">
+    app:startDestination="@id/fragment_GoogleMap_Main">
 
     <!--    //////////////////// HOME ////////////////////-->
     <activity android:id="@+id/__________________________" />
@@ -427,15 +427,16 @@
 
     <fragment
         android:id="@+id/fragment_googleMap_Simples"
-        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.FragmentGoogleMapSimples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.view.FragmentGoogleMapSimples"
         android:label="@string/MAIN_GOOGLE_MAP_SIMPLES"
         tools:layout="@layout/fragment_google_map_simples" />
 
+    <!--suppress NavigationFile -->
     <fragment
-        android:id="@+id/fragment_GoogleMap_Compose"
-        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.FragmentGoogleMapCompose"
+        android:id="@+id/googleMap_Compose"
+        android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"
         android:label="@string/MAIN_GOOGLE_MAP_COMPOSE"
-        tools:layout="@layout/fragment_google_map_compose" />
+        tools:layout="@layout/fragment_google_map_main" />
     <!--    //////////////////// GOOGLE MAP ////////////////////-->
 
 

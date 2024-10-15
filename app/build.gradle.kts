@@ -243,6 +243,9 @@ dependencies {
     implementation(libs.maps.ktx)//todo mapa ktx
     implementation(libs.android.maps.utils)//todo mapa cluster
 
+    implementation(libs.play.services.maps.v1810)//todo mapa v1810
+    implementation(libs.maps.compose)//todo mapa compose
+
 }
 
 //todo Dependências Kapt

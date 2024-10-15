@@ -1,4 +1,4 @@
-package net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples
+package net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapSimples.view
 
 import android.Manifest
 import android.content.pm.PackageManager

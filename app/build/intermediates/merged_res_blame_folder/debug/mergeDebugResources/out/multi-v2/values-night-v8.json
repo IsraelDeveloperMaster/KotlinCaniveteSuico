@@ -4,7 +4,7 @@
             "outputFile": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-94:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/src/main/res/values-night/themes.xml",
+                    "source": "/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

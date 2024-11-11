@@ -101,5 +101,4 @@ class FragmentServicesBackGroundSimples : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

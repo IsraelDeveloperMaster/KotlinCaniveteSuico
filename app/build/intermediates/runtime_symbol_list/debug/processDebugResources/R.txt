@@ -4673,6 +4673,7 @@ int layout fragment_search_recyclerview 0x7f0b006b
 int layout fragment_searchview_main 0x7f0b006c
 int layout fragment_services_background_main 0x7f0b006d
 int layout fragment_services_background_simples 0x7f0b006e
+int layout fragment_services_foreground_simples 0x7f0b00b8
 int layout fragment_test_instrumentado 0x7f0b006f
 int layout fragment_test_main 0x7f0b0070
 int layout fragment_test_unitario_simples 0x7f0b0071

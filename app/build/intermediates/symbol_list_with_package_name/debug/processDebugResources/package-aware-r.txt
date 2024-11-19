@@ -4674,6 +4674,7 @@ layout fragment_search_recyclerview
 layout fragment_searchview_main
 layout fragment_services_background_main
 layout fragment_services_background_simples
+layout fragment_services_foreground_simples
 layout fragment_test_instrumentado
 layout fragment_test_main
 layout fragment_test_unitario_simples

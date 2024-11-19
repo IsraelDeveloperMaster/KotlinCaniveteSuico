@@ -47,7 +47,6 @@ class FragmentPadraoMain : Fragment()  {
         binding.btn03.setOnClickListener {
 
 //            findNavController().navigate(R.id.)
-
         }
     }
 

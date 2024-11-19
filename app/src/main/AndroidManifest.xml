@@ -2,10 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- SERVICES FOREGROUD -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <!-- GOOGLE MAP -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- INTERNET -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- FOTOS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- FOTOS -->
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -24,18 +31,25 @@
 
         <!-- SERVICES BACKGROUD -->
         <service
-            android:name=".ui.servicesBackGround.classes.ServiceGeradoAutomaticamente"
+            android:name=".ui.services.servicesBackGround.classes.ServiceGeradoAutomaticamente"
             android:description="@string/DESCRICAO_PARA_O_SERVICES"
             android:enabled="true"
-            android:exported="false">
-        </service>
+            android:exported="false"></service>
 
-        <!-- SERVICES FOREGROUD -->
+        <!-- SERVICES BACKGROUD 2-->
         <service
-            android:name=".ui.servicesBackGround.classes.ServicesClass"
+            android:name=".ui.services.servicesBackGround.classes.ServicesClassBackGround"
             android:description="@string/DESCRICAO_PARA_O_SERVICES"
             android:enabled="true"
             android:exported="false" />
+
+        <!-- SERVICES FOREGROUD -->
+        <service
+            android:name=".ui.services.serviceForeGround.classes.ServicesClassForeGround"
+            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="shortService"/>
 
         <activity
             android:name=".ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"

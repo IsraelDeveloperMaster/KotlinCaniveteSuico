@@ -1,9 +1,13 @@
 package net.developermaster.kotlincanivetesuico.ui.servicesBackGround.serviceSimples.view
 
 
+import android.content.ComponentName
+import android.content.Context.BIND_AUTO_CREATE
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.Bundle
+import android.os.IBinder
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +17,7 @@ import net.developermaster.kotlincanivetesuico.ui.servicesBackGround.classes.Ser
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
 
-class FragmentServicesBackGroundSimples : Fragment() {
+class FragmentServicesBackGroundSimples : Fragment(), ServiceConnection {
 
     /**
      *
@@ -22,7 +26,18 @@ class FragmentServicesBackGroundSimples : Fragment() {
      */
 
     private lateinit var serviceConnection: ServiceConnection
-    private lateinit var serviceClass: ServicesClass
+
+    //todo IbindService para conexao com servico
+    override fun onServiceConnected(conectado1: ComponentName?, conectado2: IBinder?) {
+        Log.d("MyService", "Serviço conectado")
+
+        val binder = conectado2 as ServicesClass.MyBinder
+    }
+
+    //todo IbindService para desconexao com servico
+    override fun onServiceDisconnected(desconectado: ComponentName?) {
+        Log.d("MyService", "Serviço desconectado")
+    }
 
 
     //todo instancia de classe onde estao os codigos e xml
@@ -43,6 +58,9 @@ class FragmentServicesBackGroundSimples : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //todo serviceConnection para conexao com servico
+        serviceConnection = this
+
         //todo intent serviceclass para iniciar servico
         val intentServiceClass = Intent(requireContext(), ServicesClass::class.java)
 
@@ -50,24 +68,30 @@ class FragmentServicesBackGroundSimples : Fragment() {
         binding.btn01.setOnClickListener {
 
             //todo bundle recebido pelo serviceClass
-            intentServiceClass.putExtra("tempoDuracao", 1000L) //todo a cada 1 segundos executa o codigo abaixo
+            intentServiceClass.putExtra(
+                "tempoDuracao", 1000L
+            ) //todo a cada 1 segundos executa o codigo abaixo
 
             //todo iniciar servico
-            requireContext().startService( intentServiceClass )
+            requireContext().startService(intentServiceClass)
 
-            //todo iniciar bindService
-//            requireActivity().bindService(intentServiceClass, serviceConnection, BIND_AUTO_CREATE)
         }
 
         binding.btn02.setOnClickListener {
             //todo para o servico
             requireContext().stopService(intentServiceClass)
 
-//            serviceClass.onDestroy()
+            //todo parando bindService
+            requireActivity().unbindService(serviceConnection)
         }
 
         binding.btn03.setOnClickListener {
 
+            //todo iniciar servico
+            requireContext().startService(intentServiceClass)
+
+            //todo conexao com bindService
+            requireActivity().bindService(intentServiceClass, serviceConnection, BIND_AUTO_CREATE)
         }
 
         binding.fabCodigo.setOnClickListener {
@@ -83,9 +107,11 @@ class FragmentServicesBackGroundSimples : Fragment() {
 
     private fun codigo() {
 
-        val bundle1 = Bundle().apply {
-            putString("codigo", "${dados.mvc()}")
+        /*
+    val bundle1 = Bundle().apply {
+        putString("codigo", "${dados.mvc()}")
         }
+        */
 
 //        findNavController().navigate(R.id.fragment_Codigo, bundle1)
     }

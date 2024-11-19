@@ -2,6 +2,7 @@ package net.developermaster.kotlincanivetesuico.ui.servicesBackGround.classes
 
 import android.app.Service
 import android.content.Intent
+import android.os.Binder
 import android.os.IBinder
 import android.util.Log
 import android.widget.Toast
@@ -15,8 +16,17 @@ class ServicesClass : Service() {
 
     private val coroutine = CoroutineScope(Dispatchers.IO)
 
+    //todo contador
+    var cronometro = 0
+
+    //todo Ibinder class
+    inner class MyBinder : Binder(){
+
+    }
+
+    //todo onBind
     override fun onBind(servicos: Intent?): IBinder? {
-        return null
+        return MyBinder()
     }
 
     //todo criar servico
@@ -45,9 +55,11 @@ class ServicesClass : Service() {
 
             repeat(10){ contador ->
 
+                cronometro = contador
+
                 delay(tempo)
 
-                Log.i("MyService", "Serviço iniciado com Couroutines: $contador tempo: $tempo")
+                Log.i("MyService", "Serviço iniciado com Couroutines: $contador tempo: $tempo, cronometro: $cronometro")
             }
 
             stopSelf()

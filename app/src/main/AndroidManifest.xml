@@ -34,7 +34,7 @@
             android:name=".ui.services.servicesBackGround.classes.ServiceGeradoAutomaticamente"
             android:description="@string/DESCRICAO_PARA_O_SERVICES"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <!-- SERVICES BACKGROUD 2-->
         <service

@@ -78,7 +78,7 @@
             android:enabled="true"
             android:exported="false" />
 
-        <!-- SERVICES FOREGROUD -->
+        <!-- SERVICES BACKGROUD 2 -->
         <service
             android:name="net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.classes.ServicesClassBackGround"
             android:description="@string/DESCRICAO_PARA_O_SERVICES"
@@ -90,7 +90,8 @@
             android:name="net.developermaster.kotlincanivetesuico.ui.services.serviceForeGround.classes.ServicesClassForeGround"
             android:description="@string/DESCRICAO_PARA_O_SERVICES"
             android:enabled="true"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="shortService" />
 
         <activity
             android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"

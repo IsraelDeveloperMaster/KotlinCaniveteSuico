@@ -15,6 +15,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import net.developermaster.kotlincanivetesuico.databinding.FragmentServicesForegroundSimplesBinding
+import net.developermaster.kotlincanivetesuico.ui.services.serviceForeGround.classes.CustomApplication
 import net.developermaster.kotlincanivetesuico.ui.services.serviceForeGround.classes.ServicesClassForeGround
 import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 
@@ -30,6 +31,9 @@ class FragmentServicesForeGroundSimples : Fragment(), ServiceConnection {
     private lateinit var serviceConnection: ServiceConnection
 
     private lateinit var servicesRecuperado: ServicesClassForeGround
+
+    private lateinit var customApplication: CustomApplication
+
 
     //todo IbindService para conexao com servico
     override fun onServiceConnected(conectado1: ComponentName?, conectado2: IBinder?) {
@@ -62,6 +66,9 @@ class FragmentServicesForeGroundSimples : Fragment(), ServiceConnection {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //todo customApplication
+        customApplication = CustomApplication()
+
         //todo serviceConnection para conexao com servico
         serviceConnection = this
 
@@ -80,6 +87,9 @@ class FragmentServicesForeGroundSimples : Fragment(), ServiceConnection {
             //todo conexao com bindService
             requireActivity().bindService(intentServiceClass, serviceConnection, BIND_AUTO_CREATE)
 
+
+            //todo customApplication
+            customApplication = CustomApplication()
         }
 
         binding.btn02.setOnClickListener {

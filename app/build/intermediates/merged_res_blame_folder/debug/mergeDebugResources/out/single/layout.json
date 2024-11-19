@@ -48,10 +48,6 @@
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_mvvm_alert_dialog.xml"
     },
     {
-        "merged": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_services_background_simples.xml",
-        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_background_simples.xml"
-    },
-    {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_hilt_simples.xml",
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_simples.xml"
     },
@@ -254,6 +250,10 @@
     {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/activity_main.xml",
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/activity_main.xml"
+    },
+    {
+        "merged": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_services_foreground_simples.xml",
+        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_foreground_simples.xml"
     },
     {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_contato.xml",

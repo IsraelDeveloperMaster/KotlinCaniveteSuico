@@ -9,6 +9,12 @@ import net.developermaster.kotlincanivetesuico.databinding.FragmentPadraoBinding
 
 class FragmentPadraoMain : Fragment()  {
 
+    /**
+     *
+     * Documennte a classe aqui
+     *
+     */
+
     //todo binding
     private var _binding : FragmentPadraoBinding? = null
     private val binding get() = _binding!!
@@ -41,7 +47,6 @@ class FragmentPadraoMain : Fragment()  {
         binding.btn03.setOnClickListener {
 
 //            findNavController().navigate(R.id.)
-
         }
     }
 

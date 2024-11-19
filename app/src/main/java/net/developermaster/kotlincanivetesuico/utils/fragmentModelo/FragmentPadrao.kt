@@ -11,11 +11,13 @@ import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos
 import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemSnackBar
 import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
-
 class FragmentPadrao : Fragment() {
 
-    //todo instancia de classe onde estao os codigos e xml
-    val dados = modelCodigos()
+    /**
+     *
+     * Documennte a classe aqui
+     *
+     */
 
     //todo binding
     private var _binding: FragmentPadraoBinding? = null
@@ -32,44 +34,11 @@ class FragmentPadrao : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo instancia de string
-        val variavelMensagens = getString(R.string.EXT_MVC)
-
         //todo botoes
         binding.btn01.setOnClickListener {
 
-            mensagemToast(variavelMensagens)
-
-            mensagemSnackBar(variavelMensagens)
-
 //            findNavController().navigate(R.id.)
-
         }
-
-        binding.fabCodigo.setOnClickListener {
-
-            codigo()
-        }
-
-        binding.fabXml.setOnClickListener {
-
-            codigoXml()
-        }
-    }
-
-    private fun codigo() {
-
-        val bundle1 = Bundle().apply {
-            putString("codigo", "${dados.mvc()}")
-        }
-
-//        findNavController().navigate(R.id.fragment_Codigo, bundle1)
-    }
-
-    private fun codigoXml() {
-
-//        val bundle2 = bundleOf("codigoXml" to "${dados.mvcXml()}")
-//        findNavController().navigate(R.id.fragment_Codigo, bundle2)
     }
 
     override fun onDestroyView() {

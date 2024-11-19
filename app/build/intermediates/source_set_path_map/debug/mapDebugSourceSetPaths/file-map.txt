@@ -89,10 +89,10 @@ net.developermaster.kotlincanivetesuico.app-constraintlayout-2.1.4-87 /home/rael
 net.developermaster.kotlincanivetesuico.app-room-ktx-2.6.1-88 /home/rael/.gradle/caches/8.9/transforms/f0b777dce5c57c27f94f499657c00261/transformed/room-ktx-2.6.1/res
 net.developermaster.kotlincanivetesuico.app-customview-poolingcontainer-1.0.0-89 /home/rael/.gradle/caches/8.9/transforms/fa176c547b53dcebf8e2e6565ded57d7/transformed/customview-poolingcontainer-1.0.0/res
 net.developermaster.kotlincanivetesuico.app-lifecycle-livedata-ktx-2.8.6-90 /home/rael/.gradle/caches/8.9/transforms/ffff8941eb9a11025d618748572757e6/transformed/lifecycle-livedata-ktx-2.8.6/res
-net.developermaster.kotlincanivetesuico.app-res-91 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/build/generated/res/processDebugGoogleServices
-net.developermaster.kotlincanivetesuico.app-resValues-92 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/build/generated/res/resValues/debug
-net.developermaster.kotlincanivetesuico.app-packageDebugResources-93 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-net.developermaster.kotlincanivetesuico.app-packageDebugResources-94 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-net.developermaster.kotlincanivetesuico.app-debug-95 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/build/intermediates/merged_res/debug/mergeDebugResources
-net.developermaster.kotlincanivetesuico.app-debug-96 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/src/debug/res
-net.developermaster.kotlincanivetesuico.app-main-97 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico_29_10_24/app/src/main/res
+net.developermaster.kotlincanivetesuico.app-res-91 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/generated/res/processDebugGoogleServices
+net.developermaster.kotlincanivetesuico.app-resValues-92 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/generated/res/resValues/debug
+net.developermaster.kotlincanivetesuico.app-packageDebugResources-93 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+net.developermaster.kotlincanivetesuico.app-packageDebugResources-94 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+net.developermaster.kotlincanivetesuico.app-debug-95 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/merged_res/debug/mergeDebugResources
+net.developermaster.kotlincanivetesuico.app-debug-96 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/debug/res
+net.developermaster.kotlincanivetesuico.app-main-97 /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/res

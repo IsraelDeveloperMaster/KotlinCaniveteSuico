@@ -378,20 +378,16 @@
     <string name="EXT_SERVICES_BACKGROUND">SERVICES BACKGROUND</string>
     <!--todo//////// BTN MAIN ////////-->
     <string name="MAIN_SERVICES_SIMPLES">SERVICES SIMPLES </string>
-<!--    <string name="MAIN_GOOGLE_MAP_COMPOSE">GOOLE MAP COMPOSE </string>-->
-
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_INICIANDO_SERVICES">Iniciando Services </string>
     <string name="INT_PARANDO_SERVICES">Parando Services </string>
-    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Services </string>
+    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Binder Services </string>
     <!--todo//////// NAV ////////-->
     <string name="NAV_SERVICES_SIMPLES">Services Simples </string>
-<!--    <string name="NAV_GOOGLE_MAP_COMPOSE">Google Map Compose </string>-->
     <!--todo//////// MENSAGEM ////////-->
     <string name="MENSAGEM_SERVICES_SUCESSO">Services Sucesso</string>
     <string name="MENSAGEM_SERVICES_ERRO">Services Erro</string>
     <string name="DESCRICAO_PARA_O_SERVICES">Descricao Services</string>
-<!--    <string name="title_activity_compose_google_map">composeGoogleMap</string>-->
     ////////// SERVICES //////////
 
 

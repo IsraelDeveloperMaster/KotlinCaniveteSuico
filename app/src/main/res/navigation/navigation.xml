@@ -482,13 +482,13 @@
 
     <fragment
         android:id="@+id/fragment_ServicesBackGround_Main"
-        android:name="net.developermaster.kotlincanivetesuico.ui.servicesBackGround.main.FragmentServicesBackGroundMain"
+        android:name="net.developermaster.kotlincanivetesuico.ui.services.main.FragmentServicesBackGroundMain"
         android:label="@string/EXT_SERVICES_BACKGROUND"
         tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/fragment_ServicesBackGround_Simples"
-        android:name="net.developermaster.kotlincanivetesuico.ui.servicesBackGround.serviceSimples.view.FragmentServicesBackGroundSimples"
+        android:name="net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.view.FragmentServicesBackGroundSimples"
         android:label="@string/MAIN_SERVICES_SIMPLES"
         tools:layout="@layout/fragment_services_background_simples" />
 <!--

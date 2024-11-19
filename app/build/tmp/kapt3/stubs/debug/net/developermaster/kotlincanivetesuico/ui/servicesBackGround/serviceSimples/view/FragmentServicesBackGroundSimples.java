@@ -15,6 +15,7 @@ import net.developermaster.kotlincanivetesuico.utils.codigos.modelCodigos;
 public final class FragmentServicesBackGroundSimples extends androidx.fragment.app.Fragment {
     
     /**
+     * Documennte a classe aqui
      */
     private android.content.ServiceConnection serviceConnection;
     private net.developermaster.kotlincanivetesuico.ui.servicesBackGround.classes.ServicesClass serviceClass;

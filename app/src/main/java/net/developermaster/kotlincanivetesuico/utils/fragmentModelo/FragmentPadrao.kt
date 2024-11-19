@@ -14,6 +14,12 @@ import net.developermaster.kotlincanivetesuico.utils.utilsGeral.mensagemToast
 
 class FragmentPadrao : Fragment() {
 
+    /**
+     *
+     * Documennte a classe aqui
+     *
+     */
+
     //todo instancia de classe onde estao os codigos e xml
     val dados = modelCodigos()
 

@@ -5,11 +5,16 @@ import android.content.Intent
 import android.os.IBinder
 import android.util.Log
 import android.widget.Toast
-import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class ServicesClass : Service() {
+
+    private val coroutine = CoroutineScope(Dispatchers.IO)
+
     override fun onBind(servicos: Intent?): IBinder? {
         return null
     }
@@ -17,6 +22,7 @@ class ServicesClass : Service() {
     //todo criar servico
     override fun onCreate() {
         super.onCreate()
+
         Log.d("MyService", "Serviço criado")
 
         Toast.makeText(applicationContext, "Serviço criado", Toast.LENGTH_SHORT).show()
@@ -24,7 +30,6 @@ class ServicesClass : Service() {
 
     //todo iniciar servico
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        // Aqui você coloca a lógica do serviço
 
         //todo bundle intent extras
         val bundle = intent?.extras
@@ -35,23 +40,22 @@ class ServicesClass : Service() {
         //todo tempo duracao
         val tempo = tempoDuracao ?: 2000L //todo a cada 2 segundos executa o codigo abaixo
 
-        //todo Couroutines global
-        GlobalScope.launch {
+        //todo Couroutines para iniciar servico
+        coroutine.launch {
+
             repeat(10){ contador ->
+
                 delay(tempo)
+
                 Log.i("MyService", "Serviço iniciado com Couroutines: $contador tempo: $tempo")
             }
+
             stopSelf()
         }
-        Log.d("MyService", "Serviço iniciado")
 
         Toast.makeText(applicationContext, "Serviço iniciado", Toast.LENGTH_SHORT).show()
 
-        // Retorna START_STICKY para que o serviço seja reiniciado automaticamente
-//        stopSelf()
-
-        // Retorna START_NOT_STICKY para que o serviço não seja reiniciado automaticamente
-        return START_NOT_STICKY
+        return super.onStartCommand(intent, flags, startId)
     }
 
     //todo threads
@@ -69,9 +73,10 @@ class ServicesClass : Service() {
     //todo parar servico
     override fun onDestroy() {
         super.onDestroy()
+
+        //todo cancelar coroutine
+        coroutine.cancel()
         Log.d("MyService", "Serviço parado")
-
         Toast.makeText(applicationContext, "Serviço parado", Toast.LENGTH_SHORT).show()
-
     }
 }

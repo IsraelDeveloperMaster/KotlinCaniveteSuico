@@ -1,5 +1,6 @@
 package net.developermaster.kotlincanivetesuico.ui.servicesBackGround.serviceSimples.view
 
+
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.Bundle
@@ -16,7 +17,7 @@ class FragmentServicesBackGroundSimples : Fragment() {
 
     /**
      *
-     *
+     * Documennte a classe aqui
      *
      */
 
@@ -42,15 +43,14 @@ class FragmentServicesBackGroundSimples : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo intent
+        //todo intent serviceclass para iniciar servico
         val intentServiceClass = Intent(requireContext(), ServicesClass::class.java)
 
         //todo botoes
         binding.btn01.setOnClickListener {
 
-
             //todo bundle recebido pelo serviceClass
-            intentServiceClass.putExtra("tempoDuracao", 3000L) //todo a cada 3 segundos executa o codigo abaixo
+            intentServiceClass.putExtra("tempoDuracao", 1000L) //todo a cada 1 segundos executa o codigo abaixo
 
             //todo iniciar servico
             requireContext().startService( intentServiceClass )
@@ -60,11 +60,10 @@ class FragmentServicesBackGroundSimples : Fragment() {
         }
 
         binding.btn02.setOnClickListener {
+            //todo para o servico
+            requireContext().stopService(intentServiceClass)
 
-            val intent = Intent(requireContext(), ServicesClass::class.java)
-
-            //todo iniciar servico
-            requireContext().stopService(intent)
+//            serviceClass.onDestroy()
         }
 
         binding.btn03.setOnClickListener {

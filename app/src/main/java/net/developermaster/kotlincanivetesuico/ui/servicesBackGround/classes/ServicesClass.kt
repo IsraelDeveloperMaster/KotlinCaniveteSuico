@@ -22,6 +22,10 @@ class ServicesClass : Service() {
     //todo Ibinder class
     inner class MyBinder : Binder(){
 
+        fun recuperarService() : ServicesClass{
+            return this@ServicesClass
+        }
+
     }
 
     //todo onBind

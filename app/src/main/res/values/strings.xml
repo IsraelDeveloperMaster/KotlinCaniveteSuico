@@ -383,7 +383,7 @@
     <!--todo//////// BTN INTERNOS ////////-->
     <string name="INT_INICIANDO_SERVICES">Iniciando Services </string>
     <string name="INT_PARANDO_SERVICES">Parando Services </string>
-    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Services </string>
+    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Binder Services </string>
     <!--todo//////// NAV ////////-->
     <string name="NAV_SERVICES_SIMPLES">Services Simples </string>
 <!--    <string name="NAV_GOOGLE_MAP_COMPOSE">Google Map Compose </string>-->

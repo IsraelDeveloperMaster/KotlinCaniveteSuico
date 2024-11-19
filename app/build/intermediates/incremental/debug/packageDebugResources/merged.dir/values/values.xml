@@ -523,7 +523,7 @@
     <string name="INT_INJECAO_COM_HILT">Injecao de Dependencia</string>
     <string name="INT_INJECAO_COM_HILT_SIMPLES">Injecao de Dependencia Simples</string>
     <string name="INT_MODULO">Modulo</string>
-    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Services </string>
+    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Binder Services </string>
     <string name="INT_PARANDO_SERVICES">Parando Services </string>
     <string name="INT_RECUPERA_POSTAGENS_MVVM_CLEAN_ARCHITECTURE_CAMADA_DOMAIN_API">Recupera Postagens API Json Place com MVVM \n Clean Architecture \n Utilizando a Camada Domain</string>
     <string name="INT_RECUPERA_POSTEGENS_MVP_API">Recupera Postagens API com MVP</string>

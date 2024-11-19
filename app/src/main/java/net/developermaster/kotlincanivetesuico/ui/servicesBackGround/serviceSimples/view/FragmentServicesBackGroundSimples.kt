@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import net.developermaster.kotlincanivetesuico.databinding.FragmentServicesBackgroundSimplesBinding
 import net.developermaster.kotlincanivetesuico.ui.servicesBackGround.classes.ServicesClass
@@ -27,16 +28,22 @@ class FragmentServicesBackGroundSimples : Fragment(), ServiceConnection {
 
     private lateinit var serviceConnection: ServiceConnection
 
+    private lateinit var servicesRecuperado: ServicesClass
+
     //todo IbindService para conexao com servico
     override fun onServiceConnected(conectado1: ComponentName?, conectado2: IBinder?) {
         Log.d("MyService", "Serviço conectado")
 
-        val binder = conectado2 as ServicesClass.MyBinder
+        val myBinder = conectado2 as ServicesClass.MyBinder
+
+        servicesRecuperado = myBinder.recuperarService()
     }
 
     //todo IbindService para desconexao com servico
     override fun onServiceDisconnected(desconectado: ComponentName?) {
         Log.d("MyService", "Serviço desconectado")
+
+        Toast.makeText(requireContext(), "Serviço desconectado", Toast.LENGTH_SHORT).show()
     }
 
 
@@ -75,6 +82,9 @@ class FragmentServicesBackGroundSimples : Fragment(), ServiceConnection {
             //todo iniciar servico
             requireContext().startService(intentServiceClass)
 
+            //todo conexao com bindService
+            requireActivity().bindService(intentServiceClass, serviceConnection, BIND_AUTO_CREATE)
+
         }
 
         binding.btn02.setOnClickListener {
@@ -87,11 +97,9 @@ class FragmentServicesBackGroundSimples : Fragment(), ServiceConnection {
 
         binding.btn03.setOnClickListener {
 
-            //todo iniciar servico
-            requireContext().startService(intentServiceClass)
+            val cronometro = servicesRecuperado.cronometro
 
-            //todo conexao com bindService
-            requireActivity().bindService(intentServiceClass, serviceConnection, BIND_AUTO_CREATE)
+            Toast.makeText(requireContext(), "Cronometro: $cronometro", Toast.LENGTH_SHORT).show()
         }
 
         binding.fabCodigo.setOnClickListener {

@@ -3553,6 +3553,7 @@ int drawable btn_radio_off_mtrl 0x7f070081
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070082
 int drawable btn_radio_on_mtrl 0x7f070083
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070084
+int drawable cidade 0x7f070127
 int drawable common_full_open_on_phone 0x7f070085
 int drawable common_google_signin_btn_icon_dark 0x7f070086
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070087
@@ -3707,6 +3708,8 @@ int drawable notify_panel_notification_icon_bg 0x7f07011b
 int drawable perfil_01 0x7f07011c
 int drawable perfil_02 0x7f07011d
 int drawable perfil_03 0x7f07011e
+int drawable perfil_04 0x7f070128
+int drawable perfil_05 0x7f070129
 int drawable persona 0x7f07011f
 int drawable praia 0x7f070120
 int drawable python 0x7f070121

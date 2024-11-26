@@ -156,6 +156,10 @@
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvvm_main.xml"
     },
     {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_services_foreground_simples.xml",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_foreground_simples.xml"
+    },
+    {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_test_instrumentado.xml",
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_test_instrumentado.xml"
     },
@@ -252,10 +256,6 @@
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/activity_main.xml"
     },
     {
-        "merged": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_services_foreground_simples.xml",
-        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_foreground_simples.xml"
-    },
-    {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_contato.xml",
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_contato.xml"
     },
@@ -282,6 +282,10 @@
     {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_viewmodel_contador.xml",
         "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_viewmodel_contador.xml"
+    },
+    {
+        "merged": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_google_map_main.xml",
+        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_google_map_main.xml"
     },
     {
         "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-mergeDebugResources-95:/layout/fragment_arquitetura_main.xml",

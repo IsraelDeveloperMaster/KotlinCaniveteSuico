@@ -29,9 +29,6 @@ public final class FragmentGoogleMapMainBinding implements ViewBinding {
   public final Button btn02;
 
   @NonNull
-  public final Button btn03;
-
-  @NonNull
   public final FloatingActionButton fabCodigo;
 
   @NonNull
@@ -44,13 +41,12 @@ public final class FragmentGoogleMapMainBinding implements ViewBinding {
   public final TextView textView;
 
   private FragmentGoogleMapMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btn01,
-      @NonNull Button btn02, @NonNull Button btn03, @NonNull FloatingActionButton fabCodigo,
+      @NonNull Button btn02, @NonNull FloatingActionButton fabCodigo,
       @NonNull FloatingActionButton fabXml, @NonNull ProgressBar progressBar,
       @NonNull TextView textView) {
     this.rootView = rootView;
     this.btn01 = btn01;
     this.btn02 = btn02;
-    this.btn03 = btn03;
     this.fabCodigo = fabCodigo;
     this.fabXml = fabXml;
     this.progressBar = progressBar;
@@ -96,12 +92,6 @@ public final class FragmentGoogleMapMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_03;
-      Button btn03 = ViewBindings.findChildViewById(rootView, id);
-      if (btn03 == null) {
-        break missingId;
-      }
-
       id = R.id.fabCodigo;
       FloatingActionButton fabCodigo = ViewBindings.findChildViewById(rootView, id);
       if (fabCodigo == null) {
@@ -126,8 +116,8 @@ public final class FragmentGoogleMapMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentGoogleMapMainBinding((ConstraintLayout) rootView, btn01, btn02, btn03,
-          fabCodigo, fabXml, progressBar, textView);
+      return new FragmentGoogleMapMainBinding((ConstraintLayout) rootView, btn01, btn02, fabCodigo,
+          fabXml, progressBar, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

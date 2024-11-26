@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:1-108:12
 MERGED from [androidx.databinding:databinding-adapters:8.5.0] /home/rael/.gradle/caches/8.9/transforms/c757ba4f4427adaa9937e3589d2848d1/transformed/databinding-adapters-8.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.5.0] /home/rael/.gradle/caches/8.9/transforms/d0bb888703b4a0b3c190eba225c665f4/transformed/databinding-ktx-8.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.5.0] /home/rael/.gradle/caches/8.9/transforms/44bfe4dd4198be898a539de3ce2cb83d/transformed/databinding-runtime-8.5.0/AndroidManifest.xml:2:1-7:12
@@ -158,29 +158,29 @@ MERGED from [io.grpc:grpc-android:1.57.2] /home/rael/.gradle/caches/8.9/transfor
 MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /home/rael/.gradle/caches/8.9/transforms/56855cd3973d1838f76d9bf5992030d2/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rael/.gradle/caches/8.9/transforms/b0c2a85fb71a17e15563331abf778bd9/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:5-77
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:5-77
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:22-74
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:22-74
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:5-79
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:5-81
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:22-78
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:5-67
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:5-67
 MERGED from [com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
@@ -202,16 +202,16 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] /home
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/af95ebb6718223d1afb4b94f42f05e40/transformed/play-services-measurement-sdk-api-21.5.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/af95ebb6718223d1afb4b94f42f05e40/transformed/play-services-measurement-sdk-api-21.5.1/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:22-64
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:16:5-18:38
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:16:5-18:38
 	android:maxSdkVersion
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:18:9-35
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:17:9-64
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:17:9-64
 application
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:20:5-106:19
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:20:5-106:19
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:20:5-106:19
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:20:5-106:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.10.3] /home/rael/.gradle/caches/8.9/transforms/64aaaa11665aeb05a5e4a692b4133c4f/transformed/firebase-firestore-ktx-24.10.3/AndroidManifest.xml:8:5-16:19
@@ -301,161 +301,161 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rael/.gradle/caches/8
 MERGED from [com.google.maps.android:android-maps-utils:1.1.0] /home/rael/.gradle/caches/8.9/transforms/e78cb8c2abab33a8887ec43633e0ced5/transformed/android-maps-utils-1.1.0/AndroidManifest.xml:11:5-15:19
 MERGED from [com.google.maps.android:android-maps-utils:1.1.0] /home/rael/.gradle/caches/8.9/transforms/e78cb8c2abab33a8887ec43633e0ced5/transformed/android-maps-utils-1.1.0/AndroidManifest.xml:11:5-15:19
 	android:extractNativeLibs
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:28:9-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:28:9-35
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:26:9-40
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:26:9-40
 	android:fullBackupContent
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:24:9-54
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:24:9-54
 	android:roundIcon
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:27:9-50
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:27:9-50
 	tools:targetApi
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:30:9-29
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:30:9-29
 	android:icon
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:25:9-45
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:25:9-45
 	android:allowBackup
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:22:9-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:29:9-57
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:29:9-57
 	android:dataExtractionRules
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:23:9-65
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:23:9-65
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:21:9-80
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:21:9-80
 service#net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.classes.ServiceGeradoAutomaticamente
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:33:9-37:40
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:33:9-37:40
 	android:enabled
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:36:13-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:37:13-37
 	android:description
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:35:13-68
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:35:13-68
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:34:13-96
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:34:13-96
 service#net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.classes.ServicesClassBackGround
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:40:9-44:40
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:40:9-44:40
 	android:enabled
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:43:13-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:43:13-35
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:44:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:44:13-37
 	android:description
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:42:13-68
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:42:13-68
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:41:13-91
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:41:13-91
 service#net.developermaster.kotlincanivetesuico.ui.services.serviceForeGround.classes.ServicesClassForeGround
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:47:9-52:59
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:47:9-52:59
 	android:enabled
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:50:13-35
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:51:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:51:13-37
 	android:description
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:49:13-68
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:49:13-68
 	android:foregroundServiceType
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:52:13-57
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:52:13-57
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:48:13-90
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:48:13-90
 activity#net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:54:9-58:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:54:9-58:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:57:13-70
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:57:13-70
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:56:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:56:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:58:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:58:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:55:13-83
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:55:13-83
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:60:9-62:55
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:60:9-62:55
 	android:value
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:62:13-52
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:62:13-52
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:61:13-58
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:61:13-58
 activity#net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.ComposeFlowFireBase
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:64:9-68:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:64:9-68:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:67:13-74
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:67:13-74
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:66:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:66:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:68:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:68:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:65:13-72
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:65:13-72
 activity#net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.view.ScaffoldMVVM
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:69:9-73:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:69:9-73:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:72:13-65
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:72:13-65
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:71:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:71:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:73:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:73:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:70:13-70
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:70:13-70
 activity#net.developermaster.kotlincanivetesuico.ui.compose.scaffold.view.Scaffold
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:74:9-78:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:74:9-78:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:77:13-60
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:77:13-60
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:76:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:76:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:78:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:78:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:75:13-62
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:75:13-62
 activity#net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumnGrid.ComposeLazyColumnGrid
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:79:9-83:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:79:9-83:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:82:13-78
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:82:13-78
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:81:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:81:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:83:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:83:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:80:13-81
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:80:13-81
 activity#net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumn.ComposeLazyColumn
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:84:9-88:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:84:9-88:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:87:13-73
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:87:13-73
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:86:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:86:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:88:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:88:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:85:13-73
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:85:13-73
 activity#net.developermaster.kotlincanivetesuico.ui.compose.View.Atributos.ComposeAtributos
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:89:9-93:64
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:89:9-93:64
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:92:13-58
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:92:13-58
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:91:13-37
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:91:13-37
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:93:13-61
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:93:13-61
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:90:13-71
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:90:13-71
 activity#net.developermaster.kotlincanivetesuico.MainActivity
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:94:9-104:20
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:94:9-104:20
 	android:label
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:97:13-44
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:97:13-44
 	android:exported
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:96:13-36
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:96:13-36
 	android:theme
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:98:13-73
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:98:13-73
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:95:13-41
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:95:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:99:13-103:29
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:99:13-103:29
 action#android.intent.action.MAIN
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:17-69
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:17-69
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:25-66
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
+ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
 	android:name
-		ADDED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
+		ADDED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
 uses-sdk
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
-INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:8.5.0] /home/rael/.gradle/caches/8.9/transforms/c757ba4f4427adaa9937e3589d2848d1/transformed/databinding-adapters-8.5.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.5.0] /home/rael/.gradle/caches/8.9/transforms/c757ba4f4427adaa9937e3589d2848d1/transformed/databinding-adapters-8.5.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-ktx:8.5.0] /home/rael/.gradle/caches/8.9/transforms/d0bb888703b4a0b3c190eba225c665f4/transformed/databinding-ktx-8.5.0/AndroidManifest.xml:5:5-44
@@ -765,9 +765,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rael/.
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.10.3] /home/rael/.gradle/caches/8.9/transforms/64aaaa11665aeb05a5e4a692b4133c4f/transformed/firebase-firestore-ktx-24.10.3/AndroidManifest.xml:9:9-15:19

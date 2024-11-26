@@ -35,29 +35,53 @@ ferramentas disponíveis no ecossistema Android para oferecer uma experiência d
 usuário avançada e personalizável.
 
 Jetpack Compose
+
 MVVM
+
 Material Components
+
 Navigation Component
+
 Navigation Drawer
+
 Live Data
+
 Livecycle
+
 Data Binding
+
 Coroutines
+
 Picasso
+
 Mockito
+
 jUnit
+
 Espresso
+
 Room
+
 DataStore
+
 Cloud Firestore
+
 Firebase Authentication
+
 Retrofit
+
 Google Maps
+
 Location Services API
+
 Hilt
+
 Flow
+
 Clean Archetecture
+
 View Model
+
 Binding
 
 # ESPAÑOL
@@ -71,27 +95,51 @@ herramientas disponibles en el ecosistema de Android para ofrecer una experienci
 usuario avanzad
 
 Jetpack Compose
+
 MVVM
+
 Material Components
+
 Navigation Component
+
 Navigation Drawer
+
 Live Data
+
 Livecycle
+
 Data Binding
+
 Coroutines
+
 Picasso
+
 Mockito
+
 jUnit
+
 Espresso
+
 Room
+
 DataStore
+
 Cloud Firestore
+
 Firebase Authentication
+
 Retrofit
+
 Google Maps
+
 Location Services API
+
 Hilt
+
 Flow
+
 Clean Archetecture
+
 View Model
+
 Binding

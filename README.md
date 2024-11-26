@@ -23,3 +23,75 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=IsraelDeveloperMaster&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"/>
 
 ######
+
+# PORTUGUÊS
+
+## Kotlin Canivete Suíço
+
+### Esta utilizando as ferramentas mais recentes do Google e Android.
+
+representa um aplicativo robusto que aproveita quase todas as bibliotecas e
+ferramentas disponíveis no ecossistema Android para oferecer uma experiência de
+usuário avançada e personalizável.
+
+Jetpack Compose
+MVVM
+Material Components
+Navigation Component
+Navigation Drawer
+Live Data
+Livecycle
+Data Binding
+Coroutines
+Picasso
+Mockito
+jUnit
+Espresso
+Room
+DataStore
+Cloud Firestore
+Firebase Authentication
+Retrofit
+Google Maps
+Location Services API
+Hilt
+Flow
+Clean Archetecture
+View Model
+Binding
+
+# ESPAÑOL
+
+## Kotlin Canivete Suíço
+
+### Esta utilizando las últimas herramientas de Google y Android.
+
+representa una aplicación robusta que aprovecha casi todas las bibliotecas y
+herramientas disponibles en el ecosistema de Android para ofrecer una experiencia de
+usuario avanzad
+
+Jetpack Compose
+MVVM
+Material Components
+Navigation Component
+Navigation Drawer
+Live Data
+Livecycle
+Data Binding
+Coroutines
+Picasso
+Mockito
+jUnit
+Espresso
+Room
+DataStore
+Cloud Firestore
+Firebase Authentication
+Retrofit
+Google Maps
+Location Services API
+Hilt
+Flow
+Clean Archetecture
+View Model
+Binding

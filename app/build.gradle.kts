@@ -12,11 +12,21 @@ plugins {
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
     /////////////  firebase ///////////////////
+
+    /////////////  kotlin 2.0  ///////////////////
+    alias(libs.plugins.compose.compiler)
+    /////////////  kotlin 2.0  ///////////////////
+
+    /////////////  ksp  ///////////////////
+//    alias(libs.plugins.ksp)
+    /////////////  ksp  ///////////////////
+
+
 }
 
 android {
     namespace = "net.developermaster.kotlincanivetesuico"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
 

@@ -10,14 +10,14 @@ public final class ModelEntidadeRoomSimples {
     @androidx.room.PrimaryKey(autoGenerate = true)
     private final int id = 0;
     @androidx.room.ColumnInfo(name = "Coluna_nome")
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     private final java.lang.String nome = null;
     @androidx.room.ColumnInfo(name = "Coluna_idade")
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     private final java.lang.String idade = null;
     
-    public ModelEntidadeRoomSimples(int id, @org.jetbrains.annotations.NotNull
-    java.lang.String nome, @org.jetbrains.annotations.NotNull
+    public ModelEntidadeRoomSimples(int id, @org.jetbrains.annotations.NotNull()
+    java.lang.String nome, @org.jetbrains.annotations.NotNull()
     java.lang.String idade) {
         super();
     }
@@ -26,12 +26,12 @@ public final class ModelEntidadeRoomSimples {
         return 0;
     }
     
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     public final java.lang.String getNome() {
         return null;
     }
     
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     public final java.lang.String getIdade() {
         return null;
     }
@@ -40,36 +40,36 @@ public final class ModelEntidadeRoomSimples {
         return 0;
     }
     
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     public final java.lang.String component2() {
         return null;
     }
     
-    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
     public final java.lang.String component3() {
         return null;
     }
     
-    @org.jetbrains.annotations.NotNull
-    public final net.developermaster.kotlincanivetesuico.ui.bancoDeDados.room.roomSimples.modelEntidade.ModelEntidadeRoomSimples copy(int id, @org.jetbrains.annotations.NotNull
-    java.lang.String nome, @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.NotNull()
+    public final net.developermaster.kotlincanivetesuico.ui.bancoDeDados.room.roomSimples.modelEntidade.ModelEntidadeRoomSimples copy(int id, @org.jetbrains.annotations.NotNull()
+    java.lang.String nome, @org.jetbrains.annotations.NotNull()
     java.lang.String idade) {
         return null;
     }
     
-    @java.lang.Override
-    public boolean equals(@org.jetbrains.annotations.Nullable
+    @java.lang.Override()
+    public boolean equals(@org.jetbrains.annotations.Nullable()
     java.lang.Object other) {
         return false;
     }
     
-    @java.lang.Override
+    @java.lang.Override()
     public int hashCode() {
         return 0;
     }
     
-    @java.lang.Override
-    @org.jetbrains.annotations.NotNull
+    @java.lang.Override()
+    @org.jetbrains.annotations.NotNull()
     public java.lang.String toString() {
         return null;
     }

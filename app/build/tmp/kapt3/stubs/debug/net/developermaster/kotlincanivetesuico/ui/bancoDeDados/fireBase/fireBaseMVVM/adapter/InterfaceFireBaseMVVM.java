@@ -10,9 +10,9 @@ public abstract interface InterfaceFireBaseMVVM {
     
     public abstract void funcaoInterfaceFireBaseMvvmDeleteNotyfy(int position);
     
-    public abstract void funcaoInterfaceFireBaseMvvmSalvarImagemAdapter(@org.jetbrains.annotations.NotNull
+    public abstract void funcaoInterfaceFireBaseMvvmSalvarImagemAdapter(@org.jetbrains.annotations.NotNull()
     net.developermaster.kotlincanivetesuico.ui.bancoDeDados.fireBase.fireBaseMVVM.model.ModelFireBaseMVVM modelFireBaseMVVM);
     
-    public abstract void funcaoInterfaceFireBaseMvvmAdicionar(@org.jetbrains.annotations.NotNull
+    public abstract void funcaoInterfaceFireBaseMvvmAdicionar(@org.jetbrains.annotations.NotNull()
     android.os.Bundle bundle, int position);
 }

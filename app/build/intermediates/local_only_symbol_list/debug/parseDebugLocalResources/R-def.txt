@@ -462,6 +462,7 @@ dimen nav_header_height
 dimen nav_header_vertical_spacing
 dimen text_margin
 drawable baseline_add_to_home_screen_24
+drawable cidade
 drawable cplusplus
 drawable csharp
 drawable ferramentas
@@ -499,6 +500,8 @@ drawable marca_youtube
 drawable perfil_01
 drawable perfil_02
 drawable perfil_03
+drawable perfil_04
+drawable perfil_05
 drawable persona
 drawable praia
 drawable python

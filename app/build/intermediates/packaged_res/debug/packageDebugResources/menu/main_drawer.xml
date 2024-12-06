@@ -59,7 +59,7 @@
             <item
                 android:id="@+id/nav_categoria_itens_2"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="iten 1" />
+                android:title="Setting" />
         </menu>
 
     </item>

@@ -42,12 +42,13 @@ class FragmentGoogleMapMain : Fragment()  {
             val intent = Intent(activity, GoogleMapCompose::class.java)
             startActivity(intent)
         }
-
+/*
         binding.btn03.setOnClickListener {
 
 //            findNavController().navigate(R.id.)
 
         }
+        */
     }
 
     override fun onDestroyView() {

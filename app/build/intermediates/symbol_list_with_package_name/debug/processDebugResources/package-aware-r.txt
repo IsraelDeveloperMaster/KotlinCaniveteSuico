@@ -3554,6 +3554,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cidade
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3708,6 +3709,8 @@ drawable notify_panel_notification_icon_bg
 drawable perfil_01
 drawable perfil_02
 drawable perfil_03
+drawable perfil_04
+drawable perfil_05
 drawable persona
 drawable praia
 drawable python

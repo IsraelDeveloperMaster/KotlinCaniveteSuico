@@ -496,20 +496,20 @@ public final class DaggerClasseDeAplicacao_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios = "net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyUsuarios.viewModel.ViewModelDomainUsuarios";
-
       static String net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyProdutos_viewModel_ViewModelDomainProdutos = "net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyProdutos.viewModel.ViewModelDomainProdutos";
 
       static String net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm = "net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.viewmodel.ViewModelComposeMvvm";
 
-      @KeepFieldType
-      ViewModelDomainUsuarios net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios2;
+      static String net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios = "net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyUsuarios.viewModel.ViewModelDomainUsuarios";
 
       @KeepFieldType
       ViewModelDomainProdutos net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyProdutos_viewModel_ViewModelDomainProdutos2;
 
       @KeepFieldType
       ViewModelComposeMvvm net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm2;
+
+      @KeepFieldType
+      ViewModelDomainUsuarios net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios2;
     }
   }
 
@@ -588,20 +588,20 @@ public final class DaggerClasseDeAplicacao_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
+      static String net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm = "net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.viewmodel.ViewModelComposeMvvm";
+
       static String net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios = "net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyUsuarios.viewModel.ViewModelDomainUsuarios";
 
       static String net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyProdutos_viewModel_ViewModelDomainProdutos = "net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.hiltClearDomainDummyProdutos.viewModel.ViewModelDomainProdutos";
 
-      static String net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm = "net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.viewmodel.ViewModelComposeMvvm";
+      @KeepFieldType
+      ViewModelComposeMvvm net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm2;
 
       @KeepFieldType
       ViewModelDomainUsuarios net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyUsuarios_viewModel_ViewModelDomainUsuarios2;
 
       @KeepFieldType
       ViewModelDomainProdutos net_developermaster_kotlincanivetesuico_ui_arquitetura_hilt_hiltClearDomainDummyProdutos_viewModel_ViewModelDomainProdutos2;
-
-      @KeepFieldType
-      ViewModelComposeMvvm net_developermaster_kotlincanivetesuico_ui_compose_scaffoldMVVM_viewmodel_ViewModelComposeMvvm2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {

@@ -4,7 +4,17 @@
             "outputFile": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-94:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/rael/.gradle/caches/8.9/transforms/77f67f6c40827e17dec1ed082db541bb/transformed/material-1.12.0/res/values-v24/values-v24.xml",
+                    "source": "/home/rael/.gradle/caches/8.10.2/transforms/d7b73e573a78ab988e394b270df57f78/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/home/rael/.gradle/caches/8.10.2/transforms/645b6cc19cdba316d6289b8aadcd2af4/transformed/material-1.12.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "4,5,6,7,10,13,16,19",
                         "endColumns": "84,98,86,100,10,10,10,10",
                         "endOffsets": "427,526,613,714,913,1126,1327,1542"
-                    }
-                },
-                {
-                    "source": "/home/rael/.gradle/caches/8.9/transforms/a82c41e9133e379bc6c649d0079c211b/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

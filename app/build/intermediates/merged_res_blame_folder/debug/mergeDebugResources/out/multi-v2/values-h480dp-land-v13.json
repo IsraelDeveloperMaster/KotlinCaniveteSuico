@@ -4,7 +4,7 @@
             "outputFile": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-94:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/rael/.gradle/caches/8.9/transforms/77f67f6c40827e17dec1ed082db541bb/transformed/material-1.12.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/home/rael/.gradle/caches/8.10.2/transforms/645b6cc19cdba316d6289b8aadcd2af4/transformed/material-1.12.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -1,4 +1,4 @@
-#Tue Nov 26 12:58:57 CET 2024
+#Fri Dec 06 22:20:32 CET 2024
 base.0=/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex

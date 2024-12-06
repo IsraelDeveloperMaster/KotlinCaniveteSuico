@@ -221,6 +221,7 @@ class FragmentGoogleMapSimples : Fragment(), OnMapReadyCallback,
     }
 
     //todo verifica se tem permissao para acessar a localização
+    @Deprecated("Deprecated in Java")
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<out String>, grantResults: IntArray
     ) {

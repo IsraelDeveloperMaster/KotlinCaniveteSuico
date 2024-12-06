@@ -7,6 +7,6 @@ public abstract interface InterfaceRoomMVVM {
     
     public abstract void funcaoInterfaceRoomMvvmDeleteNotyfy(int position);
     
-    public abstract void funcaoInterfaceRoomMvvmAdicionar(@org.jetbrains.annotations.NotNull
+    public abstract void funcaoInterfaceRoomMvvmAdicionar(@org.jetbrains.annotations.NotNull()
     android.os.Bundle bundle, int position);
 }

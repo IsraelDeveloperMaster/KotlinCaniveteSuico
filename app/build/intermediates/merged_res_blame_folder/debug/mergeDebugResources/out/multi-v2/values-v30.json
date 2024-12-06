@@ -4,7 +4,7 @@
             "outputFile": "net.developermaster.kotlincanivetesuico.app-mergeDebugResources-94:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/home/rael/.gradle/caches/8.9/transforms/350d1dd66d4cf01f78aff2fe558922d3/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "source": "/home/rael/.gradle/caches/8.10.2/transforms/52b3fa630df33e876b8b559a32d0da51/transformed/material3-release/res/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

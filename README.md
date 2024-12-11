@@ -26,120 +26,175 @@
 
 # PORTUGUÊS
 
-## Kotlin Canivete Suíço
+## Kotlin Canivete Suiço
 
-### Esta utilizando as ferramentas mais recentes do Google e Android.
+Este repositório apresenta um aplicativo Android desenvolvido em **Kotlin** com o objetivo de ensinar a utilização de diversas bibliotecas modernas e padrões de arquitetura. O projeto é ideal para desenvolvedores que desejam aprimorar seus conhecimentos em desenvolvimento Android utilizando boas práticas e soluções eficientes.
 
-representa um aplicativo robusto que aproveita quase todas as bibliotecas e
-ferramentas disponíveis no ecossistema Android para oferecer uma experiência de
-usuário avançada e personalizável.
+## Funcionalidades
+- Navegação entre telas utilizando **Navigation Component** e **Navigation Drawer**
+- Exibição de dados dinâmicos com **LiveData**, **ViewModel** e **Data Binding**
+- Integração com **Room** para persistência de dados local
+- Armazenamento de preferências do usuário com **DataStore**
+- Integração com o **Cloud Firestore** e autenticação usando **Firebase Authentication**
+- Consumo de APIs REST com **Retrofit**
+- Uso do **Google Maps** e serviços de localização com a **Location Services API**
+- UI moderna e responsiva utilizando **Jetpack Compose** e **Material Components**
+- Gerenciamento de dependências com **Hilt**
+- Estrutura baseada em **Clean Architecture** e padrão **MVVM**
+- Manipulação de streams de dados com **Flow** e **Coroutines**
+- Exibição de imagens com **Picasso**
+- Implementação de **Service Foreground** para tarefas em segundo plano
+- Navegação centralizada com **NavController**
+- Pipeline automatizado de **CI/CD**
 
-Jetpack Compose
+## Testes
+- Testes unitários com **JUnit**
+- Mocking de dependências com **Mockito**
+- Testes de interface usando **Espresso**
 
-MVVM
+## Tecnologias Utilizadas
+Este projeto demonstra como combinar as seguintes tecnologias para criar aplicativos robustos, escaláveis e fáceis de manter:
 
-Material Components
+- **Jetpack Compose**
+- **MVVM**
+- **Material Components**
+- **Navigation Component**
+- **Navigation Drawer**
+- **LiveData**
+- **Lifecycle**
+- **Data Binding**
+- **Coroutines**
+- **Picasso**
+- **Mockito**
+- **JUnit**
+- **Espresso**
+- **Room**
+- **DataStore**
+- **Cloud Firestore**
+- **Firebase Authentication**
+- **Retrofit**
+- **Google Maps**
+- **Location Services API**
+- **Hilt**
+- **Flow**
+- **Clean Architecture**
+- **ViewModel**
+- **Binding**
+- **CI/CD**
+- **Service Foreground**
+- **NavController**
 
-Navigation Component
+## Estrutura do Projeto
+O projeto segue a estrutura recomendada pela **Clean Architecture**, dividida em:
 
-Navigation Drawer
+1. **Camada de Apresentação (UI)**
+    - Desenvolvida com **Jetpack Compose** e **Material Components**
+    - Gerenciada pelo **ViewModel**
+2. **Camada de Domínio**
+    - Contém os casos de uso do aplicativo
+3. **Camada de Dados**
+    - Responsável por persistência (local com **Room** e **DataStore**) e fontes remotas (com **Retrofit** e **Firestore**)
 
-Live Data
+## Como Rodar o Projeto
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/IsraelDeveloperMaster/KotlinCaniveteSuico.git
 
-Livecycle
+2. Abra o projeto no **Android Studio**.
+3. Certifique-se de que o **SDK do Android** esteja configurado.
+4. Configure uma conta **Firebase** para utilizar o **Cloud Firestore** e o **Firebase Authentication**.
+5. Execute o projeto em um emulador ou dispositivo real.
 
-Data Binding
+## Contribuições 
+Contribuições são bem-vindas! Fique à vontade para abrir issues ou enviar pull requests.
 
-Coroutines
+## Licença
+Este projeto está licenciado sob a Licença MIT.
 
-Picasso
-
-Mockito
-
-jUnit
-
-Espresso
-
-Room
-
-DataStore
-
-Cloud Firestore
-
-Firebase Authentication
-
-Retrofit
-
-Google Maps
-
-Location Services API
-
-Hilt
-
-Flow
-
-Clean Archetecture
-
-View Model
-
-Binding
 
 # ESPAÑOL
 
-## Kotlin Canivete Suíço
+## Kotlin Canivete Suiço
 
-### Esta utilizando las últimas herramientas de Google y Android.
+Este repositorio presenta una aplicación Android desarrollada en **Kotlin** con el objetivo de enseñar el uso de diversas bibliotecas modernas y patrones de arquitectura. El proyecto es ideal para desarrolladores que desean mejorar sus conocimientos en desarrollo Android utilizando buenas prácticas y soluciones eficientes.
 
-representa una aplicación robusta que aprovecha casi todas las bibliotecas y
-herramientas disponibles en el ecosistema de Android para ofrecer una experiencia de
-usuario avanzad
+## Funcionalidades
+- Navegación entre pantallas utilizando **Navigation Component** y **Navigation Drawer**
+- Visualización de datos dinámicos con **LiveData**, **ViewModel** y **Data Binding**
+- Integración con **Room** para persistencia de datos local
+- Almacenamiento de preferencias del usuario con **DataStore**
+- Integración con **Cloud Firestore** y autenticación usando **Firebase Authentication**
+- Consumo de APIs REST con **Retrofit**
+- Uso de **Google Maps** y servicios de localización con la **Location Services API**
+- UI moderna y responsiva utilizando **Jetpack Compose** y **Material Components**
+- Gestión de dependencias con **Hilt**
+- Estructura basada en **Clean Architecture** y el patrón **MVVM**
+- Manipulación de flujos de datos con **Flow** y **Coroutines**
+- Visualización de imágenes con **Picasso**
+- Implementación de **Service Foreground** para tareas en segundo plano
+- Navegación centralizada con **NavController**
+- Pipeline automatizado de **CI/CD**
 
-Jetpack Compose
+## Pruebas
+- Pruebas unitarias con **JUnit**
+- Mocking de dependencias con **Mockito**
+- Pruebas de interfaz utilizando **Espresso**
 
-MVVM
+## Tecnologías Utilizadas
+Este proyecto demuestra cómo combinar las siguientes tecnologías para crear aplicaciones robustas, escalables y fáciles de mantener:
 
-Material Components
+- **Jetpack Compose**
+- **MVVM**
+- **Material Components**
+- **Navigation Component**
+- **Navigation Drawer**
+- **LiveData**
+- **Lifecycle**
+- **Data Binding**
+- **Coroutines**
+- **Picasso**
+- **Mockito**
+- **JUnit**
+- **Espresso**
+- **Room**
+- **DataStore**
+- **Cloud Firestore**
+- **Firebase Authentication**
+- **Retrofit**
+- **Google Maps**
+- **Location Services API**
+- **Hilt**
+- **Flow**
+- **Clean Architecture**
+- **ViewModel**
+- **Binding**
+- **CI/CD**
+- **Service Foreground**
+- **NavController**
 
-Navigation Component
+## Estructura del Proyecto
+El proyecto sigue la estructura recomendada por la **Clean Architecture**, dividida en:
 
-Navigation Drawer
+1. **Capa de Presentación (UI)**
+   - Desarrollada con **Jetpack Compose** y **Material Components**
+   - Gestionada por **ViewModel**
+2. **Capa de Dominio**
+   - Contiene los casos de uso de la aplicación
+3. **Capa de Datos**
+   - Responsable de la persistencia (local con **Room** y **DataStore**) y fuentes remotas (con **Retrofit** y **Firestore**)
 
-Live Data
+## Cómo Ejecutar el Proyecto
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/IsraelDeveloperMaster/KotlinCaniveteSuico.git
 
-Livecycle
+2. Abre el proyecto en **Android Studio**.
+3. Asegúrate de que el **SDK de Android** esté configurado.
+4. Configura una cuenta de **Firebase** para utilizar **Cloud Firestore** y **Firebase Authentication**.
+5. Ejecuta el proyecto en un emulador o dispositivo real.
+## Contribuciones
+¡Las contribuciones son bienvenidas! No dudes en abrir issues o enviar pull requests.
 
-Data Binding
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
 
-Coroutines
-
-Picasso
-
-Mockito
-
-jUnit
-
-Espresso
-
-Room
-
-DataStore
-
-Cloud Firestore
-
-Firebase Authentication
-
-Retrofit
-
-Google Maps
-
-Location Services API
-
-Hilt
-
-Flow
-
-Clean Archetecture
-
-View Model
-
-Binding

@@ -1,0 +1,73 @@
+# 2024-12-06T20:07:38.634126390Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "FragmentHomeTest"
+    test_package: "net.developermaster.kotlincanivetesuico.ui.home.view"
+    test_method: "verificar_posicao"
+    start_time {
+      seconds: 1733515651
+      nanos: 154000000
+    }
+    end_time {
+      seconds: 1733515655
+      nanos: 217000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.NoClassDefFoundError: Failed resolution of: Lorg/hamcrest/Matchers;\nat androidx.test.espresso.matcher.ViewMatchers.withId(ViewMatchers.java:248)\nat net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest$verificar_posicao$1.invokeSuspend(FragmentHomeTest.kt:36)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest.verificar_posicao(FragmentHomeTest.kt:34)\n... 33 trimmed\nCaused by: java.lang.ClassNotFoundException: Didn\'t find class \"org.hamcrest.Matchers\" on path: DexPathList[[zip file \"/system/framework/android.test.runner.jar\", zip file \"/system/framework/android.test.mock.jar\", zip file \"/system/framework/android.test.base.jar\", zip file \"/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk\", zip file \"/data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk\"],nativeLibraryDirectories=[/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/lib/x86_64, /data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk!/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]\nat dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:379)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:312)\n... 45 more\n"
+    error_type: "java.lang.ClassNotFoundException"
+    stack_trace: "java.lang.NoClassDefFoundError: Failed resolution of: Lorg/hamcrest/Matchers;\nat androidx.test.espresso.matcher.ViewMatchers.withId(ViewMatchers.java:248)\nat net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest$verificar_posicao$1.invokeSuspend(FragmentHomeTest.kt:36)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest.verificar_posicao(FragmentHomeTest.kt:34)\n... 33 trimmed\nCaused by: java.lang.ClassNotFoundException: Didn\'t find class \"org.hamcrest.Matchers\" on path: DexPathList[[zip file \"/system/framework/android.test.runner.jar\", zip file \"/system/framework/android.test.mock.jar\", zip file \"/system/framework/android.test.base.jar\", zip file \"/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk\", zip file \"/data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk\"],nativeLibraryDirectories=[/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/lib/x86_64, /data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk!/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]\nat dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:379)\nat java.lang.ClassLoader.loadClass(ClassLoader.java:312)\n... 45 more\n"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/outputs/androidTest-results/connected/debug/Pixel_5_API_34(AVD) - 14/logcat-net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest-verificar_posicao.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/outputs/androidTest-results/connected/debug/Pixel_5_API_34(AVD) - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/outputs/androidTest-results/connected/debug/Pixel_5_API_34(AVD) - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/outputs/androidTest-results/connected/debug/Pixel_5_API_34(AVD) - 14/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/rael/BACKUPs/ANDROID/APPS_EM_DESENVOLVIMENTO/PUBLICO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/build/outputs/androidTest-results/connected/debug/Pixel_5_API_34(AVD) - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

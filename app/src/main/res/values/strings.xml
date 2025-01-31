@@ -1,0 +1,394 @@
+<resources>
+    <string name="appName">Kotlin Canivete Suiço</string>
+    <string name="nav_header_email">dev@developermaster.net</string>
+
+    ////////// MODELO //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_X">X</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_X"> xxx </string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_X"> xxx </string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_X"> xxx </string>
+    ////////// MODELO //////////
+
+
+    ////////// BUTTON //////////
+    <string name="EXIBIR_DADOS">Exibir Dados</string>
+    ////////// BUTTON //////////
+
+
+    ////////// CODIGO //////////
+    <string name="NAV_CODIGOS">Fragmento Codigos</string>
+    ////////// CODIGO //////////
+
+
+    ////////// HOME //////////
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_HOME">HOME</string>
+    ////////// HOME //////////
+
+
+    ////////// BUSCA //////////
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_BUSCA">Busca</string>
+    ////////// BUSCA //////////
+
+
+    <!--todo//////////////////////// ARQUITETURA ////////////////////////-->
+    <string name="MAIN_ARQUITETURA">ARQUITETURA</string>
+
+    ////////// MVC //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_MVC">MVC</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_RECUPERA_USUARIO_MVC">Recupera Usuario com MVC</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_MVC">MVC</string>
+    ////////// MVC //////////
+
+
+    ////////// MVP //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_MVP">MVP</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_MVP_SIMPLES">MVP Simples</string>
+    <string name="MAIN_MVP_API">MVP com API</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_RECUPERA_USUARIO_MVP_SIMPLES">Recupera Usuarios com MVP Simples</string>
+    <string name="INT_RECUPERA_POSTEGENS_MVP_API">Recupera Postagens API com MVP</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_MVP_SIMPLES">MVP Simples</string>
+    <string name="NAV_MVP_API">MVP com API</string>
+    ////////// MVP //////////
+
+
+    ////////// VIEWMODEL //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_VIEWMODEL">VIEWMODEL</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_VIEWMODEL_SIMPLES">VIEWMODEL Simples</string>
+    <string name="MAIN_VIEWMODEL_CONTADOR">VIEWMODEL contador</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_VIEWMODEL_CONTADOR_SIMPLES">Contador ViewModel Simples</string>
+    <string name="INT_VIEWMODEL_CONTADOR">Contador ViewModel</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_VIEWMODEL_SIMPLES">ViewModel Simples</string>
+    <string name="NAV_VIEWMODEL_CONTADOR">ViewModel Contador</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MESAGEM_VIEWMODEL_GIRE">Gire a tela para testar</string>
+    ////////// VIEWMODEL //////////
+
+
+    ////////// LIVEDATA //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_LIVEDATA">LIVEDATA</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_LIVEDATA_SIMPLES">LIVEDATA Simples</string>
+    <string name="MAIN_LIVEDATA_CONTADOR">LIVEDATA contador</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_LIVEDATA_SIMPLES">LiveData Simples</string>
+    <string name="NAV_LIVEDATA_CONTADOR">LiveData Contador</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_LIVEDATA_GIRE">Gire a tela para testar</string>
+    ////////// LIVEDATA //////////
+
+
+    ////////// DATABINDING //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_DATABINDING">DATABINDING</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_DATABINDING_SIMPLES">DATABINDING Simples</string>
+    <string name="INT_DATABINDING_LIVEDATA_VIEWMODEL">DATABINDING com LiveData e ViewModel</string>
+    <string name="INT_DATABINDING_CLIQUE">DATABINDING com evento de clique</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_DATABINDING_SIMPLES">DataBinding Simples</string>
+    <string name="NAV_DATABINDING_LIVEDATA_VIEWMODEL">DataBinding LiveData e ViewModel</string>
+    <string name="NAV_DATABINDING_CLIQUE">DataBinding com clique</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_DATABINDING_GIRE">Gire a tela para testar</string>
+    ////////// DATABINDING //////////
+
+
+    ////////// MVVM //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_MVVM">MVVM</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_MVVM_SIMPLES">MVVM Simples</string>
+    <string name="MAIN_MVVM_API">MVVM com API</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_RECUPERA_USUARIO_MVVM_SIMPLES">Recupera Usuario MVVM Simple</string>
+    <string name="INT_RECUPERA_POSTEGENS_MVVM_API">Recupera Postagens API com MVVM</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_MVVM_SIMPLES">MVVM Simples</string>
+    <string name="NAV_MVVM_API">MVVM com API</string>
+    ////////// MVVM //////////
+
+
+    ////////// CLEAN ARCHITECTURE //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_CLEAN_ARCHITECTURE">CLEAN ARCHITECTURE</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_CLEAN_ARCHITECTURE_MVVM">CLEAN ARCHITECTURE MVVM</string>
+    <string name="MAIN_CLEAN_ARCHITECTURE_DOMAIN">CLEAN ARCHITECTURE \n UTILIZANDO A CAMADA DOMAIN \n COM API JSON PLACE</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_RECUPERA_POSTEGENS_MVVM_CLEAN_ARCHITECTURE">Recupera Postagens API Json Place com MVVM \n Clean Architecture</string>
+    <string name="INT_RECUPERA_POSTAGENS_MVVM_CLEAN_ARCHITECTURE_CAMADA_DOMAIN_API">Recupera Postagens API Json Place com MVVM \n Clean Architecture \n Utilizando a Camada Domain</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_CLEAN_ARCHITECTURE_MVVM">Clean com MVVM</string>
+    <string name="NAV_CLEAN_ARCHITECTURE_DOMAIN">Clean com Domain</string>
+    ////////// CLEAN ARCHITECTURE //////////
+
+
+    ////////// HILT //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_HILT">HILT</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_INJECAO_COM_HILT_SIMPLES">INJECAO COM HILT SIMPLES</string>
+    <string name="MAIN_INJECAO_COM_HILT">INJECAO COM HILT</string>
+    <string name="MAIN_DEPENDENCIAS_NOMEADAS">DEPENDENCIAS NOMEADAS</string>
+    <string name="MAIN_CLEAN_ARCHITECTURE_DOMAIN_API_DUMMY_USUARIOS_HILT">CLEAN ARCHITECTURE \n UTILIZANDO A CAMADA DOMAIN \n COM API DUMMY USUARIOS \n HILT</string>
+    <string name="MAIN_CLEAN_ARCHITECTURE_DOMAIN_API_DUMMY_PRODUTOS_HILT">CLEAN ARCHITECTURE \n UTILIZANDO A CAMADA DOMAIN \n COM API DUMMY PRODUTOS \n HILT</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_INJECAO_COM_HILT_SIMPLES">Injecao de Dependencia Simples</string>
+    <string name="INT_INJECAO_COM_HILT">Injecao de Dependencia</string>
+    <string name="INT_DEPENDENCIAS_NOMEADAS">Injecao de Dependencia Nomeadas</string>
+    <string name="INT_CLEAN_ARCHITECTURE_DOMAIN_API_DUMMY_USUARIOS_HILT">Clean Architecture \n Utilizando a Camado Domain \n com API Dummy Usuarios \n e Hilt</string>
+    <string name="INT_CLEAN_ARCHITECTURE_DOMAIN_API_DUMMY_PRODUTOS_HILT">Clean Architecture \n Utilizando a Camado Domain \n com API Dummy Produtos \n e Hilt</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_HILT_INJECAO_SIMPLES">Hilt Simples</string>
+    <string name="NAV_HILT_INJECAO">Hilt Injecao Construtor</string>
+    <string name="NAV_HILT_MAIN">Hilt</string>
+    <string name="NAV_HILT_DEPENDENCIAS_NOMEADAS">Dependencias Nomeadas</string>
+    <string name="NAV_HILT_DOMAIN_API_DUMMY_USUARIOS">Hilt Domain Api Dummy Usuarios</string>
+    <string name="NAV_HILT_DOMAIN_API_DUMMY_PRODUTOS">Hilt Domain Api Dummy Produtos</string>
+    ////////// HILT //////////
+
+
+    ////////// MODULO //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_MODULO">MODULO</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_MODULO_SIMPLES">MODULO SIMPLES</string>
+    <string name="MAIN_MODULO_COM">MODULO COM</string>
+    <string name="MAIN_MODULO_COM...">MODULO COM ....</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_MODULO">Modulo</string>
+    <!--    <string name="INT_RECUPERA_POSTEGENS_MVP_API">Recupera Postagens API com MVP</string>-->
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_MODULO">MODULO Simples</string>
+    <!--    <string name="NAV_MVP_API">MVP com API</string>-->
+    ////////// MODULO //////////
+
+    ////////// SEARCHVIEW //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_SEARCHVIEW">SEARCH VIEW</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_SEARCHVIEW_LISTVIEW">SEARCHVIEW LISTVIEW</string>
+    <string name="MAIN_SEARCHVIEW_RECYCLERVIEW">SEARCHVIEW RECYCLERVIEW</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <!--    <string name="INT_"> </string>-->
+    <!--    <string name="INT_"> </string>-->
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_SEARCHVIEW_LISTVIEW">SearchView com ListView</string>
+    <string name="NAV_SEARCHVIEW_RECYCLERVIEW">SearchView com RecyclerView</string>
+    ////////// SEARCHVIEW //////////
+
+    ////////// CONTATO //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_CONTATO">CONTATO</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_CONTATO">Entre em contato comigo para tracar uma ideia sobre Kotlin</string>
+    <string name="NAV_WHATSAPP">Enviar um WhatsApp</string>
+    <string name="NAV_EMAIL">Enviar um email</string>
+    ////////// CONTATO //////////
+
+    ////////// COMPOSE //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_COMPOSE">COMPOSE</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_COMPOSE_ATRIBUTOS">COMPOSE ATRIBUTOS</string>
+    <string name="MAIN_COMPOSE_LAZYCOLUMN">COMPOSE LAZYCOLUMN</string>
+    <string name="MAIN_COMPOSE_LAZYCOLUMN_GRID">COMPOSE LAZYCOLUMN GRID</string>
+    <string name="MAIN_COMPOSE_SCAFFOLD">COMPOSE SCAFFOLD</string>
+    <string name="MAIN_COMPOSE_SCAFFOLD_MVVM">COMPOSE SCAFFOLD MVVM</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_COMPOSE_ATRIBUTOS">Compose Atributos</string>
+    <string name="INT_COMPOSE_LAZYCOLUMN">Compose LazyColumn</string>
+    <string name="INT_COMPOSE_LAZYCOLUMN_GRID">Compose LazyColumn Grid</string>
+    <string name="INT_COMPOSE_SCAFFOLD">Compose Scaffold</string>
+    <string name="INT_COMPOSE_SCAFFOLD_MVVM">Compose Scaffold Mvvm</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_COMPOSE_ATRIBUTOS">Compose Atributos</string>
+    <string name="NAV_COMPOSE_LAZYCOLUMN">Compose LazyColumn</string>
+    <string name="NAV_COMPOSE_LAZYCOLUMN_GRID">Compose LazyColumn Grid</string>
+    <string name="NAV_COMPOSE_SCAFFOLD">Compose Scaffold</string>
+    <string name="NAV_COMPOSE_SCAFFOLD_MVVM">Compose Scaffold Mvvm</string>
+    <string name="title_activity_compose_recycler_view">ComposeRecyclerView</string>
+    <string name="title_activity_compose_recycler_view_grid">ComposeRecyclerViewGrid</string>
+    <string name="title_activity_scaffold">Scaffold</string>
+    <string name="title_activity_scaffold_mvvm">ScaffoldMVVM</string>
+    ////////// COMPOSE //////////
+
+
+    ////////// FRAGMENT //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_FRAGMENT">FRAGMENT</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_FRAGMENT">FRAGMENT COM ABAS</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_">___</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_FRAGMENT_ABAS">Fragmet com Abas</string>
+    ////////// FRAGMENT //////////
+
+
+    ////////// ROOM //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_ROOM">ROOM</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_ROOM_SIMPLES">ROOM SIMPLES</string>
+    <string name="MAIN_ROOM_MVVM">ROOM COM MVVM</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_ROOM_ADICIONAR">Adicionar</string>
+    <string name="INT_ROOM_ATUALIZAR">Atualizar</string>
+    <string name="INT_ROOM_DELETAR">Delete</string>
+    <string name="INT_ROOM_LISTAR_TODOS">Listar todos</string>
+    <string name="INT_ROOM_LISTAR_ID">Listar por id</string>
+    <string name="INT_ROOM_LISTAR_NOME">Listar por nome</string>
+    <string name="INT_ROOM_LISTAR_IDADE">Listar por idade</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_ROOM_SIMPLES">Room Simples</string>
+    <string name="NAV_ROOM_MVVM">Room com MVVM</string>
+    <string name="NAV_ROOM_MVVM_ADICIONAR">ROOM MVVM ADICIONAR</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_ROOM_ID">Preencha o id desejado</string>
+    <string name="MENSAGEM_ROOM_NOME">Preencha o nome desejado</string>
+    <string name="MENSAGEM_ROOM_IDADE">Preencha a idade desejada</string>
+    <string name="MENSAGEM_ROOM_CAMPOS">Preencha todos os campos</string>
+    <string name="MENSAGEM_ROOM_SUCESSO_SALVAR">Dados salvos com sucesso</string>
+    <string name="MENSAGEM_ROOM_SUCESSO_ATUALIZAR">Dados atualizados com sucesso</string>
+    <string name="MENSAGEM_ROOM_SUCESSO_DELETE">Dados deletados com sucesso</string>
+    <string name="MENSAGEM_ROOM_SUCESSO_LISTAR">Dados listados com sucesso</string>
+    ////////// ROOM //////////
+
+
+    ////////// FIREBASE //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_FIREBASE">FIREBASE</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_FIREBASE_SIMPLES">FIREBASE SIMPLES</string>
+    <string name="MAIN_FIREBASE_MVVM">FIREBASE COM MVVM</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_FIREBASE_ADICIONAR">Adicionar</string>
+    <string name="INT_FIREBASE_SALVAR">Salvar</string>
+    <string name="INT_FIREBASE_AUTENTICAR">Autenticar Usuario</string>
+    <string name="INT_FIREBASE_ATUALIZAR">Atualizar</string>
+    <string name="INT_FIREBASE_DELETAR">Deletar</string>
+    <string name="INT_FIREBASE_LISTAR_TODOS">Listar todos</string>
+    <string name="INT_FIREBASE_LISTAR_ID">Listar por id</string>
+    <string name="INT_FIREBASE_LISTAR_NOME">Listar por nome</string>
+    <string name="INT_FIREBASE_LISTAR_IDADE">Listar por idade</string>
+    <string name="INT_FIREBASE_ABRI_GALERIA_FOTO">Abri Galeria</string>
+    <string name="INT_FIREBASE_LISTAR_FOTO">Listar foto</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_FIREBASE_SIMPLES">FireBase Simples</string>
+    <string name="NAV_FIREBASE_MVVM_ADICIONAR">FIREBASE MVVM ADICIONAR</string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_FIREBASE_ID">Preencha o id desejado</string>
+    <string name="MENSAGEM_FIREBASE_NOME">Preencha o nome desejado</string>
+    <string name="MENSAGEM_FIREBASE_IDADE">Preencha a idade desejada</string>
+    <string name="MENSAGEM_FIREBASE_CAMPOS">Preencha todos os campos</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_SALVAR">Dados salvos com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_SALVAR_FOTO">Foto salva com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_AUTENTICAR">Usuario autenticado com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_ATUALIZAR">Dados atualizados com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_DELETE">Dados deletados com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_SUCESSO_LISTAR">Dados listados com sucesso</string>
+    <string name="MENSAGEM_FIREBASE_ERRO_AUTENTICAR">Erro ao autenticar usuario</string>
+    ////////// FIREBASE //////////
+
+
+    ////////// TEST //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_TEST">TEST</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_TEST_UNITARIO">TEST UNITARIO</string>
+    <string name="MAIN_TEST_INSTRUMENTADO">TEST INSTRUMENTADO</string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_TEST_UNITARIO">Test Unitario</string>
+    <string name="INT_TEST_UNITARIO_SIMPLES">Test Unitario Simples</string>
+    <string name="INT_TEST_INSTRUMENTADO">Test Instrumentado</string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_TEST_UNITARIO">Test Unitario</string>
+    <string name="NAV_TEST_INSTRUMENTADO">Test Instrumentado</string>
+    ////////// TEST //////////
+
+    ////////// FLOW //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_FLOW">FLOW</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_FLOW_SIMPLES"> FLOW SIMPLES </string>
+    <string name="MAIN_FLOW_MVVM"> FLOW COM MVVM </string>
+    <string name="MAIN_FLOW_FIREBASE"> FLOW COM FIREBASE </string>
+    <string name="MAIN_FLOW_COMPOSE_FIREBASE"> FLOW COMPOSE E FIREBASE </string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_FLOW_SIMPLES"> Flow Simples </string>
+    <string name="INT_FLOW_MVVM"> Flow com MVVM </string>
+    <string name="INT_FLOW_FIREBASE"> Flow com Firebase </string>
+    <string name="INT_FLOW_COMPOSE_SIMPLES"> Flow Compose e Firebase </string>
+    <string name="INT_FLOW_EXEMPLO_SIMPLES"> Flow Exemplo Simples </string>
+    <string name="INT_STATE_FLOW"> State Flow </string>
+    <string name="INT_STATE_FLOW_VIEWMODEL">State Flow com ViewModel </string>
+    <string name="INT_STATE_FLOW_USECASE">State Flow com UseCase </string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_FLOW_SIMPLES"> Flow Simples </string>
+    <string name="NAV_FLOW_MVVM"> Flow com MVVM </string>
+    <string name="NAV_FLOW_FIREBASE"> Flow com Firebase </string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_FLOW_SUCESSO">Flow Sucesso</string>
+    <string name="MENSAGEM_FLOW_ERRO">Flow Erro</string>
+    <string name="title_activity_compose_flow_fire_base">ComposeFlowFireBase</string>
+    ////////// FLOW //////////
+
+    ////////// GOOGLE MAP //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_GOOGLE_MAP">GOOLE MAP</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_GOOGLE_MAP_SIMPLES">GOOLE MAP SIMPLES </string>
+    <string name="MAIN_GOOGLE_MAP_COMPOSE">GOOLE MAP COMPOSE </string>
+
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_GOOGLE_MAP_SIMPLES">Google Map Simples </string>">
+    <string name="INT_GOOLE_MAP_COMPOSE">Google Map Compose </string>
+
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_GOOLE_MAP_SIMPLES">Google Map Simples </string>
+    <string name="NAV_GOOGLE_MAP_COMPOSE">Google Map Compose </string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_GOOLE_MAP_SUCESSO">Google Map Sucesso</string>
+    <string name="MENSAGEM_GOOLE_MAP_ERRO">Google Map Erro</string>
+    <string name="title_activity_google_map_compose">googleMapCompose</string>
+    <string name="title_activity_compose_google_map">composeGoogleMap</string>
+    ////////// GOOGLE MAP //////////
+
+    ////////// SERVICES //////////
+    <!--todo//////// BTN EXTERNOS ////////-->
+    <string name="EXT_SERVICES_BACKGROUND">SERVICES BACKGROUND</string>
+    <!--todo//////// BTN MAIN ////////-->
+    <string name="MAIN_SERVICES_SIMPLES">SERVICES SIMPLES </string>
+    <!--todo//////// BTN INTERNOS ////////-->
+    <string name="INT_INICIANDO_SERVICES">Iniciando Services </string>
+    <string name="INT_PARANDO_SERVICES">Parando Services </string>
+    <string name="INT_PARANDO_DADOS_SERVICES">Parando Dados Binder Services </string>
+    <!--todo//////// NAV ////////-->
+    <string name="NAV_SERVICES_SIMPLES">Services Simples </string>
+    <!--todo//////// MENSAGEM ////////-->
+    <string name="MENSAGEM_SERVICES_SUCESSO">Services Sucesso</string>
+    <string name="MENSAGEM_SERVICES_ERRO">Services Erro</string>
+    <string name="DESCRICAO_PARA_O_SERVICES">Descricao Services</string>
+    ////////// SERVICES //////////
+
+
+</resources>

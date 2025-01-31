@@ -1,0 +1,231 @@
+12-06 12:07:23.603 20390 20419 I TestRunner: started: verificar_posicao(net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest)
+12-06 12:07:23.631 20390 20421 I FA      : App measurement initialized, version: 84002
+12-06 12:07:23.632 20390 20421 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+12-06 12:07:23.632 20390 20421 I FA      : To enable faster debug mode event logging run:
+12-06 12:07:23.632 20390 20421 I FA      :   adb shell setprop debug.firebase.analytics.app net.developermaster.kotlincanivetesuico
+12-06 12:07:23.645 20390 20419 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+12-06 12:07:23.680 20218 20218 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+12-06 12:07:23.680 20218 20218 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+12-06 12:07:23.682 20218 20218 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+12-06 12:07:23.747   387 20428 I resolv  : GetAddrInfoHandler::run: {103 103 103 983143 10199 0}
+12-06 12:07:23.751   387 20429 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+12-06 12:07:23.751   387 20429 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5241013d70
+12-06 12:07:23.751   387 20429 I resolv  : doQuery: rcode=0, ancount=4, return value=166
+12-06 12:07:23.752   387 20430 I resolv  : res_nmkquery: (QUERY, IN, A)
+12-06 12:07:23.752   387 20430 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c506100d0d0
+12-06 12:07:23.752   387 20430 I resolv  : doQuery: rcode=0, ancount=12, return value=246
+12-06 12:07:23.756 20390 20427 D TrafficStats: tagSocket(91) with statsTag=0x8003, statsUid=-1
+12-06 12:07:23.758  1833  1833 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+12-06 12:07:23.759  1833  1833 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+12-06 12:07:23.806  5452  5485 D SplashScreenView: Build android.window.SplashScreenView{fbda7b2 V.E...... ......ID 0,0-0,0}
+12-06 12:07:23.806  5452  5485 D SplashScreenView: Icon: view: null drawable: null size: 0
+12-06 12:07:23.806  5452  5485 D SplashScreenView: Branding: view: android.view.View{284d303 G.ED..... ......I. 0,0-0,0 #10204ef android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+12-06 12:07:23.900   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+12-06 12:07:24.074 20390 20436 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+12-06 12:07:24.077 20390 20436 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+12-06 12:07:24.088  1318  1899 D EGL_emulation: app_time_stats: avg=710.88ms min=23.79ms max=3044.59ms count=5
+12-06 12:07:24.151 20390 20436 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+12-06 12:07:24.276 20390 20390 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+12-06 12:07:24.292 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: PRE_ON_CREATE
+12-06 12:07:24.294 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+12-06 12:07:24.408 20390 20390 I Fragmento_Modelo_Main: OnCreate
+12-06 12:07:24.432 20390 20390 E incanivetesuico: Invalid resource ID 0x00000000.
+12-06 12:07:24.473   663  5999 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+12-06 12:07:24.716   972   972 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS
+12-06 12:07:24.789 20390 20390 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10199; state: ENABLED
+12-06 12:07:25.027 20390 20390 W incanivetesuico: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+12-06 12:07:25.045 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: CREATED
+12-06 12:07:25.045 20390 20390 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc
+12-06 12:07:25.052 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: STARTED
+12-06 12:07:25.053 20390 20390 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc
+12-06 12:07:25.056 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: RESUMED
+12-06 12:07:25.056 20390 20390 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc
+12-06 12:07:25.063 20390 20390 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10199; state: DISABLED
+12-06 12:07:25.067 20390 20390 W OpenGLRenderer: Unknown dataspace 0
+12-06 12:07:25.097 20390 20421 I FA      : Tag Manager is not found and thus will not be used
+12-06 12:07:25.104 20390 20390 D AutofillManager: view not autofillable - not passing ime action check
+12-06 12:07:25.149   432   849 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10199 pid=0
+12-06 12:07:25.149   432   849 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10199 => denied (360 us)
+12-06 12:07:25.149   432   849 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10199 pid=0
+12-06 12:07:25.149   432   600 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10199 pid=20390
+12-06 12:07:25.149   432   849 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10199 => denied (214 us)
+12-06 12:07:25.149   432   600 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10199 => denied (191 us)
+12-06 12:07:25.149   432   849 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10199 pid=0
+12-06 12:07:25.149   432   849 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10199 => denied (145 us)
+12-06 12:07:25.149   432   600 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10199 pid=20390
+12-06 12:07:25.149   432   600 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10199 => denied (257 us)
+12-06 12:07:25.187 20390 20434 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: Error inserting flex_time=14000 job_id=-1 period=30000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=231818000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1733515645243 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1870)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1765)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at byui.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):59)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at bytb.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at bytb.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):20)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at bytb.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at byot.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+12-06 12:07:25.250  1451 20354 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+12-06 12:07:25.254   158   158 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+12-06 12:07:25.254 20390 20434 I Gralloc4: mapper 4.x is not supported
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: Error inserting flex_time=14000 job_id=-1 period=30000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=231818000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1733515645328 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1870)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1765)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at byui.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):59)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at bytb.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at bytb.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):20)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at bytb.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at byot.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+12-06 12:07:25.334  1451 20355 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+12-06 12:07:26.481 20390 20440 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[MainActivity]#0) as ready
+12-06 12:07:26.482 20390 20440 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[MainActivity]#1) as ready
+12-06 12:07:26.482   663  2190 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10199 pid=0
+12-06 12:07:26.482   663  2190 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10199 => denied (487 us)
+12-06 12:07:26.482   663  2190 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10199 pid=0
+12-06 12:07:26.482   663  2190 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10199 => denied (146 us)
+12-06 12:07:26.482   663  2190 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10199 pid=0
+12-06 12:07:26.483   663  2190 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10199 => denied (78 us)
+12-06 12:07:26.488   663   706 W ziparchive: Unable to open '/data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.dm': No such file or directory
+12-06 12:07:26.500   663   706 I ActivityTaskManager: Displayed net.developermaster.kotlincanivetesuico/.MainActivity for user 0: +2s790ms
+12-06 12:07:26.594 20390 20390 I Choreographer: Skipped 89 frames!  The application may be doing too much work on its main thread.
+12-06 12:07:26.637   663  1078 I ImeTracker: net.developermaster.kotlincanivetesuico:23a41a4f: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+12-06 12:07:26.637   663  1078 I ImeTracker: net.developermaster.kotlincanivetesuico:23a41a4f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+12-06 12:07:26.662  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+12-06 12:07:26.671  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+12-06 12:07:26.671  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.developermaster.kotlincanivetesuico fieldId=0 fieldName=null extras=null}, false)
+12-06 12:07:26.672  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+12-06 12:07:26.672  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+12-06 12:07:26.717  1451  2777 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+12-06 12:07:26.717  1451  2777 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+12-06 12:07:26.727  1451  2777 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+12-06 12:07:26.738  1451  2777 I FontLog : Pulling font file for id = 236, cache size = 5 [CONTEXT service_id=132 ]
+12-06 12:07:26.747  1451  2777 I FontLog : Pulling font file for id = 236, cache size = 5 [CONTEXT service_id=132 ]
+12-06 12:07:26.898 20390 20438 I OpenGLRenderer: Davey! duration=1466ms; Flags=1, FrameTimelineVsyncId=1749130, IntendedVsync=69702344439143, Vsync=69702344439143, InputEventId=0, HandleInputStart=69702344954077, AnimationStart=69702344959567, PerformTraversalsStart=69702344964990, DrawStart=69702738693426, FrameDeadline=69702361105809, FrameInterval=69702344917932, FrameStartTime=16666666, SyncQueued=69702794084563, SyncStart=69702794429718, IssueDrawCommandsStart=69702795218415, SwapBuffers=69703644260062, FrameCompleted=69703811631106, DequeueBufferDuration=6562, QueueBufferDuration=516366, GpuCompleted=69703811538234, SwapBuffersCompleted=69703811631106, DisplayPresentTime=0, CommandSubmissionCompleted=69703644260062,
+12-06 12:07:26.920 20390 20438 I OpenGLRenderer: Davey! duration=1785ms; Flags=0, FrameTimelineVsyncId=1749145, IntendedVsync=69702361105809, Vsync=69703844439083, InputEventId=0, HandleInputStart=69703853043674, AnimationStart=69703853048675, PerformTraversalsStart=69703854670906, DrawStart=69703858567031, FrameDeadline=69703844439083, FrameInterval=69703852380364, FrameStartTime=16666666, SyncQueued=69703864964705, SyncStart=69703865052617, IssueDrawCommandsStart=69703865205617, SwapBuffers=69703870111694, FrameCompleted=69704146448170, DequeueBufferDuration=5266, QueueBufferDuration=226221, GpuCompleted=69704146361049, SwapBuffersCompleted=69704146448170, DisplayPresentTime=0, CommandSubmissionCompleted=69703870111694,
+12-06 12:07:27.161  5452  5484 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@1f79c5f
+12-06 12:07:27.165   663  2024 W InputManager-JNI: Input channel object '82b8e49 Splash Screen net.developermaster.kotlincanivetesuico (client)' was disposed without first being removed with the input manager!
+12-06 12:07:27.204  1318  1382 I ImeTracker: com.google.android.apps.nexuslauncher:a1b1d28f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+12-06 12:07:27.206  1318  1382 I ImeTracker: com.google.android.apps.nexuslauncher:a1b1d28f: onFailed at PHASE_CLIENT_VIEW_SERVED
+12-06 12:07:27.284  1318  2111 D OneSearchSuggestProvider: Shut down the binder channel
+12-06 12:07:27.295  1318  6053 I IPCThreadState: oneway function results for code 2 on binder at 0x7d27c04bce10 will be dropped but finished with status UNKNOWN_TRANSACTION
+12-06 12:07:27.344   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+12-06 12:07:27.379 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: PAUSED
+12-06 12:07:27.383 20390 20390 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc
+12-06 12:07:27.400 20390 20390 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa in: PRE_ON_CREATE
+12-06 12:07:27.401 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=net.developermaster.kotlincanivetesuico/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa
+12-06 12:07:27.413 20390 20390 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa in: CREATED
+12-06 12:07:27.414 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=net.developermaster.kotlincanivetesuico/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa
+12-06 12:07:27.418 20390 20390 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa in: STARTED
+12-06 12:07:27.419 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=net.developermaster.kotlincanivetesuico/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa
+12-06 12:07:27.422 20390 20390 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa in: RESUMED
+12-06 12:07:27.423 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=net.developermaster.kotlincanivetesuico/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa
+12-06 12:07:27.472   663   706 I ActivityTaskManager: Displayed net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +161ms
+12-06 12:07:27.517 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: STOPPED
+12-06 12:07:27.517 20390 20390 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc
+12-06 12:07:27.535 20390 20390 D AutofillManager: view not autofillable - not passing ime action check
+12-06 12:07:27.555 20390 20390 D LifecycleMonitor: Lifecycle status change: net.developermaster.kotlincanivetesuico.MainActivity@bacdfdc in: DESTROYED
+12-06 12:07:27.556 20390 20390 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+12-06 12:07:27.557 20390 20390 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@5dfc5c6
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: Error inserting flex_time=14000 job_id=-1 period=30000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=231818000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1733515647564 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1870)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1765)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at byui.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):59)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at bytb.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at bytb.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):20)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at bytb.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at byot.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+12-06 12:07:27.565  1451 20354 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+12-06 12:07:27.567   663  2024 W InputManager-JNI: Input channel object 'b3827c8 net.developermaster.kotlincanivetesuico/net.developermaster.kotlincanivetesuico.MainActivity (client)' was disposed without first being removed with the input manager!
+12-06 12:07:27.574   663  2024 I ImeTracker: net.developermaster.kotlincanivetesuico:38923f9b: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+12-06 12:07:27.574   663  2024 I ImeTracker: net.developermaster.kotlincanivetesuico:38923f9b: onCancelled at PHASE_SERVER_SHOULD_HIDE
+12-06 12:07:27.577  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+12-06 12:07:27.578  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+12-06 12:07:27.578  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.developermaster.kotlincanivetesuico fieldId=0 fieldName=null extras=null}, false)
+12-06 12:07:27.578  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+12-06 12:07:27.579  1553  1553 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+12-06 12:07:27.591 20390 20390 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa in: PAUSED
+12-06 12:07:27.592 20390 20390 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=net.developermaster.kotlincanivetesuico/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=net.developermaster.kotlincanivetesuico/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@82edaaa
+12-06 12:07:27.612 20390 20419 E TestRunner: failed: verificar_posicao(net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest)
+12-06 12:07:27.614   432   432 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+12-06 12:07:27.623 20390 20419 E TestRunner: ----- begin exception -----
+12-06 12:07:27.623 20390 20419 E TestRunner: java.lang.NoClassDefFoundError: Failed resolution of: Lorg/hamcrest/Matchers;
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at androidx.test.espresso.matcher.ViewMatchers.withId(ViewMatchers.java:248)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest$verificar_posicao$1.invokeSuspend(FragmentHomeTest.kt:36)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest.verificar_posicao(FragmentHomeTest.kt:34)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+12-06 12:07:27.623 20390 20419 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+12-06 12:07:27.627 20390 20419 E TestRunner: Caused by: java.lang.ClassNotFoundException: Didn't find class "org.hamcrest.Matchers" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk", zip file "/data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk"],nativeLibraryDirectories=[/data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/lib/x86_64, /data/app/~~UguPPwYCXrZuMQf6D3KYbw==/net.developermaster.kotlincanivetesuico.test-T2neBSI1x_KS_o5vjq3pnw==/base.apk!/lib/x86_64, /data/app/~~4cirVGi9M1BpYlt-fE3yWA==/net.developermaster.kotlincanivetesuico-U3aR6sXLieW5hw2yO6OiHw==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+12-06 12:07:27.627 20390 20419 E TestRunner: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+12-06 12:07:27.627 20390 20419 E TestRunner: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-06 12:07:27.627 20390 20419 E TestRunner: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-06 12:07:27.627 20390 20419 E TestRunner: 	... 45 more
+12-06 12:07:27.627 20390 20419 E TestRunner: ----- end exception -----
+12-06 12:07:27.655 20390 20419 I TestRunner: finished: verificar_posicao(net.developermaster.kotlincanivetesuico.ui.home.view.FragmentHomeTest)

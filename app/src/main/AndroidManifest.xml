@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- SERVICES FOREGROUD -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- GOOGLE MAP -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- FOTOS -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:name=".ui.arquitetura.hilt.classeDeAplicacao.ClasseDeAplicacao"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_canivete"
+        android:label="@string/appName"
+        android:roundIcon="@drawable/ic_canivete"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotlinCaniveteSuico"
+        tools:targetApi="31">
+
+        <!-- SERVICES BACKGROUD -->
+        <service
+            android:name=".ui.services.servicesBackGround.classes.ServiceGeradoAutomaticamente"
+            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- SERVICES BACKGROUD 2-->
+        <service
+            android:name=".ui.services.servicesBackGround.classes.ServicesClassBackGround"
+            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- SERVICES FOREGROUD -->
+        <service
+            android:name=".ui.services.serviceForeGround.classes.ServicesClassForeGround"
+            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="shortService"/>
+
+        <activity
+            android:name=".ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"
+            android:exported="false"
+            android:label="@string/title_activity_google_map_compose"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.flow.flowFireBase.ui.ComposeFlowFireBase"
+            android:exported="false"
+            android:label="@string/title_activity_compose_flow_fire_base"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".ui.compose.scaffoldMVVM.view.ScaffoldMVVM"
+            android:exported="false"
+            android:label="@string/title_activity_scaffold_mvvm"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".ui.compose.scaffold.view.Scaffold"
+            android:exported="false"
+            android:label="@string/title_activity_scaffold"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".ui.compose.View.LazyColumnGrid.ComposeLazyColumnGrid"
+            android:exported="false"
+            android:label="@string/title_activity_compose_recycler_view_grid"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".ui.compose.View.LazyColumn.ComposeLazyColumn"
+            android:exported="false"
+            android:label="@string/title_activity_compose_recycler_view"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".ui.compose.View.Atributos.ComposeAtributos"
+            android:exported="false"
+            android:label="@string/NAV_COMPOSE_ATRIBUTOS"
+            android:theme="@style/Theme.KotlinCaniveteSuico" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/appName"
+            android:theme="@style/Theme.KotlinCaniveteSuico.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

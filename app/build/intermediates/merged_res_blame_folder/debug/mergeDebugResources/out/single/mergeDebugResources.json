@@ -1,0 +1,526 @@
+[
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_google_map_janela_informacao.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_google_map_janela_informacao.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-v21_ic_menu_slideshow.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_ic_contato_whatsapp.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/ic_contato_whatsapp.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_google_map_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_google_map_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/navigation_navigation.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/navigation/navigation.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvvm_api.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvvm_api.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_flow_firebase.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_flow_firebase.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_mvvm_alert_dialog.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_mvvm_alert_dialog.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_pesquisar.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_pesquisar.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_room_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_room_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_ic_code.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/ic_code.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_python.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/python.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_room_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_room_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_mvvm.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_mvvm.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_room_mvvm.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_room_mvvm.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_test_unitario_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_test_unitario_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_room_mvvm_recyclerview.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_room_mvvm_recyclerview.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_perfil_01.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/perfil_01.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_persona.jpg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/persona.jpg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_recycler_view_item.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/recycler_view_item.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_content_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/content_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_viewmodel_contador.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_viewmodel_contador.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_clean_mvvm.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_clean_mvvm.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_mvvm_adicionar.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_mvvm_adicionar.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvvm_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvvm_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_activity_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_perfil_03.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/perfil_03.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_searchview_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_searchview_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_sair.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_sair.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_databinding_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_databinding_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_viewmodel_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_viewmodel_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvvm_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvvm_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_contato.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_contato.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_logo_youtube.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/logo_youtube.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_recycler_view_item_1.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/recycler_view_item_1.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_padrao.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_padrao.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_databinding_simples2.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_databinding_simples2.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_codigo.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_codigo.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_html.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/html.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_flow_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_flow_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_codigo.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_codigo.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_compose_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_compose_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_arquitetura_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_arquitetura_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_flow_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_flow_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_ic_code_2.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/ic_code_2.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_clean_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_clean_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_ic_canivete.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/ic_canivete.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvp_api.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvp_api.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_perfil_02.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/perfil_02.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_clean_domain.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_clean_domain.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_livedata_contador.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_livedata_contador.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvc.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvc.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_search_listview.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_search_listview.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_alert_dialog.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_alert_dialog.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_home.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_livedata_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_livedata_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_test_instrumentado.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_test_instrumentado.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_csharp.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/csharp.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-v21_ic_menu_gallery.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_kotlin.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/kotlin.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_mvvm_recyclerview.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_mvvm_recyclerview.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_recyclerview_titulos_botoes.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/recyclerview_titulos_botoes.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_marca_youtube.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/marca_youtube.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_side_nav_bar.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_room_mvvm_adicionar.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_room_mvvm_adicionar.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_google_map_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_google_map_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_databinding_livedata_viewmodel.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_databinding_livedata_viewmodel.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_floresta.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/floresta.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_baseline_add_to_home_screen_24.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/baseline_add_to_home_screen_24.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvp_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvp_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/menu_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/menu/main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_java.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/java.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_mvp_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_mvp_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_search_recyclerview.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_search_recyclerview.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_firebase_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_firebase_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_modulo_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_modulo_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_icone_youtube.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/icone_youtube.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_livedata_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_livedata_simples.xml"
+    },
+    {
+        "merged": "net.developermaster.kotlincanivetesuico.app-debug-96:/navigation_navigation.xml.flat",
+        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/navigation/navigation.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_cplusplus.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/cplusplus.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_recyclerview_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_recyclerview_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_services_background_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_background_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_home.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_domain_api_dummy_usuarios.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_domain_api_dummy_usuarios.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_databinding_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_databinding_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_bordas_redondas_preto.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_bordas_redondas_preto.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_services_background_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_background_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_test_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_test_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_databinding_com_evento_de_clique.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_databinding_com_evento_de_clique.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_swift.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/swift.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_foto.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_foto.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/menu_main_drawer.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/menu/main_drawer.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-v21_ic_menu_camera.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-v21/ic_menu_camera.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_flow_mvvm.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_flow_mvvm.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_ic_architecture.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/ic_architecture.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_xml.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_xml.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_telefone.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_telefone.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_configuracoes.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_configuracoes.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_dependencias_nomeadas.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_dependencias_nomeadas.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_domain_api_dummy_produtos.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_domain_api_dummy_produtos.xml"
+    },
+    {
+        "merged": "net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_services_foreground_simples.xml.flat",
+        "source": "net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_services_foreground_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable-nodpi_praia.jpeg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable-nodpi/praia.jpeg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_viewmodel_simples.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_viewmodel_simples.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_activity_git.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/activity_git.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_nav_header_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ferramentas.jpg.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ferramentas.jpg"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_app_bar_main.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_javascript.png.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/javascript.png"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/layout_fragment_hilt_injecao.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/layout/fragment_hilt_injecao.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/xml_backup_rules.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-debug-96:/drawable_ic_adicionar.xml.flat",
+        "source": "/home/rael/.gradle/daemon/8.9/net.developermaster.kotlincanivetesuico.app-main-98:/drawable/ic_adicionar.xml"
+    }
+]

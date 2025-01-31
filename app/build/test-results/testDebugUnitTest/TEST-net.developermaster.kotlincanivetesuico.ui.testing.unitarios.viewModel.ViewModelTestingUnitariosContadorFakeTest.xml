@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.developermaster.kotlincanivetesuico.ui.testing.unitarios.viewModel.ViewModelTestingUnitariosContadorFakeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T20:11:59" hostname="Laptop-Hp" time="0.2">
+  <properties/>
+  <testcase name=" metodo Logar Usuario ViewModel Fake Retorna True" classname="net.developermaster.kotlincanivetesuico.ui.testing.unitarios.viewModel.ViewModelTestingUnitariosContadorFakeTest" time="0.178"/>
+  <testcase name=" metodo Listar Usuario ViewModel Fake Retorna uma Lista nao Vazia" classname="net.developermaster.kotlincanivetesuico.ui.testing.unitarios.viewModel.ViewModelTestingUnitariosContadorFakeTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

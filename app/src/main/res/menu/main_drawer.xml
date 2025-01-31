@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/group">
+
+        <item
+            android:id="@+id/fragment_Home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/NAV_HOME" />
+
+        <item
+            android:id="@+id/fragment_Arquitetura_Main"
+            android:icon="@drawable/ic_architecture"
+            android:title="@string/MAIN_ARQUITETURA" />
+
+        <item
+            android:id="@+id/fragment_SearchView_Main"
+            android:icon="@drawable/ic_pesquisar"
+            android:title="@string/EXT_SEARCHVIEW" />
+
+        <item
+            android:id="@+id/fragment_FireBase_Main"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/EXT_FIREBASE" />
+
+        <item
+            android:id="@+id/fragment_Room_Main"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/EXT_ROOM" />
+
+       <!-- <item
+            android:id="@+id/fragment_VIEWMODEL"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/VIEWMODEL" />
+        <item
+            android:id="@+id/fragment_LIVEDATA"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/LIVEDATA" />
+        <item
+            android:id="@+id/fragment_DATABINDING"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/DATABINDING" />
+        <item
+            android:id="@+id/nav_fragment_de_exemplo"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/EXEMPLO" />-->
+
+    </group>
+
+    <item
+        android:id="@+id/nav_categoria_outros_itens"
+        android:icon="@drawable/ferramentas"
+        android:title="Outros itens">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_categoria_itens_2"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="iten 1" />
+        </menu>
+
+    </item>
+
+</menu>
+
+
+

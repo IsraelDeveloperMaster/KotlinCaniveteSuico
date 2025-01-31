@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/id_pesquisar"
+        android:icon="@drawable/ic_pesquisar"
+        android:title="Pesquisar" />
+    <item
+        android:id="@+id/id_informacao"
+        android:icon="@drawable/ic_configuracoes"
+        android:title="Informações" />
+
+    <item
+        android:id="@+id/id_home"
+        android:title="Home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/id_contato"
+        android:icon="@drawable/ic_telefone"
+        android:title="Contato" />
+    <item
+        android:id="@+id/id_sair"
+        android:icon="@drawable/ic_sair"
+        android:title="Sair" />
+</menu>

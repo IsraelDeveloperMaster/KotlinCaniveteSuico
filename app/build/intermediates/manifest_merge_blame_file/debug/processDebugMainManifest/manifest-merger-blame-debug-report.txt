@@ -1,0 +1,695 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.developermaster.kotlincanivetesuico"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- SERVICES FOREGROUD -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:5-77
+12-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:6:22-74
+13
+14    <!-- GOOGLE MAP -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:5-79
+15-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:5-81
+16-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:10:22-78
+17
+18    <!-- INTERNET -->
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:5-67
+19-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:13:22-64
+20
+21    <!-- FOTOS -->
+22    <uses-permission
+22-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:16:5-18:38
+23        android:name="android.permission.READ_EXTERNAL_STORAGE"
+23-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:17:9-64
+24        android:maxSdkVersion="32" />
+24-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:18:9-35
+25
+26    <!-- Include required permissions for Google Maps API to run. -->
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:23:5-79
+27-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:23:22-76
+28
+29    <uses-feature
+29-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:26:5-28:35
+30        android:glEsVersion="0x00020000"
+30-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:27:9-41
+31        android:required="true" />
+31-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:28:9-32
+32
+33    <queries>
+33-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:30:5-34:15
+34
+35        <!-- Needs to be explicitly declared on Android R+ -->
+36        <package android:name="com.google.android.apps.maps" />
+36-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:33:9-64
+36-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:33:18-61
+37        <package android:name="com.google.ar.core" />
+37-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:21:9-54
+37-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:21:18-51
+38        <package android:name="com.android.vending" />
+38-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:22:9-55
+38-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:22:18-52
+39
+40        <intent>
+40-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:24:9-26:18
+41            <action android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE" />
+41-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:25:13-96
+41-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:25:21-93
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.WAKE_LOCK" />
+45-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:24:5-68
+45-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:24:22-65
+46    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+46-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:25:5-79
+46-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:25:22-76
+47    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+47-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:26:5-88
+47-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:26:22-85
+48    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+48-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:27:5-82
+48-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:27:22-79
+49    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+49-->[com.google.android.recaptcha:recaptcha:18.4.0] /home/rael/.gradle/caches/8.9/transforms/25fa774086c23e51814b9083aff7f85f/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+49-->[com.google.android.recaptcha:recaptcha:18.4.0] /home/rael/.gradle/caches/8.9/transforms/25fa774086c23e51814b9083aff7f85f/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+50    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+50-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:26:5-110
+50-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:26:22-107
+51
+52    <permission
+52-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+53        android:name="net.developermaster.kotlincanivetesuico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+53-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+54        android:protectionLevel="signature" />
+54-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+55
+56    <uses-permission android:name="net.developermaster.kotlincanivetesuico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+56-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+56-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+57    <uses-permission android:name="android.permission.REORDER_TASKS" />
+57-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:24:5-72
+57-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:24:22-69
+58
+59    <application
+59-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:20:5-106:19
+60        android:name="net.developermaster.kotlincanivetesuico.ui.arquitetura.hilt.classeDeAplicacao.ClasseDeAplicacao"
+60-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:21:9-80
+61        android:allowBackup="true"
+61-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:22:9-35
+62        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+62-->[androidx.core:core:1.13.1] /home/rael/.gradle/caches/8.9/transforms/b1c3caa3d12005d7a9ad4ae34f397909/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+63        android:dataExtractionRules="@xml/data_extraction_rules"
+63-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:23:9-65
+64        android:debuggable="true"
+65        android:extractNativeLibs="true"
+66        android:fullBackupContent="@xml/backup_rules"
+66-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:24:9-54
+67        android:icon="@drawable/ic_canivete"
+67-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:25:9-45
+68        android:label="@string/appName"
+68-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:26:9-40
+69        android:roundIcon="@drawable/ic_canivete"
+69-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:27:9-50
+70        android:supportsRtl="true"
+70-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:28:9-35
+71        android:testOnly="true"
+72        android:theme="@style/Theme.KotlinCaniveteSuico" >
+72-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:29:9-57
+73
+74        <!-- SERVICES BACKGROUD -->
+75        <service
+75-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:33:9-37:40
+76            android:name="net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.classes.ServiceGeradoAutomaticamente"
+76-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:34:13-96
+77            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+77-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:35:13-68
+78            android:enabled="true"
+78-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:36:13-35
+79            android:exported="false" />
+79-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:37:13-37
+80
+81        <!-- SERVICES BACKGROUD 2 -->
+82        <service
+82-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:40:9-44:40
+83            android:name="net.developermaster.kotlincanivetesuico.ui.services.servicesBackGround.classes.ServicesClassBackGround"
+83-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:41:13-91
+84            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+84-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:42:13-68
+85            android:enabled="true"
+85-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:43:13-35
+86            android:exported="false" />
+86-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:44:13-37
+87
+88        <!-- SERVICES FOREGROUD -->
+89        <service
+89-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:47:9-52:59
+90            android:name="net.developermaster.kotlincanivetesuico.ui.services.serviceForeGround.classes.ServicesClassForeGround"
+90-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:48:13-90
+91            android:description="@string/DESCRICAO_PARA_O_SERVICES"
+91-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:49:13-68
+92            android:enabled="true"
+92-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:50:13-35
+93            android:exported="false"
+93-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:51:13-37
+94            android:foregroundServiceType="shortService" />
+94-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:52:13-57
+95
+96        <activity
+96-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:54:9-58:64
+97            android:name="net.developermaster.kotlincanivetesuico.ui.googleMap.googleMapCompose.view.ui.GoogleMapCompose"
+97-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:55:13-83
+98            android:exported="false"
+98-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:56:13-37
+99            android:label="@string/title_activity_google_map_compose"
+99-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:57:13-70
+100            android:theme="@style/Theme.KotlinCaniveteSuico" />
+100-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:58:13-61
+101
+102        <meta-data
+102-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:60:9-62:55
+103            android:name="com.google.android.geo.API_KEY"
+103-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:61:13-58
+104            android:value="@string/google_maps_key" />
+104-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:62:13-52
+105
+106        <activity
+106-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:64:9-68:64
+107            android:name="net.developermaster.kotlincanivetesuico.ui.flow.flowFireBase.ui.ComposeFlowFireBase"
+107-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:65:13-72
+108            android:exported="false"
+108-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:66:13-37
+109            android:label="@string/title_activity_compose_flow_fire_base"
+109-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:67:13-74
+110            android:theme="@style/Theme.KotlinCaniveteSuico" />
+110-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:68:13-61
+111        <activity
+111-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:69:9-73:64
+112            android:name="net.developermaster.kotlincanivetesuico.ui.compose.scaffoldMVVM.view.ScaffoldMVVM"
+112-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:70:13-70
+113            android:exported="false"
+113-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:71:13-37
+114            android:label="@string/title_activity_scaffold_mvvm"
+114-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:72:13-65
+115            android:theme="@style/Theme.KotlinCaniveteSuico" />
+115-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:73:13-61
+116        <activity
+116-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:74:9-78:64
+117            android:name="net.developermaster.kotlincanivetesuico.ui.compose.scaffold.view.Scaffold"
+117-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:75:13-62
+118            android:exported="false"
+118-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:76:13-37
+119            android:label="@string/title_activity_scaffold"
+119-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:77:13-60
+120            android:theme="@style/Theme.KotlinCaniveteSuico" />
+120-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:78:13-61
+121        <activity
+121-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:79:9-83:64
+122            android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumnGrid.ComposeLazyColumnGrid"
+122-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:80:13-81
+123            android:exported="false"
+123-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:81:13-37
+124            android:label="@string/title_activity_compose_recycler_view_grid"
+124-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:82:13-78
+125            android:theme="@style/Theme.KotlinCaniveteSuico" />
+125-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:83:13-61
+126        <activity
+126-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:84:9-88:64
+127            android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.LazyColumn.ComposeLazyColumn"
+127-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:85:13-73
+128            android:exported="false"
+128-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:86:13-37
+129            android:label="@string/title_activity_compose_recycler_view"
+129-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:87:13-73
+130            android:theme="@style/Theme.KotlinCaniveteSuico" />
+130-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:88:13-61
+131        <activity
+131-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:89:9-93:64
+132            android:name="net.developermaster.kotlincanivetesuico.ui.compose.View.Atributos.ComposeAtributos"
+132-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:90:13-71
+133            android:exported="false"
+133-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:91:13-37
+134            android:label="@string/NAV_COMPOSE_ATRIBUTOS"
+134-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:92:13-58
+135            android:theme="@style/Theme.KotlinCaniveteSuico" />
+135-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:93:13-61
+136        <activity
+136-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:94:9-104:20
+137            android:name="net.developermaster.kotlincanivetesuico.MainActivity"
+137-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:95:13-41
+138            android:exported="true"
+138-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:96:13-36
+139            android:label="@string/appName"
+139-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:97:13-44
+140            android:theme="@style/Theme.KotlinCaniveteSuico.NoActionBar" >
+140-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:98:13-73
+141            <intent-filter>
+141-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:99:13-103:29
+142                <action android:name="android.intent.action.MAIN" />
+142-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:17-69
+142-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:100:25-66
+143
+144                <category android:name="android.intent.category.LAUNCHER" />
+144-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
+144-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
+145            </intent-filter>
+146        </activity>
+147
+148        <service
+148-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:9:9-15:19
+149            android:name="com.google.firebase.components.ComponentDiscoveryService"
+149-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:10:13-84
+150            android:directBootAware="true"
+150-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:11:13-37
+152            <meta-data
+152-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:12:13-14:85
+153                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar"
+153-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:13:17-125
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-storage-ktx:20.3.0] /home/rael/.gradle/caches/8.9/transforms/a212d428386d692ae665f77c9b45543c/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:14:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-firestore-ktx:24.10.3] /home/rael/.gradle/caches/8.9/transforms/64aaaa11665aeb05a5e4a692b4133c4f/transformed/firebase-firestore-ktx-24.10.3/AndroidManifest.xml:12:13-14:85
+156                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+156-->[com.google.firebase:firebase-firestore-ktx:24.10.3] /home/rael/.gradle/caches/8.9/transforms/64aaaa11665aeb05a5e4a692b4133c4f/transformed/firebase-firestore-ktx-24.10.3/AndroidManifest.xml:13:17-129
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-firestore-ktx:24.10.3] /home/rael/.gradle/caches/8.9/transforms/64aaaa11665aeb05a5e4a692b4133c4f/transformed/firebase-firestore-ktx-24.10.3/AndroidManifest.xml:14:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
+159                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+159-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:31:17-118
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:32:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:33:13-35:85
+162                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+162-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:34:17-107
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-storage:20.3.0] /home/rael/.gradle/caches/8.9/transforms/d2f108645dc2e3dbb7552005a0605bcd/transformed/firebase-storage-20.3.0/AndroidManifest.xml:35:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:17:13-19:85
+165                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+165-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:18:17-122
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:19:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:20:13-22:85
+168                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+168-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:21:17-111
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-firestore:24.10.3] /home/rael/.gradle/caches/8.9/transforms/090bd1ad86891244735d2fd52145c29c/transformed/firebase-firestore-24.10.3/AndroidManifest.xml:22:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-auth-ktx:22.3.1] /home/rael/.gradle/caches/8.9/transforms/e9287c92a6abea812b4a0f30f6b7e8b2/transformed/firebase-auth-ktx-22.3.1/AndroidManifest.xml:11:13-13:85
+171                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+171-->[com.google.firebase:firebase-auth-ktx:22.3.1] /home/rael/.gradle/caches/8.9/transforms/e9287c92a6abea812b4a0f30f6b7e8b2/transformed/firebase-auth-ktx-22.3.1/AndroidManifest.xml:12:17-119
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-auth-ktx:22.3.1] /home/rael/.gradle/caches/8.9/transforms/e9287c92a6abea812b4a0f30f6b7e8b2/transformed/firebase-auth-ktx-22.3.1/AndroidManifest.xml:13:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:69:13-71:85
+174                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+174-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:70:17-109
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:71:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:25:13-27:85
+177                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+177-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:26:17-120
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:27:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:28:13-30:85
+180                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+180-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:29:17-117
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-appcheck:17.1.2] /home/rael/.gradle/caches/8.9/transforms/1c952f6d0edff74941c5c33dc4892299/transformed/firebase-appcheck-17.1.2/AndroidManifest.xml:30:17-82
+182            <meta-data
+182-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:37:13-39:85
+183                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+183-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:38:17-139
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:39:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+186                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+186-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+189                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+189-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-installations:17.2.0] /home/rael/.gradle/caches/8.9/transforms/8c8422bc3e696587e49c70d07527b2b3/transformed/firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+191            <meta-data
+191-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rael/.gradle/caches/8.9/transforms/aca3ef75712b8a067e79bb3e783c9c49/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+192                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+192-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rael/.gradle/caches/8.9/transforms/aca3ef75712b8a067e79bb3e783c9c49/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rael/.gradle/caches/8.9/transforms/aca3ef75712b8a067e79bb3e783c9c49/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+194            <meta-data
+194-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+195                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+195-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+197        </service>
+198        <service
+198-->[androidx.room:room-runtime:2.6.1] /home/rael/.gradle/caches/8.9/transforms/2e55ad683dba2fd23aa4427f04c69a5e/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+199            android:name="androidx.room.MultiInstanceInvalidationService"
+199-->[androidx.room:room-runtime:2.6.1] /home/rael/.gradle/caches/8.9/transforms/2e55ad683dba2fd23aa4427f04c69a5e/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+200            android:directBootAware="true"
+200-->[androidx.room:room-runtime:2.6.1] /home/rael/.gradle/caches/8.9/transforms/2e55ad683dba2fd23aa4427f04c69a5e/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+201            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+201-->[androidx.room:room-runtime:2.6.1] /home/rael/.gradle/caches/8.9/transforms/2e55ad683dba2fd23aa4427f04c69a5e/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+202        <uses-library
+202-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:39:9-41:40
+203            android:name="org.apache.http.legacy"
+203-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:40:13-50
+204            android:required="false" />
+204-->[com.google.android.gms:play-services-maps:19.0.0] /home/rael/.gradle/caches/8.9/transforms/58657954b5c9101b380651aa1d2bb101/transformed/play-services-maps-19.0.0/AndroidManifest.xml:41:13-37
+205
+206        <activity
+206-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:29:9-46:20
+207            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+207-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:30:13-80
+208            android:excludeFromRecents="true"
+208-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:31:13-46
+209            android:exported="true"
+209-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:32:13-36
+210            android:launchMode="singleTask"
+210-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:33:13-44
+211            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+211-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:34:13-72
+212            <intent-filter>
+212-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:35:13-45:29
+213                <action android:name="android.intent.action.VIEW" />
+213-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:36:17-69
+213-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:36:25-66
+214
+215                <category android:name="android.intent.category.DEFAULT" />
+215-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:38:17-76
+215-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:38:27-73
+216                <category android:name="android.intent.category.BROWSABLE" />
+216-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:39:17-78
+216-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:39:27-75
+217
+218                <data
+218-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:41:17-44:51
+219                    android:host="firebase.auth"
+219-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:42:21-49
+220                    android:path="/"
+220-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:43:21-37
+221                    android:scheme="genericidp" />
+221-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:44:21-48
+222            </intent-filter>
+223        </activity>
+224        <activity
+224-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:47:9-64:20
+225            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+225-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:48:13-79
+226            android:excludeFromRecents="true"
+226-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:49:13-46
+227            android:exported="true"
+227-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:50:13-36
+228            android:launchMode="singleTask"
+228-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:51:13-44
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+229-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:52:13-72
+230            <intent-filter>
+230-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:53:13-63:29
+231                <action android:name="android.intent.action.VIEW" />
+231-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:36:17-69
+231-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:36:25-66
+232
+233                <category android:name="android.intent.category.DEFAULT" />
+233-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:38:17-76
+233-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:38:27-73
+234                <category android:name="android.intent.category.BROWSABLE" />
+234-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:39:17-78
+234-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:39:27-75
+235
+236                <data
+236-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:41:17-44:51
+237                    android:host="firebase.auth"
+237-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:42:21-49
+238                    android:path="/"
+238-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:43:21-37
+239                    android:scheme="recaptcha" />
+239-->[com.google.firebase:firebase-auth:22.3.1] /home/rael/.gradle/caches/8.9/transforms/89f23386df2a6086d0feb418876ac418/transformed/firebase-auth-22.3.1/AndroidManifest.xml:44:21-48
+240            </intent-filter>
+241        </activity>
+242        <activity
+242-->[com.google.android.gms:play-services-base:18.5.0] /home/rael/.gradle/caches/8.9/transforms/bd007cde75d943bf6204c7791c3b90e3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+243            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+243-->[com.google.android.gms:play-services-base:18.5.0] /home/rael/.gradle/caches/8.9/transforms/bd007cde75d943bf6204c7791c3b90e3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+244            android:exported="false"
+244-->[com.google.android.gms:play-services-base:18.5.0] /home/rael/.gradle/caches/8.9/transforms/bd007cde75d943bf6204c7791c3b90e3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+245-->[com.google.android.gms:play-services-base:18.5.0] /home/rael/.gradle/caches/8.9/transforms/bd007cde75d943bf6204c7791c3b90e3/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+246
+247        <property
+247-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:30:9-32:61
+248            android:name="android.adservices.AD_SERVICES_CONFIG"
+248-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:31:13-65
+249            android:resource="@xml/ga_ad_services_config" />
+249-->[com.google.android.gms:play-services-measurement-api:21.5.1] /home/rael/.gradle/caches/8.9/transforms/2bd067d833cf161593fab424f43638f3/transformed/play-services-measurement-api-21.5.1/AndroidManifest.xml:32:13-58
+250
+251        <provider
+251-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+252            android:name="com.google.firebase.provider.FirebaseInitProvider"
+252-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+253            android:authorities="net.developermaster.kotlincanivetesuico.firebaseinitprovider"
+253-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+254            android:directBootAware="true"
+254-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+255            android:exported="false"
+255-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+256            android:initOrder="100" />
+256-->[com.google.firebase:firebase-common:20.4.2] /home/rael/.gradle/caches/8.9/transforms/d44fbcd7f1aa2ae671730d525fbe4202/transformed/firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+257
+258        <receiver
+258-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:29:9-33:20
+259            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+259-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:30:13-85
+260            android:enabled="true"
+260-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:31:13-35
+261            android:exported="false" >
+261-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:32:13-37
+262        </receiver>
+263
+264        <service
+264-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:35:9-38:40
+265            android:name="com.google.android.gms.measurement.AppMeasurementService"
+265-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:36:13-84
+266            android:enabled="true"
+266-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:37:13-35
+267            android:exported="false" />
+267-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:38:13-37
+268        <service
+268-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:39:9-43:72
+269            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+269-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:40:13-87
+270            android:enabled="true"
+270-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:41:13-35
+271            android:exported="false"
+271-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:42:13-37
+272            android:permission="android.permission.BIND_JOB_SERVICE" />
+272-->[com.google.android.gms:play-services-measurement:21.5.1] /home/rael/.gradle/caches/8.9/transforms/d75d66e737b77f5d227cac1e89ff90be/transformed/play-services-measurement-21.5.1/AndroidManifest.xml:43:13-69
+273
+274        <uses-library
+274-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/rael/.gradle/caches/8.9/transforms/6a5347b89219bfbd1b97852a9bbeef27/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+275            android:name="android.ext.adservices"
+275-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/rael/.gradle/caches/8.9/transforms/6a5347b89219bfbd1b97852a9bbeef27/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+276            android:required="false" />
+276-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/rael/.gradle/caches/8.9/transforms/6a5347b89219bfbd1b97852a9bbeef27/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+277
+278        <activity
+278-->[androidx.compose.ui:ui-test-manifest:1.7.2] /home/rael/.gradle/caches/8.9/transforms/0588e388c096b03409d6244147145989/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:23:9-25:39
+279            android:name="androidx.activity.ComponentActivity"
+279-->[androidx.compose.ui:ui-test-manifest:1.7.2] /home/rael/.gradle/caches/8.9/transforms/0588e388c096b03409d6244147145989/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:24:13-63
+280            android:exported="true" />
+280-->[androidx.compose.ui:ui-test-manifest:1.7.2] /home/rael/.gradle/caches/8.9/transforms/0588e388c096b03409d6244147145989/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:25:13-36
+281        <activity
+281-->[androidx.compose.ui:ui-tooling-android:1.7.2] /home/rael/.gradle/caches/8.9/transforms/b1cda076488cac92819db515b1c6b8a0/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+282            android:name="androidx.compose.ui.tooling.PreviewActivity"
+282-->[androidx.compose.ui:ui-tooling-android:1.7.2] /home/rael/.gradle/caches/8.9/transforms/b1cda076488cac92819db515b1c6b8a0/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+283            android:exported="true" />
+283-->[androidx.compose.ui:ui-tooling-android:1.7.2] /home/rael/.gradle/caches/8.9/transforms/b1cda076488cac92819db515b1c6b8a0/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+284
+285        <provider
+285-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+286            android:name="androidx.startup.InitializationProvider"
+286-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+287            android:authorities="net.developermaster.kotlincanivetesuico.androidx-startup"
+287-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+288            android:exported="false" >
+288-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+289            <meta-data
+289-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+290                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+290-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+291                android:value="androidx.startup" />
+291-->[androidx.emoji2:emoji2:1.3.0] /home/rael/.gradle/caches/8.9/transforms/0b5bdb925b19ebab199015ed15412dbf/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+292            <meta-data
+292-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/rael/.gradle/caches/8.9/transforms/c4f412646ed34f871ae0a01ffec7f6f1/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+293                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+293-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/rael/.gradle/caches/8.9/transforms/c4f412646ed34f871ae0a01ffec7f6f1/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
+294                android:value="androidx.startup" />
+294-->[androidx.lifecycle:lifecycle-process:2.8.6] /home/rael/.gradle/caches/8.9/transforms/c4f412646ed34f871ae0a01ffec7f6f1/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+295            <meta-data
+295-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+296                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+296-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+297                android:value="androidx.startup" />
+297-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+298        </provider>
+299
+300        <uses-library
+300-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+301            android:name="androidx.window.extensions"
+301-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+302            android:required="false" />
+302-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+303        <uses-library
+303-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+304            android:name="androidx.window.sidecar"
+304-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+305            android:required="false" />
+305-->[androidx.window:window:1.0.0] /home/rael/.gradle/caches/8.9/transforms/bf35b3e8d4e4c4482ee4936acc58393a/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+306
+307        <activity
+307-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:27:9-34:20
+308            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+308-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:28:13-99
+309            android:exported="true"
+309-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:29:13-36
+310            android:theme="@style/WhiteBackgroundTheme" >
+310-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:30:13-56
+311            <intent-filter android:priority="-100" >
+311-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:13-33:29
+311-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:28-51
+312                <category android:name="android.intent.category.LAUNCHER" />
+312-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
+312-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
+313            </intent-filter>
+314        </activity>
+315        <activity
+315-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:35:9-42:20
+316            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+316-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:36:13-95
+317            android:exported="true"
+317-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:37:13-36
+318            android:theme="@style/WhiteBackgroundTheme" >
+318-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:38:13-56
+319            <intent-filter android:priority="-100" >
+319-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:13-33:29
+319-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:28-51
+320                <category android:name="android.intent.category.LAUNCHER" />
+320-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
+320-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
+321            </intent-filter>
+322        </activity>
+323        <activity
+323-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:43:9-50:20
+324            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+324-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:44:13-103
+325            android:exported="true"
+325-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:45:13-36
+326            android:theme="@style/WhiteBackgroundDialogTheme" >
+326-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:46:13-62
+327            <intent-filter android:priority="-100" >
+327-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:13-33:29
+327-->[androidx.test:core:1.6.1] /home/rael/.gradle/caches/8.9/transforms/5c0f5d88bd909d48cc3e2c093366cfb3/transformed/core-1.6.1/AndroidManifest.xml:31:28-51
+328                <category android:name="android.intent.category.LAUNCHER" />
+328-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:17-77
+328-->/home/rael/ANDROID_BACKUPs/APPS_EM_DESENVOLVIMENTO/Kotlin_Canivete_Suico/KotlinCaniveteSuico/app/src/main/AndroidManifest.xml:102:27-74
+329            </intent-filter>
+330        </activity>
+331
+332        <meta-data
+332-->[com.google.android.gms:play-services-basement:18.4.0] /home/rael/.gradle/caches/8.9/transforms/3a811839f10be59f5a8bd7b5fa750925/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+333            android:name="com.google.android.gms.version"
+333-->[com.google.android.gms:play-services-basement:18.4.0] /home/rael/.gradle/caches/8.9/transforms/3a811839f10be59f5a8bd7b5fa750925/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+334            android:value="@integer/google_play_services_version" />
+334-->[com.google.android.gms:play-services-basement:18.4.0] /home/rael/.gradle/caches/8.9/transforms/3a811839f10be59f5a8bd7b5fa750925/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+335
+336        <provider
+336-->[com.squareup.picasso:picasso:2.71828] /home/rael/.gradle/caches/8.9/transforms/0f87bd89eb021569fa0d1f0a16516275/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
+337            android:name="com.squareup.picasso.PicassoProvider"
+337-->[com.squareup.picasso:picasso:2.71828] /home/rael/.gradle/caches/8.9/transforms/0f87bd89eb021569fa0d1f0a16516275/transformed/picasso-2.71828/AndroidManifest.xml:9:13-64
+338            android:authorities="net.developermaster.kotlincanivetesuico.com.squareup.picasso"
+338-->[com.squareup.picasso:picasso:2.71828] /home/rael/.gradle/caches/8.9/transforms/0f87bd89eb021569fa0d1f0a16516275/transformed/picasso-2.71828/AndroidManifest.xml:10:13-72
+339            android:exported="false" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+339-->[com.squareup.picasso:picasso:2.71828] /home/rael/.gradle/caches/8.9/transforms/0f87bd89eb021569fa0d1f0a16516275/transformed/picasso-2.71828/AndroidManifest.xml:11:13-37
+340        <meta-data
+340-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:32:9-34:41
+341            android:name="com.google.ar.core.min_apk_version"
+341-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:33:13-62
+342            android:value="241930000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+342-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:34:13-38
+343        <activity
+343-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:36:9-42:80
+344            android:name="com.google.ar.core.InstallActivity"
+344-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:37:13-62
+345            android:configChanges="keyboardHidden|orientation|screenSize"
+345-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:38:13-74
+346            android:excludeFromRecents="true"
+346-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:39:13-46
+347            android:exported="false"
+347-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:40:13-37
+348            android:launchMode="singleTop"
+348-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:41:13-43
+349            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+349-->[com.google.ar:core:1.45.0] /home/rael/.gradle/caches/8.9/transforms/42f0907f064f32d9009a0ca14bdcf625/transformed/core-1.45.0/AndroidManifest.xml:42:13-77
+350
+351        <receiver
+351-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+352            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+352-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+353            android:directBootAware="false"
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+354            android:enabled="true"
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+355            android:exported="true"
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+356            android:permission="android.permission.DUMP" >
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+357            <intent-filter>
+357-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+358                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+359            </intent-filter>
+360            <intent-filter>
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+361                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+362            </intent-filter>
+363            <intent-filter>
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+364                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+365            </intent-filter>
+366            <intent-filter>
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+367                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rael/.gradle/caches/8.9/transforms/54a64828bd56dfadeedefc02d0b13437/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+368            </intent-filter>
+369        </receiver>
+370    </application>
+371
+372</manifest>
